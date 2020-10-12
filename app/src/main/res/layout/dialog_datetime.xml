@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog"
+    android:focusableInTouchMode="true"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10px"
+        android:text="@string/please_select_time"
+        android:textColor="@android:color/white"
+        android:textSize="20px" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_marginTop="10px"
+        android:layout_weight="1"
+        android:focusableInTouchMode="true"
+        android:gravity="center|center_vertical">
+
+        <EditText
+            android:id="@+id/D_ET1"
+            style="@style/CEditText"
+            android:ems="7"
+            android:imeOptions="actionDone"
+            android:inputType="number" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:textColor="@android:color/white"
+            android:textSize="20px" />
+
+        <EditText
+            android:id="@+id/D_ET2"
+            style="@style/CEditText"
+            android:ems="7"
+            android:imeOptions="actionDone"
+            android:inputType="number" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/layout_record_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="10px"
+        android:visibility="gone">
+
+        <CheckBox
+            android:id="@+id/btn_login_record"
+            android:text="登录日志"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20px"/>
+
+        <CheckBox
+            android:id="@+id/btn_run_record"
+            android:text="运维日志"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20px"/>
+
+        <CheckBox
+            android:id="@+id/btn_other_record"
+            android:text="其他日志"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20px"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center|center_vertical"
+        android:orientation="horizontal"
+        android:padding="5px">
+
+        <Button
+            android:id="@+id/D_OK"
+            style="@style/CButton_Dialog"
+            android:layout_margin="8px"
+            android:text="@string/sure" />
+
+        <Button
+            android:id="@+id/D_Cancel"
+            style="@style/CButton_Dialog"
+            android:layout_margin="8px"
+            android:text="@string/cancel" />
+
+        <Button
+            android:id="@+id/D_Print"
+            style="@style/CButton_Dialog"
+            android:layout_margin="8px"
+            android:text="@string/print" />
+    </LinearLayout>
+</LinearLayout>

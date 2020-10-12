@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/soft_bj"
+    android:orientation="vertical">
+
+    <!--<com.yzlm.cyl.clibrary.Control.CPullable.CPullToRefreshLayout-->
+    <!--android:id="@+id/PLhistory"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_marginBottom="11px"-->
+    <!--android:layout_marginLeft="23px"-->
+    <!--android:layout_marginRight="30px"-->
+    <!--android:layout_marginTop="28px">-->
+
+    <!--<include layout="@layout/refresh_head"/>-->
+
+    <!--<com.yzlm.cyl.clibrary.Control.CPullable.CPullableSideslipListView-->
+    <!--android:id="@+id/listview"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:textColor="@android:color/white"-->
+    <!--android:textSize="18px"/>-->
+
+
+    <LinearLayout
+        android:id="@+id/layout_calTitle"
+        android:layout_width="798px"
+        android:layout_height="36px"
+        android:layout_marginLeft="25px"
+        android:layout_marginTop="30px"
+        android:paddingLeft="5px"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="70px"
+            android:layout_height="36px"
+            android:background="#D6DAD6"
+            android:gravity="center"
+            android:text="ID"
+            android:textSize="20px"/>
+
+
+        <TextView
+            android:layout_width="2px"
+            android:layout_height="36px"
+            android:background="#00000000"
+            android:gravity="center"
+            android:textSize="20px"/>
+
+        <TextView
+            android:layout_width="200px"
+            android:layout_height="36px"
+            android:background="#D6DAD6"
+            android:gravity="center"
+            android:text="@string/time"
+            android:textSize="20px"/>
+
+
+        <TextView
+            android:layout_width="2px"
+            android:layout_height="36px"
+            android:background="#00000000"
+            android:gravity="center"
+            android:textSize="20px"/>
+
+        <TextView
+            android:layout_width="290px"
+            android:layout_height="36px"
+            android:background="#D6DAD6"
+            android:gravity="center"
+            android:text="测量值"
+            android:textSize="20px"/>
+
+        <TextView
+            android:layout_width="2px"
+            android:layout_height="36px"
+            android:background="#00000000"
+            android:gravity="center"
+            android:textSize="20px"/>
+
+
+        <TextView
+            android:layout_width="150px"
+            android:layout_height="36px"
+            android:background="#D6DAD6"
+            android:gravity="center"
+            android:text="测量类型"
+            android:textSize="20px"/>
+
+        <TextView
+            android:layout_width="2px"
+            android:layout_height="36px"
+            android:background="#00000000"
+            android:gravity="center"
+            android:textSize="20px"/>
+
+
+        <TextView
+            android:layout_width="80px"
+            android:layout_height="36px"
+            android:background="#D6DAD6"
+            android:gravity="center"
+            android:text="标识"
+            android:textSize="20px"/>
+
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="798px"
+        android:layout_height="0px"
+        android:layout_weight="1"
+        android:layout_marginLeft="25px"
+        android:textColor="@android:color/white"
+        android:textSize="18px"/>
+
+    <LinearLayout
+        android:layout_width="798px"
+        android:layout_height="50px"
+        android:layout_marginLeft="20px"
+        android:layout_marginTop="10px"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/Btn_firstPage"
+            style="@style/CButton_Dialog"
+            android:layout_marginLeft="30px"
+            android:text="@string/first_page" />
+
+        <Button
+            android:id="@+id/Btn_lastPage"
+            style="@style/CButton_Dialog"
+            android:layout_marginLeft="30px"
+            android:text="@string/before_page" />
+
+        <Button
+            android:id="@+id/Btn_nextPage"
+            style="@style/CButton_Dialog"
+            android:layout_marginLeft="30px"
+            android:text="@string/next_page" />
+
+        <Button
+            android:id="@+id/Btn_tailPage"
+            style="@style/CButton_Dialog"
+            android:layout_marginLeft="30px"
+            android:text="@string/tail_page" />
+        <Button
+            android:id="@+id/Btn_history_select"
+            style="@style/CButton_Dialog"
+            android:layout_marginLeft="30px"
+            android:text="@string/query" />
+        <Button
+            android:id="@+id/Btn_export"
+            style="@style/CButton_Dialog"
+            android:layout_marginLeft="30px"
+            android:text="@string/export" />
+
+    </LinearLayout>
+
+    <!--<include layout="@layout/load_more"/>-->
+    <!--</com.yzlm.cyl.clibrary.Control.CPullable.CPullToRefreshLayout>-->
+
+</LinearLayout>

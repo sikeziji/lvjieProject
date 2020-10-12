@@ -1,0 +1,613 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="800px"
+        android:layout_height="427px"
+        android:layout_marginTop="25px"
+        android:background="@drawable/bj_p"
+        android:orientation="vertical">
+
+        <!--返回标题栏-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40px"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btnReturn_p1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10px"
+                android:background="@null"
+                android:src="@drawable/btn_return" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+
+                android:text="@string/mea_unit_select"
+                android:textColor="@android:color/white"
+                android:textSize="20px" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="44px"
+            android:layout_marginTop="20px"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50px"
+                android:text="@string/real_time_measurement"
+                android:textColor="@android:color/white"
+                android:textSize="20px" />
+
+            <ToggleButton
+                android:id="@+id/tBtnDDCLDY_sscl"
+                android:layout_width="92px"
+                android:layout_height="42px"
+                android:layout_marginLeft="10px"
+                android:background="@drawable/togglebtn"
+                android:text=""
+                android:textOff=" "
+                android:textOn=" " />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/Show_textStyle"
+                    android:layout_width="114px"
+                    android:layout_height="44px"
+                    android:layout_marginLeft="25px"
+                    android:text="@string/absorb_energy" />
+
+                <TextView
+                    android:id="@+id/ddcldy_eng"
+                    style="@style/Show_textStyle"
+                    android:layout_width="80px"
+                    android:layout_height="44px"
+                    android:layout_marginLeft="15px"
+                    android:text="" />
+
+                <TextView
+                    style="@style/Show_textStyle"
+                    android:layout_width="40px"
+                    android:layout_height="44px"
+                    android:layout_marginLeft="25px"
+                    android:text="P" />
+
+                <TextView
+                    android:id="@+id/txtORP_E"
+                    style="@style/Show_textStyle"
+                    android:layout_width="80px"
+                    android:layout_height="44px"
+                    android:layout_marginLeft="15px"
+                    android:text="" />
+
+                <Button
+                    style="@style/CButton_Dialog"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10px"
+                    android:text="@string/measurement_test"
+                    android:visibility="invisible" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!--主内容区-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="305px"
+                android:layout_height="match_parent"
+                android:focusableInTouchMode="false"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="48px"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/liquid_detection"
+                            android:textColor="@android:color/white"
+                            android:textSize="20px" />
+
+                        <EditText
+                            android:id="@+id/eT_djlw"
+                            style="@style/CEditText"
+                            android:ems="4"
+                            android:imeOptions="actionDone"
+                            android:inputType="number" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10px"
+                            android:text="±"
+                            android:textColor="@android:color/white"
+                            android:textSize="20px" />
+
+                        <EditText
+                            android:id="@+id/eT_djlw_fd"
+                            style="@style/CEditText"
+                            android:ems="4"
+                            android:imeOptions="actionDone"
+                            android:inputType="number" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="48px"
+                        android:layout_marginTop="60px"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <Button
+                            android:id="@+id/Btn_pjldy_gjlw"
+                            style="@style/CButton_Dialog"
+                            android:layout_marginLeft="130px"
+                            android:text="@string/temperature_calibration" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="48px"
+                        android:layout_marginTop="15px"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:layout_width="80px"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="50px"
+                            android:gravity="right"
+                            android:text="@string/led_channel"
+                            android:textColor="@android:color/white"
+                            android:textSize="20px" />
+
+                        <Spinner
+                            android:id="@+id/spDDLedGain"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20px"
+                            android:animationCache="true"
+                            android:drawSelectorOnTop="true"
+                            android:popupBackground="@android:color/white">
+
+                        </Spinner>
+
+                        <Button
+                            style="@style/CButton_Dialog"
+                            android:layout_marginLeft="35px"
+                            android:text="@string/calibration_light"
+                            android:visibility="gone" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15px"
+                        android:focusableInTouchMode="true"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:layout_width="80px"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="50px"
+                            android:gravity="right"
+                            android:text="@string/measurement_threshold"
+                            android:textColor="@android:color/white"
+                            android:textSize="20px" />
+
+                        <EditText
+                            android:id="@+id/edit_meaValue"
+                            style="@style/CEditText"
+                            android:layout_marginLeft="20px"
+                            android:ems="4"
+                            android:imeOptions="actionDone"
+                            android:inputType="number" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15px"
+                        android:focusableInTouchMode="true"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:layout_width="80px"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="50px"
+                            android:gravity="center"
+                            android:text="△P"
+                            android:textColor="@android:color/white"
+                            android:textSize="20px" />
+
+                        <EditText
+                            android:id="@+id/edit_endValue"
+                            style="@style/CEditText"
+                            android:layout_marginLeft="20px"
+                            android:ems="4"
+                            android:imeOptions="actionDone"
+                            android:inputType="number" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layout_pumpTest"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="48px"
+                            android:layout_marginTop="15px"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="80px"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="50px"
+                                android:gravity="right"
+                                android:text="@string/titration_pump"
+                                android:textColor="@android:color/white"
+                                android:textSize="20px" />
+
+                            <ToggleButton
+                                android:id="@+id/togBtnDDPumpCy"
+                                android:layout_width="100px"
+                                android:layout_height="40px"
+                                android:layout_marginLeft="20px"
+                                android:background="@drawable/toggle_botton"
+                                android:text="@string/infusion"
+                                android:textOff="@string/infusion"
+                                android:textOn="@string/infusion"
+                                android:textSize="18px" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="48px"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <ToggleButton
+                                android:id="@+id/togBtnDDPumpPy"
+                                android:layout_width="100px"
+                                android:layout_height="40px"
+                                android:layout_marginLeft="150px"
+                                android:background="@drawable/toggle_botton"
+                                android:text="@string/drains"
+                                android:textOff="@string/drains"
+                                android:textOn="@string/drains"
+                                android:textSize="18px" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!--右半部分-->
+            <LinearLayout
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:focusableInTouchMode="false"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/layout_ddSpeed"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15px"
+                    android:focusableInTouchMode="true"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="80px"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="@string/titration_speed"
+                        android:textColor="@android:color/white"
+                        android:textSize="20px" />
+
+                    <EditText
+                        android:id="@+id/edit_ddSpeed"
+                        style="@style/CEditText"
+                        android:layout_marginLeft="20px"
+                        android:ems="4"
+                        android:imeOptions="actionDone"
+                        android:inputType="number" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15px"
+                    android:focusableInTouchMode="true"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="80px"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="@string/fill_speed"
+                        android:textColor="@android:color/white"
+                        android:textSize="20px" />
+
+                    <EditText
+                        android:id="@+id/edit_fullSpeed"
+                        style="@style/CEditText"
+                        android:layout_marginLeft="20px"
+                        android:ems="4"
+                        android:imeOptions="actionDone"
+                        android:inputType="number" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15px"
+                    android:focusableInTouchMode="true"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="80px"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="@string/end_point"
+                        android:textColor="@android:color/white"
+                        android:textSize="20px" />
+
+                    <EditText
+                        android:id="@+id/edit_endPoint"
+                        style="@style/CEditText"
+                        android:layout_marginLeft="20px"
+                        android:ems="4"
+                        android:imeOptions="actionDone"
+                        android:inputType="number" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15px"
+                    android:focusableInTouchMode="true"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="80px"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="@string/collect_number"
+                        android:textColor="@android:color/white"
+                        android:textSize="20px" />
+
+                    <EditText
+                        android:id="@+id/edit_adjustSec"
+                        style="@style/CEditText"
+                        android:layout_marginLeft="20px"
+                        android:ems="4"
+                        android:imeOptions="actionDone"
+                        android:inputType="number" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20px"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="80px"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="@string/calibration_coe"
+                        android:textColor="@android:color/white"
+                        android:textSize="20px" />
+
+                    <TextView
+                        android:id="@+id/tvDDTemperKB"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20px"
+                        android:text="    "
+                        android:textColor="@android:color/white"
+                        android:textSize="20px" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:focusableInTouchMode="false"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15px"
+                    android:focusableInTouchMode="true"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="80px"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="@string/orpThresholdVal"
+                        android:textColor="@android:color/white"
+                        android:textSize="20px" />
+
+                    <EditText
+                        android:id="@+id/edit_ddVolumeThresholdVal"
+                        style="@style/CEditText"
+                        android:layout_marginLeft="20px"
+                        android:ems="4"
+                        android:imeOptions="actionDone"
+                        android:inputType="number" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_DDMeaMode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20px"
+                    android:focusableInTouchMode="true"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="@string/meaMode"
+                        android:textColor="@android:color/white"
+                        android:textSize="20px" />
+
+                    <ToggleButton
+                        android:id="@+id/togBtn_meaMode"
+                        android:layout_width="100px"
+                        android:layout_height="40px"
+                        android:layout_marginLeft="15px"
+                        android:background="@drawable/toggle_botton"
+                        android:textAllCaps="false"
+                        android:textOff="@string/orp"
+                        android:textOn="@string/led"
+                        android:textSize="18px" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_ddThresholdValue"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20px"
+                        android:focusableInTouchMode="true"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:layout_width="100px"
+                            android:layout_height="wrap_content"
+                            android:gravity="right"
+                            android:text="@string/catalyst_threshold"
+                            android:textColor="@android:color/white"
+                            android:textSize="20px" />
+
+                        <EditText
+                            android:id="@+id/editCatalystThresholdValue"
+                            style="@style/CEditText"
+                            android:layout_marginLeft="20px"
+                            android:ems="4"
+                            android:imeOptions="actionDone"
+                            android:inputType="number" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15px"
+                        android:focusableInTouchMode="true"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:layout_width="100px"
+                            android:layout_height="wrap_content"
+                            android:gravity="right"
+                            android:text="@string/oxidizingAgent_threshold"
+                            android:textColor="@android:color/white"
+                            android:textSize="20px" />
+
+                        <EditText
+                            android:id="@+id/editOxidizingAgentThresholdValue"
+                            style="@style/CEditText"
+                            android:layout_marginLeft="20px"
+                            android:ems="4"
+                            android:imeOptions="actionDone"
+                            android:inputType="number" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15px"
+                        android:focusableInTouchMode="true"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:layout_width="100px"
+                            android:layout_height="wrap_content"
+                            android:gravity="right"
+                            android:text="@string/reductant_threshold"
+                            android:textColor="@android:color/white"
+                            android:textSize="20px" />
+
+                        <EditText
+                            android:id="@+id/editReductantThresholdValue"
+                            style="@style/CEditText"
+                            android:layout_marginLeft="20px"
+                            android:ems="4"
+                            android:imeOptions="actionDone"
+                            android:inputType="number" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

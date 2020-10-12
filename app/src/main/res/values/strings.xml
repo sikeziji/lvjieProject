@@ -1,0 +1,1296 @@
+<resources>
+    <string name="app_name">Water OnLine</string>
+    <string name="SDZY">手动做样</string>
+    <string name="LYCL">零样测量</string>
+    <string name="GLCX">管路冲洗</string>
+    <string name="SDJZ">手动校准</string>
+    <string name="BYCL">标样1测量</string>
+    <string name="YBQX">仪表清洗</string>
+    <string name="BY2CL">标样2测量</string>
+    <string name="CSZY">初始装液</string>
+    <string name="ZY">做样</string>
+    <string name="XSJZ">稀释校准</string>
+
+
+    <string name="SDLYCL">手动零样测量</string>
+    <string name="SDGLCX">手动管路冲洗</string>
+    <string name="SDBYCL">手动标样1测量</string>
+    <string name="SDYBQX">手动仪表清洗</string>
+    <string name="SDBY2CL">手动标样2测量</string>
+    <string name="SDCSZY">手动初始装液</string>
+    <string name="SDXSJZ">手动稀释校准</string>
+    <string name="SDLDHC">手动零点核查</string>
+    <string name="SDKDHC">手动跨度核查</string>
+    <string name="SDJBHS">手动加标回收</string>
+    <string name="SDPXY">手动平行样</string>
+    <string name="SDBYHC">手动标样核查</string>
+    <string name="SDB1">手动标1</string>
+    <string name="SDB2">手动标2</string>
+    <string name="SDB3">手动标3</string>
+    <string name="SDB4">手动标4</string>
+    <string name="SDGYWDX">手动光源稳定性</string>
+    <string name="SDJYWDX">手动进样稳定性</string>
+    <string name="SDCHJZS">手动催化剂再生</string>
+
+
+    <string name="LDHC">零点核查</string>
+    <string name="KDHC">跨度核查</string>
+    <string name="JBHS">加标回收</string>
+    <string name="PXY">平行样</string>
+    <string name="BYHC">标样核查</string>
+    <string name="B1">标1</string>
+    <string name="B2">标2</string>
+    <string name="B3">标3</string>
+    <string name="B4">标4</string>
+    <string name="JZ">校准</string>
+
+    <string name="GYWDX">光源稳定性</string>
+    <string name="JYWDX">进样稳定性</string>
+    <string name="CHJZS">催化剂再生</string>
+
+    <string name="tankTemperature">水箱温度</string>
+    <string name="meterBoxTemperature">仪表箱温度</string>
+    <string name="unitT">℃</string>
+    <string name="unitHour">时</string>
+    <string name="unitMin">分</string>
+    <string name="unitSec">秒</string>
+    <string name="unitMl">ml</string>
+    <string name="unitMl_Min">ml/min</string>
+
+
+    <string name="autoJob">自动做样</string>
+    <string name="displayAutoJob">自动做样</string>
+    <string name="displayManualJob">手动做样</string>
+    <string name="continuousMea">连续测量</string>
+    <string name="cycleMea">周期测量</string>
+    <string name="intervalTime">间隔</string>
+    <string name="startTime">启动时间</string>
+    <string name="devProtectTile">水质分析仪售后服务信息</string>
+    <string name="beforeMeaData">上次测量值</string>
+    <string name="Pressure_CorrK">压力校正系数K</string>
+    <string name="Pressure_CorrB">压力校正系数B</string>
+    <string name="runningMode">运行模式</string>
+    <string name="meaMode">测量模式</string>
+    <string name="name">名称</string>
+
+
+    <string-array name="jdqpz">
+        <item>未配置</item>
+        <item>均质预处理</item>
+        <item>上下限R1</item>
+        <item>开采样R2</item>
+    </string-array>
+
+    <string-array name="sampleSystem">
+        <item>采样系统A</item>
+        <item>采样系统B</item>
+        <item>采样系统C</item>
+    </string-array>
+
+    <string-array name="operatingDevice">
+        <item>无反控</item>
+        <item>采样器</item>
+        <item>流量计</item>
+        <item>PH</item>
+    </string-array>
+
+    <string-array name="channel">
+        <item>1#开关量输入</item>
+        <item>2#开关量输入</item>
+        <item>1#模拟量输入</item>
+        <item>2#模拟量输入</item>
+    </string-array>
+    <string-array name="flowMeter">
+        <item>无</item>
+        <item>m³/h</item>
+        <item>L/min</item>
+        <item>L/S</item>
+    </string-array>
+
+    <string-array name="reserve">
+        <item>未配置</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+
+    <string-array name="cldw">
+        <item>mg/L</item>
+        <item>μg/L</item>
+        <item>ppm</item>
+        <item>ppb</item>
+        <item>%</item>
+    </string-array>
+
+    <string-array name="cldw_swdx">
+        <item>%</item>
+    </string-array>
+
+    <string-array name="cldw2">
+        <item>mg/L</item>
+        <item>μg/L</item>
+        <item>ppm</item>
+        <item>ppb</item>
+        <item>NTU</item>
+    </string-array>
+
+    <string-array name="baud">
+        <item>2400bps</item>
+        <item>9600bps</item>
+        <item>14400bps</item>
+        <item>19200bps</item>
+        <item>38400bps</item>
+        <item>56000bps</item>
+        <item>57600bps</item>
+        <item>115200bps</item>
+    </string-array>
+    <string-array name="Gain">
+        <item>未选择</item>
+        <item>通道_1</item>
+        <item>通道_2</item>
+        <item>通道_3</item>
+        <item>通道_4</item>
+    </string-array>
+    <string-array name="flow">
+        <item>做样_1</item>
+        <item>做样_2</item>
+        <item>做样_3</item>
+        <item>标1_1</item>
+        <item>标1_2</item>
+        <item>标1_3</item>
+        <item>标2_1</item>
+        <item>标2_2</item>
+        <item>标2_3</item>
+        <item>零样测量_1</item>
+        <item>零样测量_2</item>
+        <item>零样测量_3</item>
+        <item>标样1测量_1</item>
+        <item>标样1测量_2</item>
+        <item>标样1测量_3</item>
+        <item>标样2测量_1</item>
+        <item>标样2测量_2</item>
+        <item>标样2测量_3</item>
+        <item>仪表清洗_0</item>
+        <item>管路冲洗_0</item>
+        <item>初始装液_0</item>
+        <item>异常处理_0</item>
+        <item>稀释校准_1</item>
+        <item>稀释校准_2</item>
+        <item>稀释校准_3</item>
+        <item>零点核查_1</item>
+        <item>零点核查_2</item>
+        <item>零点核查_3</item>
+        <item>跨度核查_1</item>
+        <item>跨度核查_2</item>
+        <item>跨度核查_3</item>
+        <item>标样核查_1</item>
+        <item>标样核查_2</item>
+        <item>标样核查_3</item>
+        <item>平行样_1</item>
+        <item>平行样_2</item>
+        <item>平行样_3</item>
+        <item>加标回收_1</item>
+        <item>加标回收_2</item>
+        <item>加标回收_3</item>
+        <item>异常处理2_0</item>
+        <item>光源稳定性_1</item>
+        <item>进样稳定性_1</item>
+        <item>催化剂再生_0</item>
+    </string-array>
+
+    <string-array name="strComponents">
+        <item>CODcr</item>
+        <item>NH3N</item>
+        <item>TP</item>
+        <item>TN</item>
+        <item>Cr6+</item>
+        <item>TCr</item>
+        <item>TPb</item>
+        <item>CN</item>
+        <item>SYSN</item>
+        <item>TCu</item>
+        <item>AS</item>
+        <item>TNi</item>
+    </string-array>
+
+    <string-array name="strZHCS">
+        <item>做样</item>
+        <item>零样测量</item>
+        <item>管路冲洗</item>
+        <item>校准</item>
+        <item>标样1测量</item>
+        <item>仪表清洗</item>
+        <item>初始装液</item>
+        <item>标样2测量</item>
+        <item>光源稳定性</item>
+        <item>进样稳定性</item>
+    </string-array>
+
+
+    <string-array name="strDDCL">
+        <item>做样</item>
+        <item>零样测量</item>
+        <item>标样1测量</item>
+        <item>标样2测量</item>
+        <item>零点核查</item>
+        <item>跨度核查</item>
+        <item>标样核查</item>
+        <item>平行样</item>
+        <item>加标回收</item>
+    </string-array>
+    <string-array name="strDDCL2">
+        <item>未选择</item>
+        <item>做样</item>
+        <item>零样测量</item>
+        <item>标样1测量</item>
+        <item>标样2测量</item>
+        <item>零点核查</item>
+        <item>跨度核查</item>
+        <item>标样核查</item>
+        <item>平行样</item>
+        <item>加标回收</item>
+    </string-array>
+
+    <string-array name="xsbaseRange">
+        <item>量程_1</item>
+        <item>量程_2</item>
+    </string-array>
+
+    <string-array name="range">
+        <item>量程_1</item>
+        <item>量程_2</item>
+        <item>量程_3</item>
+    </string-array>
+
+    <string name="waiting_for_instructions">等待指令</string>
+
+    <string name="ready">准备</string>
+    <string name="normal">正常</string>
+    <string name="span_1">标1</string>
+    <string name="span_2">标2</string>
+    <string name="measure">测量</string>
+    <string name="realTime">实时</string>
+    <string name="infusionTest">抽液测试</string>
+    <string name="drainageTest">排液测试</string>
+    <string name="dilutionMode">稀释模式</string>
+    <string name="measureLimit">测量指标超</string>
+    <string name="error">错误</string>
+    <string name="warning">警告</string>
+    <string name="tip_login">登录</string>
+    <string name="tip_run">运维</string>
+    <string name="tip_other">其他</string>
+    <string name="selfCheck">自检中</string>
+    <string name="clean">清洗</string>
+    <string name="exceptionHandling">异常处理</string>
+    <string name="exceptionHandling2">异常处理2</string>
+    <string name="dilutionCal">稀释校准</string>
+    <string name="FlowingNumberSupermax">流程编号不能超过62</string>
+    <string name="sendFlowing">正为您下发流程…</string>
+    <string name="sendFlowError">流程下发异常，请检查设备!</string>
+    <string name="sendFlowSucceed">流程下发已完成，建议您10秒后重启确认!</string>
+
+    <string name="sendFlowCrcFail">流程验证失败，请尝试重发!</string>
+
+    <string name="flowCrcFuncFail">流程验证功能不可用，建议升级核心控制板软件!</string>
+
+    <string name="locFlowCrc">本地校验</string>
+    <string name="recFlowCrc">接收校验</string>
+
+    <string name="readyStarted">准备开始_</string>
+    <string name="pleaseWaiting">请等待…</string>
+
+    <string name="digestionTemper">消解温度</string>
+    <string name="digestionTimer">消解时长</string>
+    <string name="colorTemper">显色温度</string>
+    <string name="colorTimer">显色时长</string>
+
+    <string name="dispellingCooling">消解降温</string>
+    <string name="colorCooling">显色降温</string>
+    <string name="colorStand">显色静置</string>
+    <string name="waitingStand">等待静置</string>
+    <string name="distillTubeTemper">蒸馏管温度</string>
+    <string name="distillTimer">蒸馏时长</string>
+    <string name="calibrationDigestionTempe">校准消解温度</string>
+    <string name="calibrationDigestionTime">校准消解时长</string>
+
+    <string name="waterVolume">水样体积</string>
+    <string name="oxidantVolume">氧化剂体积</string>
+    <string name="reductantVolume">还原剂体积</string>
+    <string name="reductantCoc">还原剂浓度</string>
+    <string name="titrationVolume">滴定液体积</string>
+
+    <string name="catalystVolume">催化剂体积</string>
+
+    <string name="bufferVolume">缓冲剂体积</string>
+    <string name="reagentVolume">显色剂体积</string>
+    <string name="bufferRinseVolume">缓冲剂冲洗体积</string>
+    <string name="reagentRinseVolume">显色剂冲洗体积</string>
+    <string name="catalystRinseVolume">催化剂冲洗体积</string>
+
+    <string name="distill_temper_is_set_error">设置的蒸馏温度有误</string>
+    <string name="distill_temper_is_empty">设置的蒸馏温度不能为空</string>
+    <string name="distill_timer_is_set_error">设置的蒸馏时长有误</string>
+    <string name="distill_timer_is_empty">设置的蒸馏时长不能为空</string>
+
+    <string name="digestion_temper_is_set_error">设置的消解温度有误</string>
+    <string name="digestion_temper_is_empty">设置的消解温度不能为空</string>
+
+    <string name="digestion_timer_is_set_error">设置的消解时长有误</string>
+    <string name="digestion_timer_is_empty">设置的消解时长不能为空</string>
+
+    <string name="color_temper_is_set_error">设置的显色温度有误</string>
+    <string name="color_temper_is_empty">设置的显色温度不能为空</string>
+
+    <string name="color_timer_is_set_error">设置的显色时长有误</string>
+    <string name="color_timer_is_empty">设置的显色时长不能为空</string>
+
+    <string name="dispelling_cooling_is_set_error">设置的消解降温有误</string>
+    <string name="dispelling_cooling_is_empty">设置的消解降温不能为空</string>
+
+
+    <string name="color_cooling_is_set_error">设置的显色降温有误</string>
+    <string name="color_cooling_is_empty">设置的显色降温不能为空</string>
+
+
+    <string name="color_stand_is_set_error">设置的显色静置有误</string>
+    <string name="color_stand_is_empty">设置的显色静置不能为空</string>
+
+    <string name="set_meaPar">设置的</string>
+
+    <string name="is_set_empty">不能为空</string>
+    <string name="is_set_error">有误</string>
+
+
+    <string name="wait_stand_is_set_error">设置的等待静置有误</string>
+    <string name="wait_stand_is_empty">设置的等待静置不能为空</string>
+
+    <string name="burning_temperature_is_set_error">设置的燃烧温度有误</string>
+    <string name="burning_temperature_is_empty">设置的燃烧温度不能为空</string>
+
+    <string name="titration_volume_is_set_error">设置的滴定液体积有误</string>
+    <string name="titration_volume_is_empty">设置的滴定液体积不能为空</string>
+
+    <string name="reductant_coc_is_set_error">设置的还原剂浓度有误</string>
+    <string name="reductant_coc_is_empty">设置的还原剂浓度不能为空</string>
+
+    <string name="reductant_volume_is_set_error">设置的还原剂体积有误</string>
+    <string name="reductant_volume_is_empty">设置的还原剂体积不能为空</string>
+
+    <string name="water_volume_is_set_error">设置的水样体积有误</string>
+    <string name="water_volume_is_empty">设置的水样体积不能为空</string>
+    <string name="the_oxidizer_must_not_be_empty">设置的氧化剂体积不能为空</string>
+    <string name="the_size_of_the_oxidizer_is_not_correct">设置的氧化剂体积有误</string>
+
+    <string name="catalyst_volume_is_set_error">设置的催化剂体积有误</string>
+    <string name="catalyst_volume_is_empty">设置的催化剂体积不能为空</string>
+    <string name="range">量程</string>
+
+    <string name="exception">异常</string>
+
+    <string name="set_standard_sample_to_same_coc">设置标样浓度相同!</string>
+    <string name="set_rtu2018_id_exception">很抱歉当前设置ID 同其他因子设置ID 冲突! 请检查后重新设置!</string>
+
+    <string name="high_alarm">报警上限</string>
+    <string name="low_alarm">报警下限</string>
+
+    <string name="inputParException">输入参数有误请重新确认！</string>
+    <string name="make_sure_the_reagent_bottle">确定已经装满试剂？</string>
+    <string name="make_sure_the_container_empty">确定已经清空废液桶？</string>
+
+    <string name="failed_find_action_command">未从动作表找到对应命令！</string>
+
+    <string name="device_temper_to_high">设备消解管温度高于</string>
+    <string name="temper_unit">度</string>
+
+    <string name="startReceive">开始接收</string>
+    <string name="stopReceive">停止接收</string>
+
+    <string name="sendingArea">发送区</string>
+
+    <string name="receivingArea">接收区</string>
+    <string name="forInstrument">数采仪</string>
+
+    <string name="make_sure_recovery_history">确定恢复历史数据？</string>
+    <string name="error_data">数据错误！</string>
+    <string name="recovery_successful">恢复成功！</string>
+    <string name="recovery_failed">恢复失败！</string>
+    <string name="restore_successful">还原成功！</string>
+    <string name="restore_failed">还原失败！</string>
+
+
+    <string name="uart">串口</string>
+    <string name="TCP">TCP</string>
+    <string name="TCP1">输出一</string>
+    <string name="TCP2">输出二</string>
+    <string name="TCP3">输出三</string>
+
+    <string name="outputTest">输出测试</string>
+    <string name="inputTest">输入测试</string>
+
+    <string name="channel">通道</string>
+    <string name="please_Configure">请配置</string>
+    <string name="sorry_input_data_not_normative">抱歉，输入的数据不符合规范.</string>
+    <string name="notSet">未设置</string>
+    <string name="device_no_job">设备暂停工作,请联系设备厂商!</string>
+
+    <string name="reserve">保留</string>
+
+    <string name="infusion">抽液</string>
+    <string name="isBussy">"仪器非空闲状态!"</string>
+
+    <string name="liquid_detection_value_is_set_error">设置的液体检测值有误</string>
+    <string name="liquid_detection_value_is_empty">设置的液体检测值不能为空</string>
+
+    <string name="please_set_the_titration_speed">请设置滴定转速!</string>
+    <string name="please_confirm_the_range_input_par">请确认输入参数范围</string>
+
+    <string name="setting_par_zero_unallowed">参数不可设置为零!</string>
+
+    <string name="set_factory_settings">是否要设置出厂设置？</string>
+    <string name="restore_factory_settings">是否要恢复出厂设置？</string>
+
+
+    <string name="clear_all_running_records">是否要清除所有运行记录？</string>
+    <string name="clear_all_cal_records">是否要清除所有校准记录？</string>
+    <string name="clear_all_history_records">是否要清除所有历史记录？</string>
+    <string name="clear_all_alarm_records">是否要清除所有报警记录？</string>
+    <string name="clear_all_operation_records">是否要清除所有操作记录？</string>
+    <string name="cannot_be_set_empty">不能设置为空！</string>
+    <string name="automatic_switch_to_range_1">自动切换为量程1！</string>
+
+    <string name="set_finished">我的仓库已空，不要再点我了…</string>
+    <string name="the_measuring_point_has_been_changed_please_save_it_first">测量点已改动，请先保存</string>
+    <string name="spec_address_empty">设置的光谱地址不能为空</string>
+    <string name="integral_time_empty">设置的积分时间不能为空</string>
+    <string name="average_time_empty">设置的平均次数不能为空</string>
+    <string name="dark_current_empty">设置的暗电流处理不能为空</string>
+    <string name="lamp_voltage_empty">设置的打灯电压不能为空</string>
+    <string name="lamp_times_empty">设置的打灯次数不能为空</string>
+    <string name="dark_current_compensation_empty">设置的暗电流补偿不能为空</string>
+    <string name="spec_coe_k_empty">设置的光谱系数K不能为空</string>
+    <string name="spec_coe_b_empty">设置的光谱系数B不能为空</string>
+    <string name="measurement_par_empty">设置的计量参数不能为空</string>
+    <string name="is_dirty">已更新</string>
+    <string name="exception_par">参数异常</string>
+    <string name="please_config_metering_board_info">请配置计量采集板信息!</string>
+    <string name="en_par_high_up_limit">超过光强上限</string>
+    <string name="en_par_low_down_limit">低于光强下限</string>
+    <string name="change_to_default">为您更改为默认值!</string>
+    <string name="please_select_comm_board">请选择通讯模块,当前未设置!</string>
+    <string name="zero">零样</string>
+    <string name="vitriol">硫酸</string>
+    <string name="water">水样</string>
+
+    <string name="high_dose_a">高计量位</string>
+    <string name="low_dose_a">低计量位</string>
+    <string name="set_meter_empty">设置的计量不能为空</string>
+    <string name="is_under_installation">正为您安装中</string>
+    <string name="titration_working_curve_info">校准曲线说明：\n测量值=[(V1+Vn)*K-V2]*N*8*1000/V3\nV1代表氧化剂体积\nV2代表还原剂体积\nV3代表水样体积\nK代表校准系数\nVn代表终体积\nN代表还原剂浓度</string>
+    <string name="working_curve_info">校准曲线说明：\n测量值=(K*A+B)k+b\nK、B代表各量程校准曲线的斜率和截距；\nk代表各量程校正因子；\nb代表各量程修正因子；\nA代表每次测量得到的吸光度。</string>
+
+    <string name="correctionFactor">校正因子</string>
+    <string name="correctionFactor1">修正因子</string>
+    <string name="scope_k">范围:0.95~1.05</string>
+    <string name="scopeCODcrb">范围:-10~+10</string>
+    <string name="scopeCODmnb">范围:-0.2~+0.2</string>
+    <string name="scopeNH3Nb">范围:-0.3~+0.3</string>
+    <string name="scopeTPb">范围:-0.2~+0.2</string>
+    <string name="scopeTNb">范围:-1.00~+1.00</string>
+    <string name="scope">范围:</string>
+    <string name="time">时间</string>
+    <string name="number">次数</string>
+    <string name="flow">流程</string>
+    <string name="measurement_value">测量值</string>
+    <string name="unit">单位</string>
+    <string name="temperature">温度</string>
+    <string name="Inner_temperature">内温</string>
+    <string name="Outside_temperature">外温</string>
+    <string name="energy">能量</string>
+    <string name="light_intensity">光强</string>
+    <string name="voltage">打灯电压</string>
+    <string name="lampTimes">打灯次数</string>
+    <string name="absorbancy">吸光度</string>
+    <string name="tag">数据标识</string>
+    <string name="historyData">历史数据</string>
+    <string name="no_data_to_export">抱歉，没数据可以导出.</string>
+    <string name="unknow_exception_to_export">未知异常，导出失败！.</string>
+    <string name="no_external_SD_card">无外置SD卡或USB设备，请先插入！</string>
+    <string name="data_export">数据导出中,请稍等…</string>
+    <string name="data_export_fail">数据导出异常，请检查SD卡或USB设备</string>
+    <string name="data_export_success">数据已经成功导出，请拔出SD卡或USB设备</string>
+
+    <string name="the_last_page">已到最后一页</string>
+
+    <string name="printing">正在打印数据…</string>
+
+    <string name="error_num">错误号</string>
+    <string name="info">信息</string>
+    <string name="alarm">报警记录</string>
+
+    <string name="configured">已配置</string>
+    <string name="unConfigured">未配置</string>
+    <string name="configured1">配置一</string>
+    <string name="configured2">配置二</string>
+
+
+    <string name="please_input_7_place">请输入7位</string>
+    <string name="please_input_12_place">请输入12位</string>
+    <string name="please_input_24_place">请输入24位</string>
+
+    <string name="please_input_less_10_place">请输入10位以下</string>
+
+    <string name="currently_in_range">当前在量程</string>
+    <string name="combination_test_does_not_start">组 合 测 试 未 启 动 !</string>
+    <string name="modifying_combined_tests_during_measurement">测量中修改组合测试 !</string>
+    <string name="ready_to_start">准备开始 </string>
+    <string name="communication_is_disconnected">当前设备通讯已断开，请检查通讯...</string>
+    <string name="No_file_manager">亲，木有文件管理器啊-_-!!</string>
+    <string name="select_the_file">选择文件</string>
+    <string name="update_ckb">更新测控板</string>
+    <string name="update_config">更新配置文件</string>
+    <string name="update_status">更新状态:</string>
+    <string name="component">组分</string>
+    <string name="whether">是否</string>
+    <string name="protocol_configuration">协议配置</string>
+    <string name="the_port_number">端口号</string>
+
+
+    <string name="open_pump_time_empty">开采样泵时间不能为空!</string>
+
+    <string name="open_pump_time_is_set_error">开采样泵时间有误</string>
+    <string name="cleaning">清洗中..</string>
+    <string name="mixing">搅拌中..</string>
+    <string name="waste_discharging">排废中…</string>
+    <string name="open_pump">开采样</string>
+    <string name="time_empty">时间不能为空!</string>
+    <string name="LED">比色</string>
+    <string name="SPEC">光谱</string>
+    <string name="titration">滴定</string>
+    <string name="injectionPumptitration">注射泵滴定</string>
+    <string name="injectionPumpLED">注射泵比色</string>
+    <string name="dilution">稀释</string>
+    <string name="distill">蒸馏</string>
+    <string name="multSpec">多光谱</string>
+    <string name="TOC">TOC</string>
+    <string name="RotaryInjectionPumpSPEC">注射泵光谱</string>
+    <string name="Biological_toxicity">生物毒性</string>
+    <string name="add_comp_to_more">参数界面最多展现12个，您已经超限!</string>
+    <string name="the_most_select">最多可选</string>
+    <string name="a_component">个组分</string>
+    <string name="please_click_restart_button">请点击右上角 ‘重启更新’ 按钮!</string>
+    <string name="please_restart">请重启更新!</string>
+    <string name="component_already_exists">该组分已存在</string>
+    <string name="please_sure_par">请确认参数</string>
+    <string name="address_already_exists">该地址已存在</string>
+    <string name="been_deleted">被删除了</string>
+    <string name="latest_exceed_bid_component">最近一次超标组份:</string>
+    <string name="modify_component_name">修改组分名</string>
+    <string name="modify">修改</string>
+    <string name="cancel">取消</string>
+
+    <string name="set_value_is_empty">设置值不能为空</string>
+    <string name="set_value_is_error">设置值有误</string>
+
+    <string name="start_time_before_end_time">起始时间在结束时间之前，请重新输入!</string>
+    <string name="year">年</string>
+    <string name="month">月</string>
+    <string name="day">日</string>
+    <string name="doing">正在</string>
+
+
+    <string name="pressure">压力</string>
+    <string name="the_measurement_pointsPar_set_failed">设置的测量点参数不符合规范</string>
+    <string name="set_measurement_pointsVol_beyond_range">设置的测量点电压超出范围</string>
+    <string name="the_points_Par_is_empty">设置的测量点参数不能为空</string>
+    <string name="set_measurement_pointsLampTimes_beyond_range">设置的测量点打灯次数超出范围</string>
+    <string name="set_measurement_pointsSum_beyond_range">设置的测量点总数已到上限</string>
+
+    <string name="the_measurement_points_set_failed">设置的测量点不符合规范</string>
+    <string name="set_measurement_points_beyond_range">设置的测量点超出范围</string>
+    <string name="first_points_value_set_failed">第一个测量点不能大于第二个测量点</string>
+    <string name="the_points_is_empty">设置的测量点不能为空</string>
+    <string name="whether_if">是否</string>
+    <string name="auto_measurement_is_closed">异常报错自动测量已关闭</string>
+    <string name="working_condition">工作状态</string>
+    <string name="valve">阀</string>
+    <string name="use_range">使用量程</string>
+    <string name="current_status">当前状态</string>
+    <string name="current_action">当前动作</string>
+    <string name="next_action">下一动作</string>
+    <string name="meaEnergy">测量能量</string>
+    <string name="beforeMea">上次测量</string>
+    <string name="steps_left">剩余步骤</string>
+    <string name="sample_model">做样模式</string>
+
+    <string name="digestion_temperature">消解管温度</string>
+    <string name="ambient_temperature">环境温度</string>
+    <string name="burner_temperature">燃烧炉温度</string>
+    <string name="restart_time">再启动时间</string>
+    <string name="close_devices_3_day_info">系统三天内进入保护状态，\n请联系设备厂商!</string>
+    <string name="close_devices_info">设备暂停工作，\n请联系设备厂商!</string>
+    <string name="calibration_tip">为保证仪器准确测量,\n请尽快校准!</string>
+
+
+    <string name="devices_running">设备测量中</string>
+    <string name="auto_calibration">自动校准</string>
+    <string name="auto">自动</string>
+    <string name="off_line">离线</string>
+
+    <string name="water_devices_name">水质在线自动分析仪</string>
+    <string name="original_component_name">原组分名</string>
+    <string name="new_component_name">新组分名</string>
+    <string name="component_address">组分地址</string>
+    <string name="back">返回</string>
+    <string name="please_select_time">请选择时间段</string>
+    <string name="sure">确定</string>
+    <string name="print">打印</string>
+    <string name="func_temper">温度</string>
+    <string name="func_action_time">动作耗时</string>
+    <string name="hour">时</string>
+    <string name="minute">分</string>
+    <string name="second">秒</string>
+    <string name="sign">标识</string>
+    <string name="input_mea_point">请输入添加的测量点、打灯电压、打灯次数</string>
+    <string name="please_input_password">请输入密码:</string>
+    <string name="stop">停止</string>
+    <string name="mea_component">测量组分</string>
+    <string name="mea_data">测\u0020\u0020量\u0020\u0020值</string>
+    <string name="inhibition_rate">抑\u0020\u0020制\u0020\u0020率</string>
+    <string name="display_range">设备量程</string>
+    <string name="used_range">使用量程</string>
+    <string name="toxicity_level">毒性等级</string>
+
+    <string name="flowConfigInfo">流程信息</string>
+    <string name="flow_config">流程配置选项</string>
+    <string name="flow_config_info">流程信息选项</string>
+    <string name="read">读取</string>
+    <string name="single_setting">单个设置</string>
+    <string name="all_setting">全部设置</string>
+    <string name="empty">清空</string>
+    <string name="times">次</string>
+    <string name="add">添加</string>
+    <string name="combination_test">组合测试</string>
+    <string name="combination_test_info">配置流程后请点击启动按钮!</string>
+    <string name="launch">启动</string>
+    <string name="minute_unit">分</string>
+    <string name="span_coc">标液浓度</string>
+    <string name="spanCoc_1">标样1</string>
+    <string name="spanCoc_2">标样2</string>
+    <string name="auto_clean">自动清洗</string>
+    <string name="auto_wash">自动冲洗</string>
+    <string name="smart_digest">智能消解</string>
+    <string name="clean_info">次/清洗</string>
+    <string name="autoWashUnit">mg/L</string>
+    <string name="range_switch">量程切换</string>
+    <string name="range_switch_mea">切换后补测</string>
+    <string name="Cal_OK">校准提示</string>
+    <string name="relay_config">继电器配置</string>
+    <string name="print_data">数据打印</string>
+    <string name="out_data">出数显示</string>
+    <string name="negative_data">允许负值显示</string>
+    <string name="quantify_limit_data">定量下限显示</string>
+    <string name="bh_determination">标核判定</string>
+    <string name="bh_calibration">核查校准</string>
+    <string name="bh_concentration">标核浓度</string>
+
+
+    <string name="mea_unit">测量单位</string>
+    <string name="cal_data_upload">校准数据上传</string>
+    <string name="significant_digit">有效位数</string>
+    <string name="absorb_upload">吸光度上传</string>
+    <string name="low_alarm_set">报警下限:</string>
+    <string name="high_alarm_set">报警上限:</string>
+    <string name="setting">设置</string>
+    <string name="synchronization">同步</string>
+    <string name="reagent_allowance">试剂余量</string>
+    <string name="allowance_alarm">余量告警</string>
+    <string name="reagent">试剂</string>
+    <string name="full_bottle">满瓶(ml)</string>
+    <string name="regent_value">余量(%)</string>
+    <string name="allowance_alarm_value">余量报警(%)</string>
+    <string name="waste_liquid_alarm_value">废液报警(%)</string>
+    <string name="full_all_bottle">装满试剂瓶</string>
+    <string name="empty_waste_container">清空废液桶</string>
+    <string name="analog_test">模拟量测试</string>
+    <string name="output_test">输出测试</string>
+    <string name="channel_1">通道1</string>
+    <string name="channel_2">通道2</string>
+    <string name="channel_3">通道3</string>
+    <string name="digital_out_test">数字量测试</string>
+    <string name="sending">发送</string>
+    <string name="pump_value_components">泵阀组件选项</string>
+    <string name="drains">排液</string>
+    <string name="valve_control">阀控制</string>
+    <string name="mea_unit_select">测量单元选项</string>
+    <string name="titration_par_select">滴定参数选项</string>
+    <string name="tempCtrl_par_select">温控参数选项</string>
+    <string name="update_config_select">更新配置选项</string>
+    <string name="read_config_select">读取配置选项</string>
+    <string name="glucose_test">葡萄糖测试</string>
+    <string name="pump_par_select">注射泵参数选项</string>
+    <string name="pump_par">注射泵参数</string>
+    <string name="open_format">打开格式</string>
+    <string name="temp_A">温度A</string>
+    <string name="temp_B">温度B</string>
+    <string name="temp_C">温度C</string>
+    <string name="temp_D">温度D</string>
+
+    <string name="thermal_efficiency_A">热效率A</string>
+    <string name="thermal_efficiency_B">热效率B</string>
+    <string name="thermal_efficiency_C">热效率C</string>
+    <string name="thermal_efficiency_D">热效率D</string>
+    <string name="metering_board_parC_setup">计量参数B选项</string>
+
+    <string name="real_time_measurement">实时测量</string>
+    <string name="bs_light">光源常开</string>
+    <string name="light_change">光源切换</string>
+    <string name="liquid_detection">液体检测</string>
+    <string name="temperature_calibration">温度标定</string>
+    <string name="led_channel">LED通道</string>
+    <string name="calibration_light">校准光路</string>
+    <string name="calibration_coe">标定系数</string>
+    <string name="operation_record">操作日志</string>
+    <string name="query">查询</string>
+    <string name="absorb_energy">计数光强</string>
+    <string name="measurement_test">计量测试</string>
+    <string name="measurement_threshold">测量阈值</string>
+    <string name="titration_pump">滴定泵</string>
+    <string name="titration_speed">滴定转速</string>
+    <string name="fill_speed">填充转速</string>
+    <string name="end_point">终点滴数</string>
+    <string name="calibration_time">校准时间</string>
+    <string name="collect_number">采集次数</string>
+    <string name="titration_space">滴定间隔</string>
+    <string name="titration_Timer_A">滴定计时A</string>
+    <string name="titration_Timer_B">滴定计时B</string>
+    <string name="titration_start_en_up">光强上限</string>
+    <string name="titration_start_en_down">光强下限</string>
+
+    <string name="minimum_volume">最小体积</string>
+    <string name="maximum_volume">最大体积</string>
+    <string name="minimum_time">最小时间</string>
+    <string name="maximum_time">最大时间</string>
+
+
+    <string name="device_info">水质分析仪信息</string>
+    <string name="restore_factory_set">恢复出厂设置</string>
+    <string name="set_factory_set">设置出厂设置</string>
+    <string name="device_number">仪器编号</string>
+    <string name="history_data_empty">清空历史数据</string>
+    <string name="alarm_data_empty">清空报警记录</string>
+    <string name="device_range">仪表量程</string>
+    <string name="calibration_data_empty">清空校准记录</string>
+    <string name="running_data_empty">清空运行记录</string>
+    <string name="range_1">量程一</string>
+    <string name="operation_data_empty">清空操作记录</string>
+    <string name="range_2">量程二</string>
+    <string name="range_3">量程三</string>
+    <string name="K2Cr2O7_coc">重铬酸钾浓度</string>
+    <string name="mea_point">测量点</string>
+    <string name="save">保存</string>
+    <string name="volume_calibration">体积校准</string>
+    <string name="get_energy">获取能量</string>
+    <string name="get_spec">获取光谱</string>
+    <string name="integral_time">积分时间</string>
+    <string name="average_time">平均次数</string>
+    <string name="dark_current">暗电流处理</string>
+    <string name="lamp_voltage">公共电压</string>
+    <string name="lamp_times">公共打灯次数</string>
+    <string name="dark_current_compensation">暗电流补偿</string>
+    <string name="auto_adjust">自动调节</string>
+    <string name="reference_wavelength">参考波长</string>
+    <string name="minimum_energy">最低能量</string>
+    <string name="maximum_energy">最高能量</string>
+    <string name="spec_coe_k">光谱系数K</string>
+    <string name="spec_coe_b">光谱系数B</string>
+    <string name="compensate_coe_k">补偿系数K</string>
+    <string name="compensate_coe_b">补偿系数B</string>
+    <string name="light_measurement">打灯测量</string>
+    <string name="spec_curve">光谱曲线</string>
+    <string name="temper_calibration">温度标定</string>
+    <string name="metering_par_options">计量参数选项</string>
+    <string name="metering_board_setup">计量板设置</string>
+    <string name="address">地址</string>
+    <string name="all_clear">全部删除</string>
+    <string name="metering_collection">计量采集</string>
+    <string name="tee_valve">三通阀</string>
+    <string name="open">开启</string>
+    <string name="close">关闭</string>
+    <string name="speed">速度</string>
+    <string name="sample_pump">样品泵</string>
+    <string name="measuring_threshold">计量阈值</string>
+    <string name="measurement_unit_options">计量单元选项</string>
+    <string name="set_par">参数设置</string>
+    <string name="measuring_low">低计量位</string>
+    <string name="measuring_high">高计量位</string>
+    <string name="end_pressure_po">加压终点压力Po</string>
+    <string name="add_pressure_value_a">加压阈值a</string>
+    <string name="inlet_end_pressure_po">进样终点压力Po</string>
+    <string name="CK_A">核心控制板</string>
+    <string name="CK_B">泵阀控制板</string>
+    <string name="measure_board">磁导计量板</string>
+    <string name="metering_board">计量模块板</string>
+    <string name="orp_board">ORP电极板</string>
+    <string name="runningBoard">安卓运行板</string>
+    <string name="IO_board">安卓通讯板</string>
+    <string name="mechanical_drive_board">机械驱动板</string>
+    <string name="photoelectric_detection_board">光电检测板</string>
+    <string name="first_page">首页</string>
+    <string name="before_page">上一页</string>
+    <string name="next_page">下一页</string>
+    <string name="tail_page">尾页</string>
+    <string name="export">导出</string>
+    <string name="comm_board_setting">通讯板配置</string>
+    <string name="analog_out">模拟量输出</string>
+    <string name="digital_out">数字量输出</string>
+    <string name="tcp_setting">TCP传输配置</string>
+    <string name="baud_rate">波特率</string>
+    <string name="protocol_setting">协议配置</string>
+    <string name="institution_code">机构代码</string>
+    <string name="device_code">设备代码</string>
+    <string name="crc">校验方式</string>
+    <string name="forInstrument_port">数采仪口</string>
+    <string name="protocol_address">地址</string>
+    <string name="protocol_Sys_address">系统地址</string>
+    <string name="protocol">协议</string>
+    <string name="protocolUpdateSpace">主动上传间隔</string>
+    <string name="pc_port">PC口</string>
+    <string name="rs485_port">RS485口</string>
+    <string name="rs232_port">RS232口</string>
+    <string name="serial_number">设备序列号</string>
+    <string name="sample_pretreatment">样品预处理</string>
+    <string name="sample_pump_setting">采样泵设置</string>
+    <string name="mix">搅拌</string>
+    <string name="waste_discharge">排废</string>
+    <string name="multi_par_monitoring">多参数监控</string>
+    <string name="control_measure">反控测量</string>
+
+    <string name="devices">设备</string>
+    <string name="par_unit">参数单位</string>
+    <string name="par_range">参数量程</string>
+    <string name="par_limit">参数门限</string>
+    <string name="limit">门限</string>
+    <string name="standard_sample">超标留样</string>
+    <string name="exceed_threshold">超标门限</string>
+    <string name="component_management">组分管理</string>
+    <string name="add_components_name">添加组分名</string>
+    <string name="add_components">添加组分</string>
+    <string name="restart">重启更新</string>
+    <string name="use_select">可选组分</string>
+    <string name="unused_select">已选组分</string>
+    <string name="all">全选</string>
+    <string name="display_mea_absorb">测量能量： ——————</string>
+    <string name="display_before_mea">上次测量： ——————</string>
+    <string name="display_use_range">使用量程： ——————</string>
+    <string name="display_work_status">工作状态： 正常</string>
+    <string name="display_current_status">当前状态： 等待指令</string>
+    <string name="display_current_action">当前动作： ——————</string>
+    <string name="display_next_action">下一动作： ——————</string>
+    <string name="display_steps_left">剩余步骤： ——————</string>
+    <string name="display_sample_model">测量模式： ——————</string>
+    <string name="display_digestion_temperature">消解管温度： ——————</string>
+    <string name="display_distill_temperature">蒸馏管温度： ——————</string>
+    <string name="display_burner_temperature">燃烧炉温度： ——————</string>
+    <string name="display_reaction_temperature">反应室温度： ——————</string>
+    <string name="display_cooling_temperature">储菌室温度： ——————</string>
+    <string name="display_tc_flow">TC流量： ——————</string>
+    <string name="display_restart_time">再启动时间： ——————</string>
+    <string name="low_high">低/高</string>
+    <string name="high">高</string>
+    <string name="low">低</string>
+    <string name="water_pump">水泵</string>
+    <string name="pump">蠕动泵</string>
+    <string name="measuring_module">计量模块</string>
+    <string name="digestion_Tube">消解管</string>
+    <string name="leakage_detection">漏液检测</string>
+    <string name="single_operation">单步操作</string>
+    <string name="flow_file_read_failed">流程文件无法读取</string>
+    <string name="flow_cmd_failed">流程表错误命令</string>
+    <string name="flow_file_lost">流程配置文件丢失</string>
+    <string name="action_file_read_failed">动作文件无法读取</string>
+    <string name="action_cmd_failed">动作表错误命令</string>
+    <string name="action_file_lost">动作配置文件丢失</string>
+    <string name="valve_file_read_failed">阀号文件无法读取</string>
+    <string name="valve_file_lost">阀号文件丢失</string>
+    <string name="calculate_file_read_failed">算法文件无法读取</string>
+    <string name="calculate_table_failed">算法表错误算法</string>
+    <string name="calculate_file_lost">算法文件丢失</string>
+    <string name="error_file_read_failed">错误文件无法读取</string>
+
+    <string name="energys_file_read_failed">能量配置文件无法读取</string>
+    <string name="energys_table_failed">能量配置文件有误</string>
+    <string name="energys_table_lost">能量配置项缺失</string>
+
+    <string name="yes">是</string>
+    <string name="CK_reported">测控板报</string>
+    <string name="error_table_failed">错误表有误</string>
+    <string name="error_file_lost">错误文件丢失</string>
+    <string name="component_name_file_read_failed">组分名文件无法读取</string>
+    <string name="component_name_file_error">组分名文件错误</string>
+    <string name="component_name_file_lost">组分名文件丢失</string>
+    <string name="protocol_name_file_error">协议名文件错误</string>
+    <string name="manual">手动</string>
+    <string name="cmd_find_filed_show_info">未从流程表找到对应命令,流程无法进行</string>
+    <string name="mea_cfg_file_read_failed">测量参数配置文件无法读取</string>
+    <string name="mea_cfg_table_error">测量参数配置表有误</string>
+    <string name="mea_cfg_file_lost">测量参数配置文件丢失</string>
+    <string name="reagent_file_read_failed">试剂余量配置文件无法读取</string>
+    <string name="reagent_file_table_error">试剂余量参数配置表有误</string>
+    <string name="voc_par_cfg_table_error">参数配置表有误</string>
+    <string name="flows_high_limit_info">流程测量次数超上限</string>
+    <string name="xs_base_range">基础量程</string>
+    <string name="please_config_flows">请配置流程</string>
+    <string name="CKB_Num">测控编号</string>
+    <string name="slow">慢</string>
+    <string name="fast">快</string>
+    <string name="unread_ver">未读取到版本</string>
+    <string name="time_o"></string>
+    <string name="time_hour">点</string>
+    <string name="Homing_peak">自动寻峰</string>
+
+    <string name="turbidityComCoe">浊度补偿系数</string>
+    <string name="turbidityCom">浊度补偿</string>
+    <string name="range1kz1">量程一  KZ1:</string>
+    <string name="range2kz1">量程二  KZ1:</string>
+    <string name="range3kz1">量程三  KZ1:</string>
+    <string name="opened">已开</string>
+    <string name="closeed">已关</string>
+    <string name="and">且</string>
+    <string name="adminiPar">管理员参数</string>
+    <string name="LowLimit">下限:</string>
+    <string name="userPar">用户参数</string>
+    <string name="calculate_table2_failed">算法表2错误算法</string>
+    <string name="set_standard_sample_up_rangeDown">设置标样浓度超量程下限!</string>
+    <string name="set_standard_sample_up_rangeHigh">设置标样浓度超量程上限!</string>
+    <string name="set_standard_sample1_high_sample2">设置标样1浓度高于标样2浓度!</string>
+    <string name="set_standard_sample2_low_sample1">标样2低于标样1浓度!</string>
+    <string name="waste_liquid_regeneration">废液再生</string>
+    <string name="now_M_Value">当前加入量M:</string>
+    <string name="original_B_Value">原始B值:</string>
+
+    <string name="process_is_empty">待测流程为空</string>
+    <string name="spec_calibration">光谱校准</string>
+    <string name="startSpecCal">启动光谱校准</string>
+    <string name="DevRangeLimit">超仪表量程告警:</string>
+    <string name="RangeLimit">超量程告警:</string>
+    <string name="alarmNowRange">当前量程告警</string>
+    <string name="alarmDevRange">仪表量程告警</string>
+    <string name="orpThresholdVal">ORP阈值</string>
+    <string name="XJThresholdVal">消解阈值</string>
+    <string name="averagetime">平均时间</string>
+    <string name="burnTemperature">燃烧温度</string>
+    <string name="burnDownTemperature">下降温度</string>
+
+    <string name="checkVersion">请检查文件版本</string>
+    <string name="version">文件版本</string>
+    <string name="findNotFile">没有找到文件</string>
+    <string name="oneKeyCal">多量程校准</string>
+    <string name="calAfterUseRange">校准后启动量程</string>
+    <string name="afterUseRange">再启动量程</string>
+    <string name="afterJobUseRange">再启动量程： ——————</string>
+    <string name="oneKeyCalSwitchOff">多量程校准功能关闭！量程切换功能关闭！</string>
+    <string name="quantitativeLimit">定量下限:</string>
+    <string name="inputPassword">请设置密码:</string>
+    <string name="loginUser">账号</string>
+    <string name="loginPassword">密码</string>
+    <string name="loginNewPassword">新密码</string>
+    <string name="passwordError">密码错误</string>
+    <string name="passwordAmendSuccess">密码修改成功</string>
+    <string name="pleasSelectOtherPassword">请更换其它密码</string>
+    <string name="loginSuccess">登录成功</string>
+    <string name="loginOut">退出登录</string>
+    <string name="login">登录</string>
+    <string name="out">退出</string>
+    <string name="modifyPassword">修改密码</string>
+
+    <string name="resetPasswordSuccess">重置密码成功</string>
+
+    <string name="inputPasswordSixBit">请输入6位密码!</string>
+    <string name="inputPasswordFiveBit">请输入5位密码!</string>
+    <string name="passwordTooSimple">密码过于简单!</string>
+    <string name="passwordHint1">密码请已</string>
+    <string name="passwordHint2">开头!</string>
+    <string name="analogCfg">4–20MA</string>
+    <string name="analogCfg2">模拟量配置</string>
+    <string name="uartCfg">串口配置</string>
+    <string name="tcpCfg">TCP配置</string>
+    <string name="protocolCfg">协议配置</string>
+    <string name="screenSaver">屏幕保护</string>
+    <string name="outPut1">输出一</string>
+    <string name="outPut2">输出二</string>
+    <string name="outPut3">输出三</string>
+    <string name="hex">hex</string>
+    <string name="ascii">ascii</string>
+    <string name="displayKDHC">跨度核查</string>
+    <string name="displayKDHCSetting">跨度核查设置</string>
+    <string name="flowCfgSetting">流程配置</string>
+    <string name="updateConfig">更新配置文件</string>
+    <string name="systemConfig">系统文件</string>
+    <string name="updateConfig_complete">更新配置文件</string>
+    <string name="copyConfig">复制配置文件</string>
+    <string name="copyConfig_complete">复制配置文件完成</string>
+    <string name="importConfig">导入配置文件</string>
+    <string name="importConfig_complete">导入配置文件完成</string>
+    <string name="restoreConfig">恢复配置文件</string>
+    <string name="restoreConfig_complete">恢复配置文件完成</string>
+    <string name="backupConfig">备份配置文件</string>
+    <string name="backupConfig_complete">备份配置文件完成</string>
+    <string name="readConfig">读取配置文件</string>
+    <string name="upgradeBoard">软件烧写</string>
+    <string name="datarecovery">数据恢复</string>
+    <string name="import_backup_data">导入备份数据</string>
+    <string name="backup_data_complete">备份数据替换完成</string>
+    <string name="LogIn">登录账号：</string>
+    <string name="publicUser">公共</string>
+    <string name="please_back_to_first_win">请返回到主界面再尝试登录!</string>
+    <string name="kdpar">因修改该界面导致的数据异常，本公司不承担相关责任</string>
+
+    <string name="productID">产品ID</string>
+    <string name="master_slave">主从关系</string>
+    <string name="master">主</string>
+    <string name="slave">从</string>
+
+    <string name="rangeCannotBeEmpty">量程不能为空</string>
+    <string name="doorLimitCannotBeEmpty">门限不能为空</string>
+    <string name="doorLimitCannotBeRangeValue">门限不能超量程范围</string>
+    <string name="PHBeRangeValue">PH量程合理范围为</string>
+    <string name="waterPumpSetTime">水泵预开启时间设置</string>
+    <string name="LiquidLevelAlarm">液位报警</string>
+    <string name="doSample">采样</string>
+
+    <string name="measureSwitchToNo2">"反控测量切换至\"2#开关量输入\""</string>
+    <string name="CurrentFlowLow">"当前流量低!"</string>
+    <string name="relation">关系式</string>
+    <string name="xValue">X值</string>
+    <string name="yValue">Y值</string>
+    <string name="span2TestValue">标2测试浓度</string>
+    <string name="autoCreateRangeKB">自动生成量程KB</string>
+    <string name="errorRinse">氟管清洗提示:</string>
+    <string name="errorProtection">仪器保护:</string>
+    <string name="fileReadPrompt">我是有底线的</string>
+    <string name="myDistracted">我走神了</string>
+    <string name="directoryLook">动作耗时</string>
+
+    <string name="injectionPump">注射泵</string>
+    <string name="ml">毫升</string>
+    <string name="start">开始</string>
+    <string name="zeroOperation">归零</string>
+    <string name="reset">复位</string>
+    <string name="init">初始化</string>
+    <string name="rotaryValve">旋转阀</string>
+    <string name="left">左</string>
+    <string name="right">右</string>
+
+    <string name="aSpace">A阶段间隔</string>
+    <string name="bSpace">B阶段间隔</string>
+    <string name="aSpaceDropNum">A阶段滴数</string>
+    <string name="aSpaceStepLength">A阶段步长</string>
+    <string name="bSpaceStepLength">B阶段步长</string>
+    <string name="oxidizingAgentVolume">氧化剂体积</string>
+    <string name="oxidizingAgentVolume2">氧化剂体积2</string>
+    <string name="traceMode">微量模式</string>
+    <string name="catalystWashVolume">催化剂冲洗体积</string>
+    <string name="oxidizingAgentWashVolume">氧化剂冲洗体积</string>
+    <string name="reductantWashVolume">还原剂冲洗体积</string>
+    <string name="lyeVolume">碱液体积</string>
+    <string name="lyeWashVolume">碱液冲洗体积</string>
+
+    <string name="orp">ORP</string>
+    <string name="led">LED</string>
+    <string name="FuncFailMsg">该功能不可用，建议升级核心控制板软件!</string>
+    <string name="itemNumber">编号</string>
+    <string name="action">动作</string>
+    <string name="sampleCfg">进样配置</string>
+
+    <string name="otherCfg">其它配置</string>
+    <string name="par2">参数2</string>
+    <string name="par1">参数1</string>
+
+    <string name="isDoCfgFlow">配置流程</string>
+    <string name="clearDisplay">清空显示</string>
+
+    <string name="flowEmpty">流程为空,请检查配置流程!</string>
+    <string name="isCalibration">是否进行校准?</string>
+    <string name="CalibrationFinshMsg">工作曲线已更新</string>
+    <string name="CalibrationFail">校准失败!</string>
+    <string name="referenceEnergy">参比能量</string>
+    <string name="absorbEnergy">吸收能量</string>
+    <string name="calibRange">校准量程</string>
+    <string name="delete">删除</string>
+    <string name="configFlowStarted">配置流程已启动（关联做样）</string>
+    <string name="watchDog">看门狗</string>
+
+    <string name="data_sjdrz">开机自检中,请稍等…</string>
+    <string name="data_sjdrcg">自检成功</string>
+    <string name="data_dr">导入</string>
+    <string name="data_sjgscw">数据格式错误，请检查数据格式</string>
+    <string name="data_wjcw">文件错误，请重新选择</string>
+    <string name="data_glwqy">功能未启用</string>
+    <string name="data_mycw">密钥错误</string>
+
+    <string name="clockwise">顺</string>
+    <string name="switchValve">切阀</string>
+    <string name="anticlockwise">逆</string>
+
+    <string name="currentPosition">当前位置</string>
+    <string name="calcv1">校准体积V1</string>
+    <string name="clacv2">校准体积V2</string>
+    <string name="inSpeed">抽液速度</string>
+    <string name="backRowSpeed">回排速度</string>
+    <string name="BackRowTime">回排时间</string>
+    <string name="prepumpOutTime">预抽试剂超时时间</string>
+    <string name="make_sure_single_board_connect">请断开其它背板通讯线或电源后再添加组分 !</string>
+    <string name="high_number_of_points">高计量进样点数</string>
+    <string name="low_number_of_points">低计量进样点数</string>
+
+    <string name="files_add">添加文件:</string>
+    <string name="files_delete">删除文件:</string>
+    <string name="files_modify">修改文件:</string>
+    <string name="files_changes">以上配置文件有改动！</string>
+
+    <string name="catalyst_threshold">催化剂阈值</string>
+    <string name="oxidizingAgent_threshold">氧化剂阈值</string>
+    <string name="reductant_threshold">还原剂阈值</string>
+
+    <string name="whether_to_enable">是否启用</string>
+
+    <string name="whether_to_interference">干扰判断:</string>
+
+    <string name="pleaseInputDevRange">请先设置仪表量程值!</string>
+
+    <string name="history_datetime">历史记录时间</string>
+    <string name="history_show">历史数据显示</string>
+    <string name="start_time">启动时间</string>
+    <string name="sampling_time">采样时间</string>
+    <string name="no">无</string>
+
+    <string name="wrong">有误</string>
+    <string name="cfg_unit_select">配置单元选项</string>
+    <string name="ic_purging_time">IC吹扫时间</string>
+    <string name="tc_purging_time">TC吹扫时间</string>
+    <string name="collect_time">采集时间</string>
+    <string name="mixed_extraction_volume">混合抽取体积</string>
+    <string name="clean_volume">清洗体积</string>
+    <string name="conversion_factor_k">转换系数k</string>
+    <string name="conversion_factor_b">转换系数b</string>
+    <string name="number_of_measurements">测量次数</string>
+    <string name="tc_flow">TC流量</string>
+
+    <string name="fill_volume">填充体积</string>
+    <string name="singleInVolume">单次进样体积</string>
+    <string name="inSpaceTimes">进样间隔时间</string>
+    <string name="inNumbers">进样次数</string>
+    <string name="rangeSelect">量程选择</string>
+    <string name="userParSetting">用户选项设置</string>
+    <string name="enShow">光强显示</string>
+    <string name="clearNotesShow">记录清除按钮显示</string>
+    <string name="AShow">吸光度显示</string>
+    <string name="errorCfg">报错配置</string>
+
+    <string name="robot_set_up">机器人设置</string>
+    <string name="optocoupler_settings">光耦设置</string>
+    <string name="coordinate_settings">坐标设置</string>
+    <string name="coordinate_view">坐标查看</string>
+    <string name="coordinate_send">坐标下发</string>
+    <string name="coordinate_error">坐标错误</string>
+    <string name="add_success">添加成功</string>
+    <string name="mod_success">修改成功</string>
+    <string name="delete_success">删除成功</string>
+    <string name="volume_setting">体积设置</string>
+    <string name="send_success">下发成功</string>
+    <string name="the_coordinates_have_been_modified_please_reissue">坐标点已修改，请重新下发!</string>
+
+    <string name="withdrawal_volume">回抽体积</string>
+    <string name="rinse_settings">润洗体积</string>
+    <string name="brine_error">盐水体积</string>
+    <string name="headspace_success">顶空体积</string>
+    <string name="bacterial_liquid_success">菌液体积</string>
+    <string name="recovery_success">复苏体积</string>
+    <string name="buffer_volume">缓冲体积</string>
+    <string name="control_volume">对照体积</string>
+
+    <string name="reaction_module_temperature">反应室温度</string>
+    <string name="cooling_module_temperature">储菌室温度</string>
+    <string name="reference_intensity">参比光强</string>
+    <string name="absorbed_light_intensity">吸收光强</string>
+    <string name="toxicity_test_time">毒性测试时间</string>
+    <string name="bacteria_storage_room">储菌室</string>
+    <string name="reaction_chamber">反应室</string>
+    <string name="low_toxicity">低度毒性</string>
+    <string name="moderate_toxicity">中度毒性</string>
+    <string name="highly_toxicity">高度毒性</string>
+    <string name="light_intensity_threshold">光强阈值</string>
+
+    <string name="analysisMode">解析模式</string>
+    <string name="crcMode">校验模式</string>
+
+    <string name="LEDsave">比色存储</string>
+
+    <string-array name="runningMode">
+        <item>在线</item>
+        <item>离线</item>
+        <item>维护</item>
+    </string-array>
+
+    <string-array name="loginUsers">
+        <item>用户</item>
+        <item>运维</item>
+        <item>管理员</item>
+    </string-array>
+
+    <string-array name="meaMode">
+        <item>连续模式</item>
+        <item>周期模式</item>
+        <item>定点模式</item>
+        <item>受控模式</item>
+        <item>手动模式</item>
+    </string-array>
+
+    <string-array name="dilutionMode">
+        <item>模式—</item>
+        <item>模式二</item>
+        <item>模式三</item>
+    </string-array>
+
+
+    <string-array name="TcpChannelSum">
+        <item>输出—</item>
+        <item>输出二</item>
+        <item>输出三</item>
+    </string-array>
+
+    <string-array name="outMeaShow">
+        <item>无</item>
+        <item>负值显示</item>
+        <item>定量显示</item>
+    </string-array>
+
+
+    <string-array name="boardType">
+        <item>常规</item>
+        <item>W200</item>
+    </string-array>
+
+    <string-array name="crc">
+        <item>CRC1</item>
+        <item>CRC2</item>
+    </string-array>
+
+    <string-array name="crcMode">
+        <item>高位</item>
+        <item>低位</item>
+    </string-array>
+
+    <string-array name="ReadConfig1">
+        <item>Csoft</item>
+        <item>watercrash</item>
+        <item>waterrun</item>
+    </string-array>
+
+    <string-array name="jzRange">
+        <item>主量程</item>
+        <item>量程1</item>
+    </string-array>
+
+</resources>

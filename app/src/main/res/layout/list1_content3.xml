@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="30px"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/btnReturn_p0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10px"
+                android:background="@null"
+                android:src="@drawable/btn_return" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20px"
+            android:layout_marginBottom="20px"
+            android:focusableInTouchMode="true">
+
+            <ListView
+                android:id="@+id/listCfgFlowLocal"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20px"
+                android:layout_weight="1">
+
+
+            </ListView>
+
+            <LinearLayout
+
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="25px"
+                        android:gravity="right">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="20px"
+                            android:text="@string/isDoCfgFlow"
+                            android:textColor="@color/white"
+                            android:textSize="25px" />
+
+                        <ToggleButton
+                            android:id="@+id/BtnCfgFlowStart"
+                            android:layout_width="92px"
+                            android:layout_height="42px"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="20px"
+                            android:background="@drawable/togglebtn"
+                            android:textOff=" "
+                            android:textOn=" " />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layoutCfgFlowSetting"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="visible">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15px">
+
+
+                            <EditText
+                                android:id="@+id/edFlowNum"
+                                style="@style/CEditText"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="20px"
+                                android:ems="4"
+                                android:hint="@string/itemNumber"
+                                android:imeOptions="actionDone"
+                                android:inputType="number" />
+
+                            <Button
+                                android:id="@+id/BtnActionList"
+                                style="@style/CButton_Dialog"
+                                android:layout_marginLeft="20px"
+                                android:text="@string/action" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15px">
+
+                            <Button
+                                android:id="@+id/BtnSampleCfg"
+                                style="@style/CButton_Dialog"
+                                android:layout_marginLeft="20px"
+                                android:text="@string/sampleCfg" />
+
+                            <LinearLayout
+                                android:id="@+id/layout_sampleActionCfgPar"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:visibility="visible">
+
+                                <EditText
+                                    android:id="@+id/edActionDoTimes"
+                                    style="@style/CEditText"
+                                    android:layout_gravity="center"
+                                    android:layout_marginLeft="20px"
+                                    android:ems="4"
+                                    android:hint="@string/number"
+                                    android:imeOptions="actionDone"
+                                    android:inputType="number" />
+
+                                <Button
+                                    android:id="@+id/BtnActionLowHigh"
+                                    style="@style/CButton_Dialog"
+                                    android:layout_marginLeft="20px"
+                                    android:text="@string/low" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/layout_otherActionCfgPar"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical"
+                                android:visibility="gone">
+
+                                <EditText
+                                    android:id="@+id/edActionPar1"
+                                    style="@style/CEditText"
+                                    android:layout_gravity="center"
+                                    android:layout_marginLeft="20px"
+                                    android:ems="4"
+                                    android:hint="@string/par1"
+                                    android:imeOptions="actionDone"
+                                    android:inputType="number" />
+
+                                <EditText
+                                    android:id="@+id/edActionPar2"
+                                    style="@style/CEditText"
+                                    android:layout_gravity="center"
+                                    android:layout_marginLeft="20px"
+                                    android:ems="4"
+                                    android:hint="@string/par2"
+                                    android:imeOptions="actionDone"
+                                    android:inputType="number" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15px">
+
+                            <Button
+                                android:id="@+id/BtnFlowDel"
+                                style="@style/CButton_Dialog"
+                                android:layout_marginLeft="135px"
+                                android:text="@string/delete" />
+
+                            <Button
+                                android:id="@+id/BtnFlowAdd"
+                                style="@style/CButton_Dialog"
+                                android:layout_marginLeft="20px"
+                                android:text="@string/add" />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layoutCfgFlowComm"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15px"
+                        android:visibility="gone">
+
+                        <Button
+                            android:id="@+id/btnCfgFlowSave"
+                            style="@style/CButton_Dialog"
+                            android:layout_marginLeft="20px"
+                            android:text="@string/save" />
+
+                        <Button
+                            android:id="@+id/btnCfgFlowRead"
+                            style="@style/CButton_Dialog"
+                            android:layout_marginLeft="20px"
+                            android:text="@string/read" />
+
+                        <Button
+                            android:id="@+id/btnClearDisplay"
+                            style="@style/CButton_Dialog"
+                            android:layout_marginLeft="20px"
+                            android:text="@string/clearDisplay" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

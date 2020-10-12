@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/line"
+    android:orientation="vertical"
+    android:splitMotionEvents="false">
+
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/Left1_1"
+                android:layout_width="wrap_content"
+                android:layout_height="65px"
+                android:layout_marginTop="40px"
+                android:background="@android:color/transparent"
+                android:scaleType="fitXY"
+                android:src="@drawable/l1l1" />
+
+            <ImageButton
+                android:id="@+id/Left1_2"
+                android:layout_width="wrap_content"
+                android:layout_height="65px"
+                android:background="@android:color/transparent"
+                android:scaleType="fitXY"
+                android:src="@drawable/l1l2" />
+
+            <ImageButton
+                android:id="@+id/Left1_3"
+                android:layout_width="wrap_content"
+                android:layout_height="65px"
+                android:background="@android:color/transparent"
+                android:scaleType="fitXY"
+                android:src="@drawable/l1l3" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="260px"
+                android:background="@android:color/transparent"
+                android:scaleType="fitXY"
+                android:src="@drawable/l13" />
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</LinearLayout>

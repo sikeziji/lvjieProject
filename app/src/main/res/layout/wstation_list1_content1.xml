@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100px"
+        android:gravity="center_vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="110px"
+                android:text="量程"
+                android:textColor="@android:color/white"
+                android:textSize="25px" />
+
+            <EditText
+                android:id="@+id/wstation_eTRangeLow"
+                style="@style/CEditText"
+                android:layout_marginLeft="20px"
+                android:ems="4"
+                android:imeOptions="actionDone"
+                android:inputType="numberSigned" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10px"
+                android:text="-"
+                android:textColor="@android:color/white"
+                android:textSize="20px" />
+
+            <EditText
+                android:id="@+id/wstation_eTRangeUp"
+                style="@style/CEditText"
+                android:layout_marginLeft="10px"
+                android:ems="4"
+                android:imeOptions="actionDone"
+                android:inputType="numberSigned" />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="80px"
+                android:text="上下限"
+                android:textColor="@android:color/white"
+                android:textSize="25px" />
+
+            <EditText
+                android:id="@+id/wsAlarmLow"
+                style="@style/CEditText"
+                android:layout_marginLeft="20px"
+                android:ems="4"
+                android:imeOptions="actionDone"
+                android:inputType="numberSigned" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10px"
+                android:text="-"
+                android:textColor="@android:color/white"
+                android:textSize="20px" />
+
+            <EditText
+                android:id="@+id/wsAlarmHigh"
+                style="@style/CEditText"
+                android:layout_marginLeft="10px"
+                android:ems="4"
+                android:imeOptions="actionDone"
+                android:inputType="numberSigned" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="25px"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="110px"
+            android:text="单位"
+            android:textColor="@android:color/white"
+            android:textSize="25px" />
+
+        <Spinner
+            android:id="@+id/wstation_spUnit"
+            style="@style/CSpinner"
+            android:layout_marginLeft="20px" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25px">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60px"
+            android:text="有效位数"
+            android:textColor="@android:color/white"
+            android:textSize="25px" />
+
+        <EditText
+            android:id="@+id/eTWSyxws"
+            style="@style/CEditText"
+            android:layout_marginLeft="20px"
+            android:ems="4"
+            android:imeOptions="actionDone"
+            android:inputType="number" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25px"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60px"
+            android:text="历史数据"
+            android:textColor="@android:color/white"
+            android:textSize="25px" />
+
+        <Button
+            android:id="@+id/wstationbtnClear"
+            style="@style/CButton_Big"
+            android:layout_marginLeft="20px"
+            android:text="清空" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/layout_standSample"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25px"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60px"
+            android:text="超标留样"
+            android:textColor="@android:color/white"
+            android:textSize="25px" />
+
+        <Button
+            android:id="@+id/wsStandSampleClear"
+            style="@style/CButton_Big"
+            android:layout_marginLeft="20px"
+            android:text="清除留样" />
+        <TextView
+            android:id="@+id/txtStandSampleInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60px"
+
+            android:textColor="@android:color/white"
+            android:textSize="25px" />
+
+    </LinearLayout>
+</LinearLayout>

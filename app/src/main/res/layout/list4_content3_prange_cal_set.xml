@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="800px"
+        android:layout_height="427px"
+        android:layout_marginTop="25px"
+        android:background="@drawable/bj_p"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40px"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btnReturnFlow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10px"
+                android:background="@null"
+                android:src="@drawable/btn_return" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/oneKeyCal"
+                android:textColor="@android:color/white"
+                android:textSize="20px" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:id="@+id/layout_OneKeyCal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20px"
+                    android:layout_marginTop="10px"
+                    android:focusableInTouchMode="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20px"
+                        android:shadowDx="1"
+                        android:shadowDy="1"
+                        android:shadowRadius="5"
+                        android:text="@string/range_1"
+                        android:textColor="@android:color/black"
+                        android:textSize="25px"
+                        android:visibility="gone" />
+
+                    <Button
+                        android:id="@+id/btnOneKeyCalR1RSA"
+                        style="@style/CButton_Dialog"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20px"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20px"
+                        android:shadowDx="1"
+                        android:shadowDy="1"
+                        android:shadowRadius="5"
+                        android:text="@string/range_2"
+                        android:textColor="@android:color/white"
+                        android:textSize="25px" />
+
+                    <Button
+                        android:id="@+id/btnOneKeyCalR2RSA"
+                        style="@style/CButton_Dialog"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20px"
+                        android:text=""
+                        android:textColor="@color/white" />
+
+                    <LinearLayout
+                        android:id="@+id/layout_oneKeyR3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20px"
+                            android:shadowDx="1"
+                            android:shadowDy="1"
+                            android:shadowRadius="5"
+                            android:text="@string/range_3"
+                            android:textColor="@android:color/white"
+                            android:textSize="25px" />
+
+                        <Button
+                            android:id="@+id/btnOneKeyCalR3RSA"
+                            style="@style/CButton_Dialog"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20px"
+                            android:text=""
+                            android:textColor="@color/white" />
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20px"
+                        android:shadowDx="1"
+                        android:shadowDy="1"
+                        android:shadowRadius="5"
+                        android:text="@string/relation"
+                        android:textColor="@android:color/white"
+                        android:textSize="25px" />
+
+                    <Button
+                        android:id="@+id/btnOneKeyCalXRSA"
+                        style="@style/CButton_Dialog"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20px"
+                        android:text=""
+                        android:textColor="@color/white" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20px"
+                    android:layout_marginTop="15px"
+                    android:focusableInTouchMode="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50px"
+                        android:shadowDx="1"
+                        android:shadowDy="1"
+                        android:shadowRadius="5"
+                        android:text="@string/span2TestValue"
+                        android:textColor="@android:color/white"
+                        android:textSize="25px" />
+
+                    <EditText
+                        android:id="@+id/eTOneKeyCalB"
+                        style="@style/CEditText"
+                        android:layout_width="120px"
+                        android:layout_marginLeft="20px"
+                        android:ems="4"
+                        android:imeOptions="actionDone"
+                        android:inputType="numberDecimal" />
+
+                    <Button
+                        android:id="@+id/BtnOneKeyCal"
+                        style="@style/CButton_Dialog"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="20px"
+                        android:text="@string/JZ"
+                        android:textColor="@color/white" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20px"
+                    android:layout_marginTop="15px"
+                    android:focusableInTouchMode="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50px"
+                        android:shadowDx="1"
+                        android:shadowDy="1"
+                        android:shadowRadius="5"
+                        android:text="@string/xValue"
+                        android:textColor="@android:color/white"
+                        android:textSize="25px" />
+
+                    <EditText
+                        android:id="@+id/eTOneKeyCalX"
+                        style="@style/CEditText"
+                        android:layout_width="120px"
+                        android:layout_marginLeft="20px"
+                        android:ems="4"
+                        android:imeOptions="actionDone"
+                        android:inputType="numberSigned|numberDecimal" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50px"
+                        android:shadowDx="1"
+                        android:shadowDy="1"
+                        android:shadowRadius="5"
+                        android:text="@string/yValue"
+                        android:textColor="@android:color/white"
+                        android:textSize="25px" />
+
+                    <EditText
+                        android:id="@+id/eTOneKeyCalY"
+                        style="@style/CEditText"
+                        android:layout_width="120px"
+                        android:layout_marginLeft="20px"
+                        android:ems="4"
+                        android:imeOptions="actionDone"
+                        android:inputType="numberSigned|numberDecimal" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layoutAutoCalRangeKB"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20px"
+                    android:layout_marginTop="15px"
+                    android:focusableInTouchMode="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20px"
+                        android:shadowDx="1"
+                        android:shadowDy="1"
+                        android:shadowRadius="5"
+                        android:text="@string/autoCreateRangeKB"
+                        android:textColor="@android:color/white"
+                        android:textSize="25px" />
+
+                    <Button
+                        android:id="@+id/BtnCalRange2KB"
+                        style="@style/CButton_Dialog"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="20px"
+                        android:text="@string/range_2"
+                        android:textColor="@color/white" />
+
+                    <Button
+                        android:id="@+id/BtnCalRange3KB"
+                        style="@style/CButton_Dialog"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="20px"
+                        android:text="@string/range_3"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="0px"
+                    android:layout_marginTop="15px"
+                    android:layout_weight="1"
+                    android:focusableInTouchMode="true"
+                    android:gravity="center|center_vertical"
+                    android:orientation="horizontal"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15px"
+                        android:text="@string/kdpar"
+                        android:textColor="@color/red"
+                        android:textSize="20px" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

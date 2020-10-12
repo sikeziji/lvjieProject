@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="800px"
+        android:layout_height="427px"
+        android:layout_marginTop="25px"
+        android:background="@drawable/bj_p"
+        android:orientation="vertical">
+
+        <!--返回标题栏-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40px"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btnReturn_p1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10px"
+                android:background="@null"
+                android:src="@drawable/btn_return" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/measurement_unit_options"
+                android:textColor="@android:color/white"
+                android:textSize="20px" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_marginTop="10px"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="130px"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="@string/rangeSelect"
+                android:layout_marginLeft="45px"
+                android:textColor="@android:color/white"
+                android:textSize="20px" />
+            <Spinner
+                android:id="@+id/spRangeParSelect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20px"
+                android:animationCache="true"
+                android:drawSelectorOnTop="true"
+                android:popupBackground="@android:color/white" />
+        </LinearLayout>
+        <!--主内容区-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <!--右半部分-->
+            <LinearLayout
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="45px"
+                android:layout_weight="1"
+                android:focusableInTouchMode="false"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10px"
+                    android:focusableInTouchMode="true"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="130px"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="@string/fill_volume"
+                        android:textColor="@android:color/white"
+                        android:textSize="20px" />
+
+                    <EditText
+                        android:id="@+id/editFillVolume"
+                        style="@style/CEditText"
+                        android:layout_marginLeft="20px"
+                        android:ems="4"
+                        android:imeOptions="actionDone"
+                        android:inputType="number|numberDecimal" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15px"
+                        android:gravity="right"
+                        android:text="@string/unitMl"
+                        android:textColor="@android:color/white"
+                        android:textSize="20px" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15px"
+                    android:focusableInTouchMode="true"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="130px"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="@string/singleInVolume"
+                        android:textColor="@android:color/white"
+                        android:textSize="20px" />
+
+                    <EditText
+                        android:id="@+id/editSingleInVolume"
+                        style="@style/CEditText"
+                        android:layout_marginLeft="20px"
+                        android:ems="4"
+                        android:imeOptions="actionDone"
+                        android:inputType="number|numberDecimal" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15px"
+                        android:gravity="right"
+                        android:text="@string/unitMl"
+                        android:textColor="@android:color/white"
+                        android:textSize="20px" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15px"
+                    android:focusableInTouchMode="true"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="130px"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="@string/inSpaceTimes"
+                        android:textColor="@android:color/white"
+                        android:textSize="20px" />
+
+                    <EditText
+                        android:id="@+id/editInSpaceTimes"
+                        style="@style/CEditText"
+                        android:layout_marginLeft="20px"
+                        android:ems="4"
+                        android:imeOptions="actionDone"
+                        android:inputType="number" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15px"
+                        android:gravity="right"
+                        android:text="@string/unitSec"
+                        android:textColor="@android:color/white"
+                        android:textSize="20px" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15px"
+                    android:focusableInTouchMode="true"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="130px"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="@string/inNumbers"
+                        android:textColor="@android:color/white"
+                        android:textSize="20px" />
+
+                    <EditText
+                        android:id="@+id/editInNumber"
+                        style="@style/CEditText"
+                        android:layout_marginLeft="20px"
+                        android:ems="4"
+                        android:imeOptions="actionDone"
+                        android:inputType="number" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:focusableInTouchMode="false"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/layout_ddThresholdValue"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

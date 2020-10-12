@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_marginTop="30px"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/btnNBYQXX"
+            android:layout_width="382px"
+            android:layout_height="201px"
+            android:background="@drawable/btn_yqxx" />
+
+        <Button
+            android:id="@+id/btnNBCZRZ"
+            android:layout_width="382px"
+            android:layout_height="201px"
+            android:background="@drawable/btn_czrz"
+            android:visibility="invisible" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_marginBottom="10px"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/btnNBBCPB"
+            android:layout_width="382px"
+            android:layout_height="201px"
+            android:layout_marginLeft="10px"
+            android:background="@drawable/btn_bcpb"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/btnNBUserParSet"
+            android:layout_width="382px"
+            android:layout_height="201px"
+            android:layout_marginLeft="10px"
+            android:background="@drawable/btn_bcpb"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/btnNBAdminParSet"
+            android:layout_width="382px"
+            android:layout_height="201px"
+            android:layout_marginLeft="10px"
+            android:background="@drawable/btn_bcpb"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="30px"
+        android:layout_marginTop="30px"
+        android:layout_marginBottom="10px">
+
+        <GridLayout
+            android:id="@+id/gl_302"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2"></GridLayout>
+    </ScrollView>
+
+</LinearLayout>

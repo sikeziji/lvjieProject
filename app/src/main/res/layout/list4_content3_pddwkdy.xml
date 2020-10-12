@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="800px"
+        android:layout_height="427px"
+        android:layout_marginTop="25px"
+        android:background="@drawable/bj_p"
+        android:orientation="vertical">
+
+        <!--返回标题栏-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40px"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btnReturn_p1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10px"
+                android:background="@null"
+                android:src="@drawable/btn_return" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+
+                android:text="@string/tempCtrl_par_select"
+                android:textColor="@android:color/white"
+                android:textSize="20px" />
+        </LinearLayout>
+
+        <!--主内容区-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:focusableInTouchMode="false"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20px"
+                    android:focusableInTouchMode="true"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="80px"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="@string/temp_A"
+                        android:textColor="@android:color/white"
+                        android:textSize="20px" />
+
+                    <EditText
+                        android:id="@+id/edit_tempA1"
+                        style="@style/CEditText"
+                        android:layout_marginLeft="20px"
+                        android:ems="4"
+                        android:imeOptions="actionDone"
+                        android:inputType="numberDecimal" />
+
+                    <TextView
+                        android:layout_width="80px"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="@string/thermal_efficiency_A"
+                        android:textColor="@android:color/white"
+                        android:textSize="20px" />
+
+                    <EditText
+                        android:id="@+id/edit_thermal_efficiency_A1"
+                        style="@style/CEditText"
+                        android:layout_marginLeft="20px"
+                        android:ems="4"
+                        android:imeOptions="actionDone"
+                        android:inputType="numberDecimal" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20px"
+                    android:focusableInTouchMode="true"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="80px"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="@string/temp_B"
+                        android:textColor="@android:color/white"
+                        android:textSize="20px" />
+
+                    <EditText
+                        android:id="@+id/edit_tempB1"
+                        style="@style/CEditText"
+                        android:layout_marginLeft="20px"
+                        android:ems="4"
+                        android:imeOptions="actionDone"
+                        android:inputType="numberDecimal" />
+
+                    <TextView
+                        android:layout_width="80px"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="@string/thermal_efficiency_B"
+                        android:textColor="@android:color/white"
+                        android:textSize="20px" />
+
+                    <EditText
+                        android:id="@+id/edit_thermal_efficiency_B1"
+                        style="@style/CEditText"
+                        android:layout_marginLeft="20px"
+                        android:ems="4"
+                        android:imeOptions="actionDone"
+                        android:inputType="numberDecimal" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20px"
+                    android:focusableInTouchMode="true"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="80px"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="@string/temp_C"
+                        android:textColor="@android:color/white"
+                        android:textSize="20px"
+                        android:visibility="invisible" />
+
+                    <EditText
+                        android:id="@+id/edit_tempC1"
+                        style="@style/CEditText"
+                        android:layout_marginLeft="20px"
+                        android:ems="4"
+                        android:imeOptions="actionDone"
+                        android:inputType="number"
+                        android:visibility="invisible" />
+
+                    <TextView
+                        android:layout_width="80px"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="@string/thermal_efficiency_C"
+                        android:textColor="@android:color/white"
+                        android:textSize="20px" />
+
+                    <EditText
+                        android:id="@+id/edit_thermal_efficiency_C1"
+                        style="@style/CEditText"
+                        android:layout_marginLeft="20px"
+                        android:ems="4"
+                        android:imeOptions="actionDone"
+                        android:inputType="numberDecimal" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20px"
+                    android:focusableInTouchMode="true"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="80px"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="@string/temp_D"
+                        android:textColor="@android:color/white"
+                        android:textSize="20px"
+                        android:visibility="invisible" />
+
+                    <EditText
+                        android:id="@+id/edit_tempD1"
+                        style="@style/CEditText"
+                        android:layout_marginLeft="20px"
+                        android:ems="4"
+                        android:imeOptions="actionDone"
+                        android:inputType="number"
+                        android:visibility="invisible" />
+
+                    <TextView
+                        android:layout_width="80px"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="@string/thermal_efficiency_D"
+                        android:textColor="@android:color/white"
+                        android:textSize="20px"
+                        android:visibility="invisible" />
+
+                    <EditText
+                        android:id="@+id/edit_thermal_efficiency_D1"
+                        style="@style/CEditText"
+                        android:layout_marginLeft="20px"
+                        android:ems="4"
+                        android:imeOptions="actionDone"
+                        android:inputType="numberDecimal"
+                        android:visibility="invisible" />
+                </LinearLayout>
+            </LinearLayout>
+            <!--右半部分-->
+            <LinearLayout
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:focusableInTouchMode="false"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20px"
+                    android:focusableInTouchMode="true"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="80px"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="@string/temp_A"
+                        android:textColor="@android:color/white"
+                        android:textSize="20px" />
+
+                    <EditText
+                        android:id="@+id/edit_tempA2"
+                        style="@style/CEditText"
+                        android:layout_marginLeft="20px"
+                        android:ems="4"
+                        android:imeOptions="actionDone"
+                        android:inputType="numberDecimal" />
+
+                    <TextView
+                        android:layout_width="80px"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="@string/thermal_efficiency_A"
+                        android:textColor="@android:color/white"
+                        android:textSize="20px" />
+
+                    <EditText
+                        android:id="@+id/edit_thermal_efficiency_A2"
+                        style="@style/CEditText"
+                        android:layout_marginLeft="20px"
+                        android:ems="4"
+                        android:imeOptions="actionDone"
+                        android:inputType="numberDecimal" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20px"
+                    android:focusableInTouchMode="true"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="80px"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="@string/temp_B"
+                        android:textColor="@android:color/white"
+                        android:textSize="20px" />
+
+                    <EditText
+                        android:id="@+id/edit_tempB2"
+                        style="@style/CEditText"
+                        android:layout_marginLeft="20px"
+                        android:ems="4"
+                        android:imeOptions="actionDone"
+                        android:inputType="numberDecimal" />
+
+                    <TextView
+                        android:layout_width="80px"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="@string/thermal_efficiency_B"
+                        android:textColor="@android:color/white"
+                        android:textSize="20px" />
+
+                    <EditText
+                        android:id="@+id/edit_thermal_efficiency_B2"
+                        style="@style/CEditText"
+                        android:layout_marginLeft="20px"
+                        android:ems="4"
+                        android:imeOptions="actionDone"
+                        android:inputType="numberDecimal" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20px"
+                    android:focusableInTouchMode="true"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="80px"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="@string/temp_C"
+                        android:textColor="@android:color/white"
+                        android:textSize="20px"
+                        android:visibility="invisible" />
+
+                    <EditText
+                        android:id="@+id/edit_tempC2"
+                        style="@style/CEditText"
+                        android:layout_marginLeft="20px"
+                        android:ems="4"
+                        android:imeOptions="actionDone"
+                        android:inputType="number"
+                        android:visibility="invisible" />
+
+                    <TextView
+                        android:layout_width="80px"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="@string/thermal_efficiency_C"
+                        android:textColor="@android:color/white"
+                        android:textSize="20px" />
+
+                    <EditText
+                        android:id="@+id/edit_thermal_efficiency_C2"
+                        style="@style/CEditText"
+                        android:layout_marginLeft="20px"
+                        android:ems="4"
+                        android:imeOptions="actionDone"
+                        android:inputType="numberDecimal" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20px"
+                    android:focusableInTouchMode="true"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="80px"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="@string/temp_D"
+                        android:textColor="@android:color/white"
+                        android:textSize="20px"
+                        android:visibility="invisible" />
+
+                    <EditText
+                        android:id="@+id/edit_tempD2"
+                        style="@style/CEditText"
+                        android:layout_marginLeft="20px"
+                        android:ems="4"
+                        android:imeOptions="actionDone"
+                        android:inputType="number"
+                        android:visibility="invisible" />
+
+                    <TextView
+                        android:layout_width="80px"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="@string/thermal_efficiency_D"
+                        android:textColor="@android:color/white"
+                        android:textSize="20px"
+                        android:visibility="invisible" />
+
+                    <EditText
+                        android:id="@+id/edit_thermal_efficiency_D2"
+                        style="@style/CEditText"
+                        android:layout_marginLeft="20px"
+                        android:ems="4"
+                        android:imeOptions="actionDone"
+                        android:inputType="numberDecimal"
+                        android:visibility="invisible" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,1040 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="800px"
+        android:layout_height="427px"
+        android:layout_marginTop="25px"
+        android:background="@drawable/bj_p"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+        <!--标题栏-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40px"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btnReturn_p3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10px"
+                android:background="@null"
+                android:src="@drawable/btn_return" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/protocolCfg"
+                android:textColor="@android:color/white"
+                android:textSize="20px" />
+        </LinearLayout>
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <!--协议选择-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="40px">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="83px"
+                            android:shadowDx="1"
+                            android:shadowDy="1"
+                            android:shadowRadius="5"
+                            android:text="@string/protocol"
+                            android:textColor="@android:color/white"
+                            android:textSize="25px" />
+
+                        <Spinner
+                            android:id="@+id/spXYCfgSelect"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="41px"
+                            android:animationCache="true"
+                            android:drawSelectorOnTop="true"
+                            android:popupBackground="@android:color/white" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layout_ProtocolSet"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10px"
+                        android:orientation="vertical">
+
+
+                        <!--gb2005-->
+                        <LinearLayout
+                            android:id="@+id/layout_gb2005"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15px"
+                            android:orientation="vertical"
+                            android:visibility="gone">
+
+
+                            <!--机构代码-->
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5px">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="65px"
+                                    android:text="@string/institution_code"
+                                    android:textColor="@android:color/white"
+                                    android:textSize="25px" />
+
+                                <EditText
+                                    android:id="@+id/eTOrg"
+                                    style="@style/CEditText"
+                                    android:layout_width="150px"
+                                    android:layout_marginLeft="18px"
+                                    android:layout_marginTop="1px"
+                                    android:layout_marginBottom="1px"
+                                    android:hint="@string/please_input_7_place"
+                                    android:imeOptions="actionDone"
+                                    android:inputType="text"
+                                    android:maxLength="7" />
+
+                            </LinearLayout>
+
+
+                            <!--设备代码-->
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5px">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="65px"
+                                    android:text="@string/device_code"
+                                    android:textColor="@android:color/white"
+                                    android:textSize="25px" />
+
+                                <EditText
+                                    android:id="@+id/eTDevAddr"
+                                    style="@style/CEditText"
+                                    android:layout_width="150px"
+                                    android:layout_marginLeft="18px"
+                                    android:layout_marginTop="1px"
+                                    android:layout_marginBottom="1px"
+                                    android:hint="@string/please_input_7_place"
+                                    android:imeOptions="actionDone"
+                                    android:inputType="text"
+                                    android:maxLength="7" />
+
+                            </LinearLayout>
+
+
+                            <!--校验方式-->
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5px">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="65px"
+                                    android:text="@string/crc"
+                                    android:textColor="@android:color/white"
+                                    android:textSize="25px" />
+
+                                <Spinner
+                                    android:id="@+id/spgb2005crc"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="18px"
+                                    android:animationCache="true"
+                                    android:drawSelectorOnTop="true"
+                                    android:popupBackground="@android:color/white" />
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+
+                        <!--gb2017-->
+                        <LinearLayout
+                            android:id="@+id/layout_gb2017"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10px"
+                            android:orientation="vertical"
+                            android:visibility="gone">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5px">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="65px"
+                                    android:text="@string/institution_code"
+                                    android:textColor="@android:color/white"
+                                    android:textSize="25px" />
+
+                                <EditText
+                                    android:id="@+id/eTOrg2017"
+                                    style="@style/CEditText"
+                                    android:layout_width="150px"
+                                    android:layout_marginLeft="18px"
+                                    android:layout_marginTop="1px"
+                                    android:layout_marginBottom="1px"
+                                    android:hint="@string/please_input_12_place"
+                                    android:imeOptions="actionDone"
+                                    android:inputType="text"
+                                    android:maxLength="12" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5px">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="65px"
+                                    android:text="@string/device_code"
+                                    android:textColor="@android:color/white"
+                                    android:textSize="25px" />
+
+                                <EditText
+                                    android:id="@+id/eTDevAddr2017"
+                                    style="@style/CEditText"
+                                    android:layout_width="150px"
+                                    android:layout_marginLeft="18px"
+                                    android:layout_marginTop="1px"
+                                    android:layout_marginBottom="1px"
+                                    android:hint="@string/please_input_12_place"
+                                    android:imeOptions="actionDone"
+                                    android:inputType="text"
+                                    android:maxLength="12" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5px">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="65px"
+                                    android:text="@string/crc"
+                                    android:textColor="@android:color/white"
+                                    android:textSize="25px" />
+
+                                <Spinner
+                                    android:id="@+id/spgb2017crc"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="18px"
+                                    android:animationCache="true"
+                                    android:drawSelectorOnTop="true"
+                                    android:popupBackground="@android:color/white" />
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+
+                        <!--gb2017v2-->
+                        <LinearLayout
+                            android:id="@+id/layout_gb2017v2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10px"
+                            android:orientation="vertical"
+                            android:visibility="gone">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5px">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="65px"
+                                    android:text="@string/institution_code"
+                                    android:textColor="@android:color/white"
+                                    android:textSize="25px" />
+
+                                <EditText
+                                    android:id="@+id/eTOrg2017v2"
+                                    style="@style/CEditText"
+                                    android:layout_width="150px"
+                                    android:layout_marginLeft="18px"
+                                    android:layout_marginTop="1px"
+                                    android:layout_marginBottom="1px"
+                                    android:hint="@string/please_input_12_place"
+                                    android:imeOptions="actionDone"
+                                    android:inputType="text"
+                                    android:maxLength="12" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5px">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="65px"
+                                    android:text="@string/device_code"
+                                    android:textColor="@android:color/white"
+                                    android:textSize="25px" />
+
+                                <EditText
+                                    android:id="@+id/eTDevAddr2017v2"
+                                    style="@style/CEditText"
+                                    android:layout_width="150px"
+                                    android:layout_marginLeft="18px"
+                                    android:layout_marginTop="1px"
+                                    android:layout_marginBottom="1px"
+                                    android:hint="@string/please_input_12_place"
+                                    android:imeOptions="actionDone"
+                                    android:inputType="text"
+                                    android:maxLength="12" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5px">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="65px"
+                                    android:text="@string/crc"
+                                    android:textColor="@android:color/white"
+                                    android:textSize="25px" />
+
+                                <Spinner
+                                    android:id="@+id/spgb2017v2crc"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="18px"
+                                    android:animationCache="true"
+                                    android:drawSelectorOnTop="true"
+                                    android:popupBackground="@android:color/white" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+                        <!--JS-->
+                        <LinearLayout
+                            android:id="@+id/layout_JS"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15px"
+                            android:orientation="horizontal"
+                            android:visibility="gone">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10px">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="65px"
+                                    android:text="@string/institution_code"
+                                    android:textColor="@android:color/white"
+                                    android:textSize="25px" />
+
+                                <EditText
+                                    android:id="@+id/eTOrgJS"
+                                    style="@style/CEditText"
+                                    android:layout_width="150px"
+                                    android:layout_marginLeft="18px"
+                                    android:layout_marginTop="1px"
+                                    android:layout_marginBottom="1px"
+                                    android:hint="@string/please_input_12_place"
+                                    android:imeOptions="actionDone"
+                                    android:inputType="text"
+                                    android:maxLength="12" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10px">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="55px"
+                                    android:text="@string/device_code"
+                                    android:textColor="@android:color/white"
+                                    android:textSize="25px" />
+
+                                <EditText
+                                    android:id="@+id/eTDevAddrJS"
+                                    style="@style/CEditText"
+                                    android:layout_width="150px"
+                                    android:layout_marginLeft="18px"
+                                    android:layout_marginTop="1px"
+                                    android:layout_marginBottom="1px"
+                                    android:hint="@string/please_input_12_place"
+                                    android:imeOptions="actionDone"
+                                    android:inputType="text"
+                                    android:maxLength="12" />
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+
+                        <!--DCI-->
+                        <LinearLayout
+                            android:id="@+id/layout_DCI"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15px"
+                            android:orientation="horizontal"
+                            android:visibility="gone">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10px">
+
+                                <TextView
+                                    android:id="@+id/txtXY1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="65px"
+                                    android:text="@string/rs232_port"
+                                    android:textColor="@android:color/white"
+                                    android:textSize="25px" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="38px"
+                                    android:text="@string/protocol_address"
+                                    android:textColor="@android:color/white"
+                                    android:textSize="25px" />
+
+                                <EditText
+                                    android:id="@+id/eTAddr"
+                                    style="@style/CEditText"
+                                    android:layout_width="150px"
+                                    android:layout_marginLeft="18px"
+                                    android:layout_marginTop="1px"
+                                    android:layout_marginBottom="1px"
+                                    android:imeOptions="actionDone"
+                                    android:inputType="number"
+                                    android:maxLength="3" />
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+
+                        <!--PC-->
+                        <LinearLayout
+                            android:id="@+id/layout_PC"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15px"
+                            android:orientation="horizontal"
+                            android:visibility="gone">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10px">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="108px"
+                                    android:text="@string/pc_port"
+                                    android:textColor="@android:color/white"
+                                    android:textSize="25px" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="38px"
+                                    android:text="@string/protocol_address"
+                                    android:textColor="@android:color/white"
+                                    android:textSize="25px" />
+
+                                <EditText
+                                    android:id="@+id/eTPC_Addr"
+                                    style="@style/CEditText"
+                                    android:layout_width="150px"
+                                    android:layout_marginLeft="18px"
+                                    android:layout_marginTop="1px"
+                                    android:layout_marginBottom="1px"
+                                    android:imeOptions="actionDone"
+                                    android:inputType="number"
+                                    android:maxLength="3" />
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+
+                        <!--DCI2-->
+                        <LinearLayout
+                            android:id="@+id/layout_DCI2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15px"
+                            android:orientation="horizontal"
+                            android:visibility="gone">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10px">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="65px"
+                                    android:text="@string/rs485_port"
+                                    android:textColor="@android:color/white"
+                                    android:textSize="25px" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="38px"
+                                    android:text="@string/protocol_address"
+                                    android:textColor="@android:color/white"
+                                    android:textSize="25px" />
+
+                                <EditText
+                                    android:id="@+id/eTAddr2"
+                                    style="@style/CEditText"
+                                    android:layout_width="150px"
+                                    android:layout_marginLeft="18px"
+                                    android:layout_marginTop="1px"
+                                    android:layout_marginBottom="1px"
+                                    android:imeOptions="actionDone"
+                                    android:inputType="number"
+                                    android:maxLength="3" />
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+
+                        <!--设备序列号、地址-->
+                        <LinearLayout
+                            android:id="@+id/layout_device_serial_number"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15px"
+                            android:orientation="vertical"
+                            android:visibility="gone">
+
+                            <!--设备序列表-->
+                            <LinearLayout
+                                android:id="@+id/layout_device_serial_number_1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10px"
+                                    android:text="@string/serial_number"
+                                    android:textColor="@android:color/white"
+                                    android:textSize="25px" />
+
+
+                                <EditText
+                                    android:id="@+id/eTPC_devsn"
+                                    style="@style/CEditText"
+                                    android:layout_width="300px"
+                                    android:layout_marginLeft="38px"
+                                    android:layout_marginTop="1px"
+                                    android:layout_marginBottom="1px"
+                                    android:hint="@string/please_input_24_place"
+                                    android:imeOptions="actionDone"
+                                    android:inputType="text"
+                                    android:maxLength="24" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="45px"
+                                        android:text="@string/protocol_Sys_address"
+                                        android:textColor="@android:color/white"
+                                        android:textSize="25px" />
+
+
+                                    <EditText
+                                        android:id="@+id/eTSysRtuId"
+                                        style="@style/CEditText"
+                                        android:layout_width="120px"
+                                        android:layout_marginLeft="38px"
+                                        android:layout_marginTop="1px"
+                                        android:layout_marginBottom="1px"
+                                        android:imeOptions="actionDone"
+                                        android:inputType="number"
+                                        android:maxLength="3" />
+
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <!--地址-->
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="15px">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="80px"
+                                    android:text="@string/protocol_address"
+                                    android:textColor="@android:color/white"
+                                    android:textSize="25px" />
+
+                                <ListView
+                                    android:id="@+id/listRtuID"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="100px"
+                                    android:layout_marginLeft="38px">
+
+                                </ListView>
+
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+
+                        <!--heNan-->
+                        <LinearLayout
+                            android:id="@+id/layout_heNan"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10px"
+                            android:orientation="vertical"
+                            android:visibility="gone">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5px">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="65px"
+                                    android:text="@string/institution_code"
+                                    android:textColor="@android:color/white"
+                                    android:textSize="25px" />
+
+                                <EditText
+                                    android:id="@+id/eTHeNanOrg"
+                                    style="@style/CEditText"
+                                    android:layout_width="150px"
+                                    android:layout_marginLeft="18px"
+                                    android:layout_marginTop="1px"
+                                    android:layout_marginBottom="1px"
+                                    android:hint="@string/please_input_7_place"
+                                    android:imeOptions="actionDone"
+                                    android:inputType="text"
+                                    android:maxLength="7" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5px">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="65px"
+                                    android:text="@string/device_code"
+                                    android:textColor="@android:color/white"
+                                    android:textSize="25px" />
+
+                                <EditText
+                                    android:id="@+id/eTHeNanDevAddr"
+                                    style="@style/CEditText"
+                                    android:layout_width="150px"
+                                    android:layout_marginLeft="18px"
+                                    android:layout_marginTop="1px"
+                                    android:layout_marginBottom="1px"
+                                    android:hint="@string/please_input_7_place"
+                                    android:imeOptions="actionDone"
+                                    android:inputType="text"
+                                    android:maxLength="7" />
+
+                            </LinearLayout>
+
+
+                            <!--校验方式-->
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5px">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="65px"
+                                    android:text="@string/crc"
+                                    android:textColor="@android:color/white"
+                                    android:textSize="25px" />
+
+                                <Spinner
+                                    android:id="@+id/spHeNancrc"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="18px"
+                                    android:animationCache="true"
+                                    android:drawSelectorOnTop="true"
+                                    android:popupBackground="@android:color/white" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <!--GuiZhou-->
+                        <LinearLayout
+                            android:id="@+id/layout_GuiZhou"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15px"
+                            android:orientation="vertical"
+                            android:visibility="gone">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="15px">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="80px"
+                                    android:text="@string/protocol_address"
+                                    android:textColor="@android:color/white"
+                                    android:textSize="25px" />
+
+                                <ListView
+                                    android:id="@+id/listRtuID_GuiZhou"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="100px"
+                                    android:layout_marginLeft="38px">
+
+                                </ListView>
+
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+
+                        <!--W300-->
+                        <LinearLayout
+                            android:id="@+id/layout_W300"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15px"
+                            android:orientation="vertical"
+                            android:visibility="gone">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="15px">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="80px"
+                                    android:text="@string/protocol_address"
+                                    android:textColor="@android:color/white"
+                                    android:textSize="25px" />
+
+                                <ListView
+                                    android:id="@+id/listRtuID_W300"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="100px"
+                                    android:layout_marginLeft="38px">
+
+                                </ListView>
+
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+
+                        <!--SiChuan-->
+                        <LinearLayout
+                            android:id="@+id/layout_SiChuan"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15px"
+                            android:orientation="vertical"
+                            android:visibility="gone">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="15px">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="80px"
+                                    android:text="@string/protocol_address"
+                                    android:textColor="@android:color/white"
+                                    android:textSize="25px" />
+
+                                <ListView
+                                    android:id="@+id/listRtuID_SiChuan"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="100px"
+                                    android:layout_marginLeft="38px">
+
+                                </ListView>
+
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+
+                        <!--解析模式-->
+                        <LinearLayout
+                            android:id="@+id/layout_AnalysisMode"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15px"
+                            android:visibility="gone">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="65px"
+                                android:text="@string/analysisMode"
+                                android:textColor="@android:color/white"
+                                android:textSize="25px" />
+
+                            <Spinner
+                                android:id="@+id/spAnalysisMode"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="18px"
+                                android:animationCache="true"
+                                android:drawSelectorOnTop="true"
+                                android:popupBackground="@android:color/white" />
+
+                        </LinearLayout>
+
+
+                        <!--校验模式-->
+                        <LinearLayout
+                            android:id="@+id/layout_CrcMode"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15px"
+                            android:visibility="gone">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="65px"
+                                android:text="@string/crcMode"
+                                android:textColor="@android:color/white"
+                                android:textSize="25px" />
+
+                            <Spinner
+                                android:id="@+id/spCrcMode"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="18px"
+                                android:animationCache="true"
+                                android:drawSelectorOnTop="true"
+                                android:popupBackground="@android:color/white" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="25px"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:layout_width="720px"
+                                android:layout_height="5px"
+                                android:background="@drawable/workline_line" />
+                        </LinearLayout>
+
+                        <!--主动上传间隔-->
+                        <LinearLayout
+                            android:id="@+id/layout_updateTime"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15px"
+                            android:visibility="gone">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="113px"
+                                android:shadowDx="1"
+                                android:shadowDy="1"
+                                android:shadowRadius="5"
+                                android:text="@string/protocolUpdateSpace"
+                                android:textColor="@android:color/white"
+                                android:textSize="25px" />
+
+                            <EditText
+                                android:id="@+id/eTProtocolUpdateSec"
+                                style="@style/CEditText"
+                                android:layout_marginLeft="15px"
+                                android:ems="4"
+                                android:imeOptions="actionDone"
+                                android:inputType="number" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <!--校准数据上传-->
+                            <LinearLayout
+
+                                android:layout_width="0px"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="15px"
+                                android:layout_weight="1">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="113px"
+                                    android:shadowDx="1"
+                                    android:shadowDy="1"
+                                    android:shadowRadius="5"
+                                    android:text="@string/cal_data_upload"
+                                    android:textColor="@android:color/white"
+                                    android:textSize="25px" />
+
+                                <ToggleButton
+                                    android:id="@+id/tBtnJZSZSC"
+                                    android:layout_width="92px"
+                                    android:layout_height="42px"
+                                    android:layout_marginLeft="15px"
+                                    android:background="@drawable/togglebtn"
+                                    android:text="@string/cal_data_upload"
+                                    android:textOff=" "
+                                    android:textOn=" " />
+                            </LinearLayout>
+
+                            <!--吸光度上传-->
+                            <LinearLayout
+                                android:id="@+id/layoutVOLUpdate"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="15px"
+                                android:visibility="gone">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="100px"
+                                    android:shadowDx="1"
+                                    android:shadowDy="1"
+                                    android:shadowRadius="5"
+                                    android:text="@string/absorb_upload"
+                                    android:textColor="@android:color/white"
+                                    android:textSize="25px" />
+
+                                <ToggleButton
+                                    android:id="@+id/tBtnXGDSC"
+                                    android:layout_width="92px"
+                                    android:layout_height="42px"
+                                    android:layout_marginLeft="15px"
+                                    android:background="@drawable/togglebtn"
+                                    android:text="@string/cal_data_upload"
+                                    android:textOff=" "
+                                    android:textOn=" " />
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </ScrollView>
+
+    </LinearLayout>
+</LinearLayout>

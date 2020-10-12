@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="392px"
+              android:layout_height="261px"
+              android:background="@drawable/dialog"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1"
+        android:gravity="center|center_vertical"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            >
+
+            <EditText
+                android:id="@+id/etHisYear"
+                style="@style/CEditText"
+                android:layout_marginTop="15px"
+                android:hint="@string/year"
+                android:ems="4"
+                android:visibility="gone"
+                android:imeOptions="actionDone"
+                android:inputType="number"/>
+            <EditText
+                android:id="@+id/etHisMonth"
+                style="@style/CEditText"
+                android:layout_marginTop="15px"
+                android:hint="@string/month"
+                android:visibility="gone"
+                android:ems="4"
+                android:imeOptions="actionDone"
+                android:inputType="number"/>
+            <EditText
+                android:id="@+id/etHisDay"
+                style="@style/CEditText"
+                android:layout_marginTop="15px"
+                android:hint="@string/day"
+                android:visibility="gone"
+                android:ems="4"
+                android:imeOptions="actionDone"
+                android:inputType="number"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/etHisHour"
+                style="@style/CEditText"
+                android:layout_marginTop="15px"
+                android:hint="@string/hour"
+                android:visibility="gone"
+                android:ems="4"
+                android:imeOptions="actionDone"
+                android:inputType="number"/>
+            <EditText
+                android:id="@+id/etHisMin"
+                style="@style/CEditText"
+                android:layout_marginTop="15px"
+                android:hint="@string/minute"
+                android:visibility="gone"
+                android:ems="4"
+                android:imeOptions="actionDone"
+                android:inputType="number"/>
+            <EditText
+                android:id="@+id/etHisSec"
+                style="@style/CEditText"
+                android:layout_marginTop="15px"
+                android:hint="@string/second"
+                android:visibility="gone"
+                android:ems="4"
+                android:imeOptions="actionDone"
+                android:inputType="number"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/etHisData"
+                style="@style/CEditText"
+                android:layout_marginTop="15px"
+                android:hint="@string/measurement_value"
+                android:ems="4"
+                android:imeOptions="actionDone"
+                android:inputType="numberDecimal" />
+
+            <EditText
+                android:id="@+id/etHisDateType"
+                style="@style/CEditText"
+                android:layout_marginTop="15px"
+                android:hint="@string/sign"
+                android:ems="4"
+                android:imeOptions="actionDone"
+                android:inputType="text"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center|center_vertical"
+        android:orientation="horizontal"
+        android:padding="5px">
+
+        <Button
+            android:id="@+id/D_OK"
+            style="@style/CButton_Dialog"
+            android:layout_margin="8px"
+            android:text="@string/sure"/>
+
+        <Button
+            android:id="@+id/D_Cancel"
+            style="@style/CButton_Dialog"
+            android:layout_margin="8px"
+            android:text="@string/cancel"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <!--返回标题栏-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40px"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/glucose_test"
+            android:textColor="@android:color/white"
+            android:textSize="20px" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_Glu1Setting"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_marginTop="25px"
+        android:layout_marginRight="10px"
+        android:layout_weight="1"
+        android:gravity="center|center_vertical"
+        android:orientation="horizontal">
+
+        <ToggleButton
+            android:id="@+id/tBtn_gul1"
+            android:layout_width="92px"
+            android:layout_height="42px"
+            android:layout_marginLeft="10px"
+            android:background="@drawable/togglebtn"
+            android:text="@string/real_time_measurement"
+            android:textOff=" "
+            android:textOn=" " />
+
+        <EditText
+            android:id="@+id/edGluA1"
+            style="@style/CEditText1"
+            android:layout_width="120px"
+            android:layout_marginLeft="10px"
+            android:ems="4"
+            android:imeOptions="actionDone"
+            android:inputType="numberSigned|numberDecimal" />
+
+        <EditText
+            android:id="@+id/edGluB1"
+            style="@style/CEditText1"
+            android:layout_width="120px"
+            android:layout_marginLeft="25px"
+            android:ems="4"
+            android:imeOptions="actionDone"
+            android:inputType="numberSigned|numberDecimal" />
+
+        <EditText
+            android:id="@+id/edGluCorrect1"
+            style="@style/CEditText1"
+            android:layout_width="120px"
+            android:layout_marginLeft="25px"
+            android:ems="4"
+            android:imeOptions="actionDone"
+            android:inputType="numberSigned|numberDecimal" />
+
+        <Button
+            android:id="@+id/btnGluABCSave"
+            android:layout_width="100px"
+            android:layout_height="45px"
+            android:layout_marginLeft="25px"
+            android:text="@string/save"
+            android:textColor="@color/white"
+            android:textSize="20px"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_Glu2Setting"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_marginRight="10px"
+        android:layout_weight="1"
+        android:gravity="center|center_vertical"
+        android:orientation="horizontal">
+
+        <ToggleButton
+            android:id="@+id/tBtn_gul2"
+            android:layout_width="92px"
+            android:layout_height="42px"
+            android:layout_marginLeft="10px"
+            android:background="@drawable/togglebtn"
+            android:text="@string/real_time_measurement"
+            android:textOff=" "
+            android:textOn=" " />
+
+        <EditText
+            android:id="@+id/edGluA2"
+            style="@style/CEditText1"
+            android:layout_width="120px"
+            android:layout_marginLeft="10px"
+            android:ems="4"
+            android:imeOptions="actionDone"
+            android:inputType="numberSigned|numberDecimal" />
+
+        <EditText
+            android:id="@+id/edGluB2"
+            style="@style/CEditText1"
+            android:layout_width="120px"
+            android:layout_marginLeft="25px"
+            android:ems="4"
+            android:imeOptions="actionDone"
+            android:inputType="numberSigned|numberDecimal" />
+
+        <EditText
+            android:id="@+id/edGluCorrect2"
+            style="@style/CEditText1"
+            android:layout_width="120px"
+            android:layout_marginLeft="25px"
+            android:ems="4"
+            android:imeOptions="actionDone"
+            android:inputType="numberSigned|numberDecimal" />
+
+        <Button
+            android:id="@+id/btnGluZXCSave"
+            android:layout_width="100px"
+            android:layout_height="45px"
+            android:layout_marginLeft="25px"
+            android:text="@string/save"
+            android:textColor="@color/white"
+            android:textSize="20px"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1"
+        android:gravity="center|center_vertical"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnDialogKBClose"
+            android:layout_width="100px"
+            android:layout_height="45px"
+            android:layout_marginTop="5px"
+            android:text="@string/back"
+            android:textColor="@color/white"
+            android:textSize="20px" />
+
+    </LinearLayout>
+
+</LinearLayout>

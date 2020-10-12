@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="800px"
+    android:layout_height="427px"
+    android:layout_marginTop="25px"
+    android:layout_marginLeft="25px"
+    android:background="@drawable/bj_p"
+    android:orientation="vertical">
+
+    <!--返回标题栏-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40px"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/btnReturnFlow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10px"
+            android:background="@null"
+            android:src="@drawable/btn_return" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+
+            android:text="恢复数据"
+            android:textColor="@android:color/white"
+            android:textSize="20px" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="115dp"
+        android:layout_marginTop="30px"
+        android:layout_marginBottom="25px"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <!--<Button
+            android:id="@+id/DRLSJL"
+            style="@style/CButton_Dialog"
+            android:layout_width="178dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="180px"
+            android:layout_marginTop="15px"
+            android:text="导入历史记录"
+            android:textSize="20px" />-->
+
+        <Button
+            android:id="@+id/HFLSSJ"
+            style="@style/CButton_Dialog"
+            android:layout_width="178dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30px"
+            android:layout_marginTop="15px"
+            android:text="全部恢复"
+            android:textSize="20px" />
+
+        <Button
+            android:id="@+id/gjsjhflssj"
+            style="@style/CButton_Dialog"
+            android:layout_width="178dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30px"
+            android:layout_marginTop="15px"
+            android:text="时间恢复"
+            android:textSize="20px" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50px"
+        android:layout_marginBottom="25px"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+       <!-- <Button
+            android:id="@+id/drjjjl"
+            style="@style/CButton_Dialog"
+            android:layout_width="178dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="180px"
+            android:layout_marginTop="15px"
+            android:text="导入校准记录"
+            android:textSize="20px" />-->
+
+       <!-- <Button
+            android:id="@+id/hfjzsj"
+            style="@style/CButton_Dialog"
+            android:layout_width="178dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30px"
+            android:layout_marginTop="15px"
+            android:text="恢复校准数据"
+            android:textSize="20px" />
+
+        <Button
+            android:id="@+id/gjsjhfjzsz"
+            style="@style/CButton_Dialog"
+            android:layout_width="178dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30px"
+            android:layout_marginTop="15px"
+            android:text="根据时间恢复校准数据"
+            android:textSize="20px" />-->
+    </LinearLayout>
+
+    <!--<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50px"
+        android:layout_marginBottom="25px"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/gjsjdrlssj"
+            style="@style/CButton_Dialog"
+            android:layout_width="178dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="180px"
+            android:layout_marginTop="15px"
+            android:text="根据时间导入历史数据"
+            android:textSize="20px" />
+
+        <Button
+            android:id="@+id/gjsjdrjzjl"
+            style="@style/CButton_Dialog"
+            android:layout_width="178dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30px"
+            android:layout_marginTop="15px"
+            android:text="根据时间导入校准记录"
+            android:textSize="20px" />
+    </LinearLayout>-->
+
+</LinearLayout>

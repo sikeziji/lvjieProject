@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="800px"
+        android:layout_height="427px"
+        android:layout_marginTop="25px"
+        android:background="@drawable/bj_p"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40px"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+
+                android:text="@string/device_info"
+                android:textColor="@android:color/white"
+                android:textSize="20px" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45px"
+                android:layout_marginTop="5px"
+                android:gravity="center_vertical">
+
+                <Button
+                    android:id="@+id/Btn_clearLog"
+                    style="@style/CButton_Dialog"
+                    android:layout_width="140px"
+                    android:layout_marginLeft="30px"
+                    android:text="@string/alarm_data_empty" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45px"
+                android:layout_marginTop="5px"
+                android:gravity="center_vertical">
+
+                <Button
+                    android:id="@+id/Btn_clearKBF"
+                    style="@style/CButton_Dialog"
+                    android:layout_width="140px"
+                    android:layout_marginLeft="30px"
+                    android:text="@string/calibration_data_empty" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45px"
+                android:layout_marginTop="5px"
+                android:gravity="center_vertical">
+
+                <Button
+                    android:id="@+id/Btn_clearOperation"
+                    style="@style/CButton_Dialog"
+                    android:layout_width="140px"
+                    android:layout_marginLeft="30px"
+                    android:text="@string/operation_data_empty"
+                    android:visibility="invisible" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

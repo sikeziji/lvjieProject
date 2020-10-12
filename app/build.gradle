@@ -1,0 +1,93 @@
+apply plugin: 'com.android.application'
+apply plugin: 'findbugs'
+
+
+task findbugs(type: FindBugs, dependsOn: 'assembleDebug') {
+
+    ignoreFailures = true
+    effort = "default"
+    reportLevel = "high"
+    println("$project.buildDir")
+    classes = files("$project.buildDir/intermediates/classes")
+    source = fileTree("src/main/java/")
+    classpath = files()
+    reports {
+        xml.enabled = false
+        html.enabled = true
+        xml {
+            destination "$project.buildDir/findbugs.xml"
+        }
+        html {
+            destination "$project.buildDir/findbugs.html"
+        }
+    }
+    classpath = files()
+}
+//noinspection GroovyMissingReturnStatement
+android {
+    compileSdkVersion 28
+    buildToolsVersion '28.0.3'
+
+    //需要加入的两句话
+    aaptOptions.cruncherEnabled = false
+    aaptOptions.useNewCruncher = false
+    lintOptions {
+        checkReleaseBuilds false
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found:
+        abortOnError false
+    }
+
+    defaultConfig {
+        applicationId "com.yzlm.cyl.cfragment"
+        minSdkVersion 19
+        targetSdkVersion 28
+        versionCode 1
+        versionName "2.25.23_Test"
+    }
+
+    //设置apk打包名称，注意引用
+    android.applicationVariants.all {
+        variant ->
+            variant.outputs.all {
+                output ->
+                    def outputFile = output.outputFile
+                    if (outputFile.name.contains("debug")){
+                        outputFileName = new File("../debug/", "Water_${defaultConfig.versionName}.apk")
+                    }
+                    if (outputFile.name.contains("release")){
+                        outputFileName = new File("../release/", "Water_${defaultConfig.versionName}.apk")
+                    }
+            }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            shrinkResources false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            zipAlignEnabled true
+        }
+    }
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+}
+
+repositories { flatDir { dirs 'libs' } }
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation project(':caoyilianglibrary')
+    testImplementation 'junit:junit:4.12'
+    implementation 'com.android.support:design:25.0.0'      //不要改
+    implementation 'com.android.support:support-v4:25.0.0'   //不要改
+    implementation 'com.android.support:appcompat-v7:25.0.0'     //不要改
+    implementation project(':weiqian')
+    implementation project(':jxl')
+    implementation project(':sdUpdate')
+    implementation files('libs/mpandroidchartlibrary-2-1-6.jar')
+    implementation files('libs/poi-3.15.jar')
+}

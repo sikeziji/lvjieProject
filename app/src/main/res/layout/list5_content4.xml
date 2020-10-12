@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/soft_bj"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/layout_calTitle"
+        android:layout_width="790px"
+        android:layout_height="36px"
+        android:layout_marginLeft="25px"
+        android:layout_marginTop="30px"
+        android:paddingLeft="5px"
+        android:paddingRight="5px"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="50px"
+            android:layout_height="36px"
+            android:background="#D6DAD6"
+            android:gravity="center"
+            android:text="ID"
+            android:textSize="20px"/>
+
+
+        <TextView
+            android:layout_width="2px"
+            android:layout_height="36px"
+            android:background="#00000000"
+            android:gravity="center"
+            android:textSize="20px"/>
+
+        <TextView
+            android:layout_width="210px"
+            android:layout_height="36px"
+            android:background="#D6DAD6"
+            android:gravity="center"
+            android:text="@string/time"
+            android:textSize="20px"/>
+
+        <TextView
+            android:layout_width="2px"
+            android:layout_height="36px"
+            android:background="#00000000"
+            android:gravity="center"
+            android:textSize="20px"/>
+
+        <TextView
+            android:layout_width="116px"
+            android:layout_height="36px"
+            android:background="#D6DAD6"
+            android:gravity="center"
+            android:text="@string/component"
+            android:textSize="20px"/>
+
+        <TextView
+            android:layout_width="2px"
+            android:layout_height="36px"
+            android:background="#00000000"
+            android:gravity="center"
+            android:textSize="20px"/>
+
+        <TextView
+            android:layout_width="108px"
+            android:layout_height="36px"
+            android:background="#D6DAD6"
+            android:gravity="center"
+            android:text="@string/range"
+            android:textSize="20px"/>
+
+        <TextView
+            android:layout_width="2px"
+            android:layout_height="36px"
+            android:background="#00000000"
+            android:gravity="center"
+            android:textSize="20px"/>
+
+        /*隐藏了F，本来layout_width="98px"*/
+        <TextView
+            android:layout_width="148px"
+            android:layout_height="36px"
+            android:background="#D6DAD6"
+            android:gravity="center"
+            android:text="K"
+            android:textSize="20px"/>
+
+        <TextView
+            android:layout_width="2px"
+            android:layout_height="36px"
+            android:background="#00000000"
+            android:gravity="center"
+            android:textSize="20px"/>
+
+        /*隐藏了F，本来layout_width="98px"*/
+        <TextView
+            android:layout_width="148px"
+            android:layout_height="36px"
+            android:background="#D6DAD6"
+            android:gravity="center"
+            android:text="B"
+            android:textSize="20px"/>
+
+        <TextView
+            android:layout_width="2px"
+            android:layout_height="36px"
+            android:background="#00000000"
+            android:gravity="center"
+            android:textSize="20px"/>
+
+        <TextView
+            android:layout_width="100px"
+            android:layout_height="36px"
+            android:background="#D6DAD6"
+            android:gravity="center"
+            android:visibility="gone"
+            android:text="F"
+            android:textSize="20px"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_calTitle_module"
+        android:layout_width="790px"
+        android:layout_height="36px"
+        android:layout_marginLeft="25px"
+        android:layout_marginTop="30px"
+        android:paddingLeft="5px"
+        android:visibility="gone"
+        android:paddingRight="5px"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="50px"
+            android:layout_height="36px"
+            android:background="#D6DAD6"
+            android:gravity="center"
+            android:text="ID"
+            android:textSize="20px"/>
+
+
+        <TextView
+            android:layout_width="2px"
+            android:layout_height="36px"
+            android:background="#00000000"
+            android:gravity="center"
+            android:textSize="20px"/>
+
+        <TextView
+            android:layout_width="210px"
+            android:layout_height="36px"
+            android:background="#D6DAD6"
+            android:gravity="center"
+            android:text="@string/time"
+            android:textSize="20px"/>
+
+        <TextView
+            android:layout_width="2px"
+            android:layout_height="36px"
+            android:background="#00000000"
+            android:gravity="center"
+            android:textSize="20px"/>
+
+        <TextView
+            android:layout_width="116px"
+            android:layout_height="36px"
+            android:background="#D6DAD6"
+            android:gravity="center"
+            android:text="@string/component"
+            android:textSize="20px"/>
+
+        <TextView
+            android:layout_width="2px"
+            android:layout_height="36px"
+            android:background="#00000000"
+            android:gravity="center"
+            android:textSize="20px"/>
+
+        <TextView
+            android:layout_width="108px"
+            android:layout_height="36px"
+            android:background="#D6DAD6"
+            android:gravity="center"
+            android:text="@string/dilutionMode"
+            android:textSize="20px"/>
+
+        <TextView
+            android:layout_width="2px"
+            android:layout_height="36px"
+            android:background="#00000000"
+            android:gravity="center"
+            android:textSize="20px"/>
+
+        /*隐藏了F，本来layout_width="98px"*/
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="36px"
+            android:background="#D6DAD6"
+            android:gravity="center"
+            android:text="D"
+            android:textSize="20px"/>
+
+        <TextView
+            android:layout_width="2px"
+            android:layout_height="36px"
+            android:background="#00000000"
+            android:gravity="center"
+            android:textSize="20px"/>
+
+        /*隐藏了F，本来layout_width="98px"*/
+
+        <TextView
+            android:layout_width="100px"
+            android:layout_height="36px"
+            android:background="#D6DAD6"
+            android:gravity="center"
+            android:visibility="gone"
+            android:text="F"
+            android:textSize="20px"/>
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listviewCalib"
+        android:layout_width="790px"
+        android:layout_height="333px"
+        android:layout_marginLeft="25px"
+        android:textColor="@android:color/white"
+        android:textSize="18px"/>
+
+    <LinearLayout
+        android:layout_width="790px"
+        android:layout_height="50px"
+        android:layout_marginLeft="20px"
+        android:layout_marginTop="10px"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/calib_firstPage"
+            style="@style/CButton_Dialog"
+            android:layout_marginLeft="30px"
+            android:text="@string/first_page" />
+
+        <Button
+            android:id="@+id/calib_lastPage"
+            style="@style/CButton_Dialog"
+            android:layout_marginLeft="30px"
+            android:text="@string/before_page" />
+
+        <Button
+            android:id="@+id/calib_nextPage"
+            style="@style/CButton_Dialog"
+            android:layout_marginLeft="30px"
+            android:text="@string/next_page" />
+
+        <Button
+            android:id="@+id/calib_tailPage"
+            style="@style/CButton_Dialog"
+            android:layout_marginLeft="30px"
+            android:text="@string/tail_page" />
+        <Button
+            android:id="@+id/Btn_cal_select"
+            style="@style/CButton_Dialog"
+            android:layout_marginLeft="30px"
+            android:text="@string/query" />
+        <Button
+            android:id="@+id/calib_export"
+            style="@style/CButton_Dialog"
+            android:layout_marginLeft="30px"
+            android:text="@string/export" />
+
+    </LinearLayout>
+
+</LinearLayout>

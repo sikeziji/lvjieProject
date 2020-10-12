@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_marginTop="50px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/layoutAutoRange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="invisible">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="65px"
+                android:shadowColor="@android:color/white"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="5"
+                android:text="@string/range_switch"
+                android:textColor="@android:color/white"
+                android:textSize="25px" />
+
+            <ToggleButton
+                android:id="@+id/tBtnLCQH"
+                android:layout_width="92px"
+                android:layout_height="42px"
+                android:layout_marginLeft="10px"
+                android:background="@drawable/togglebtn"
+                android:text="@string/range_switch"
+                android:textOff=" "
+                android:textOn=" " />
+
+            <TextView
+                android:id="@+id/txtCalUseRange"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50px"
+                android:textColor="@android:color/holo_red_light"
+                android:textSize="25px" />
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:id="@+id/layoutAutoRangeMeaSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40px"
+                android:shadowColor="@android:color/white"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="5"
+                android:text="@string/range_switch_mea"
+                android:textColor="@android:color/white"
+                android:textSize="25px" />
+
+            <ToggleButton
+                android:id="@+id/tBtnQHCL"
+                android:layout_width="92px"
+                android:layout_height="42px"
+                android:layout_marginLeft="10px"
+                android:background="@drawable/togglebtn"
+                android:text="@string/range_switch"
+                android:textOff=" "
+                android:textOn=" " />
+
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:id="@+id/layoutAutoRangeSwitchRecovery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="65px"
+                android:shadowColor="@android:color/white"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="5"
+                android:text="切换复原"
+                android:textColor="@android:color/white"
+                android:textSize="25px" />
+
+            <ToggleButton
+                android:id="@+id/tBtnQHFY"
+                android:layout_width="92px"
+                android:layout_height="42px"
+                android:layout_marginLeft="10px"
+                android:background="@drawable/togglebtn"
+                android:text="@string/range_switch"
+                android:textOff=" "
+                android:textOn=" " />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20px"
+        android:layout_marginBottom="60px"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/layoutRang1"
+            android:layout_width="match_parent"
+            android:layout_height="0px"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:visibility="invisible">
+
+
+            <ToggleButton
+                android:id="@+id/btnLC1"
+                android:layout_width="50px"
+                android:layout_height="50px"
+                android:layout_marginLeft="40px"
+                android:layout_marginTop="15px"
+                android:background="@drawable/toggle_hook"
+                android:text=" "
+                android:textOff=" "
+                android:textOn=" "
+                android:textSize="45px" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50px"
+                android:text="@string/range_1"
+                android:textColor="@android:color/white"
+                android:textSize="25px" />
+
+            <EditText
+                android:id="@+id/eTlcl1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10px"
+                android:ems="4"
+                android:enabled="false"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                android:textSize="25px" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10px"
+                android:text="~"
+                android:textColor="@android:color/white"
+                android:textSize="25px" />
+
+            <EditText
+                android:id="@+id/eTlch1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10px"
+                android:ems="4"
+                android:enabled="false"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                android:textSize="25px" />
+
+            <TextView
+                android:id="@+id/textlc1dw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10px"
+                android:textColor="@android:color/white"
+                android:textSize="25px" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutRang2"
+            android:layout_width="match_parent"
+            android:layout_height="0px"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:visibility="invisible">
+
+            <ToggleButton
+                android:id="@+id/btnLC2"
+                android:layout_width="50px"
+                android:layout_height="50px"
+                android:layout_marginLeft="40px"
+                android:layout_marginTop="15px"
+                android:background="@drawable/toggle_hook"
+                android:text=" "
+                android:textOff=" "
+                android:textOn=" "
+                android:textSize="45px" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50px"
+                android:text="@string/range_2"
+                android:textColor="@android:color/white"
+                android:textSize="25px" />
+
+            <EditText
+                android:id="@+id/eTlcl2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10px"
+                android:ems="4"
+                android:enabled="false"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                android:textSize="25px" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10px"
+                android:text="~"
+                android:textColor="@android:color/white"
+                android:textSize="25px" />
+
+            <EditText
+                android:id="@+id/eTlch2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10px"
+                android:ems="4"
+                android:enabled="false"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                android:textSize="25px" />
+
+            <TextView
+                android:id="@+id/textlc2dw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10px"
+                android:textColor="@android:color/white"
+                android:textSize="25px" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutRang3"
+            android:layout_width="match_parent"
+            android:layout_height="0px"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:visibility="invisible">
+
+            <ToggleButton
+                android:id="@+id/btnLC3"
+                android:layout_width="50px"
+                android:layout_height="50px"
+                android:layout_marginLeft="40px"
+                android:layout_marginTop="15px"
+                android:background="@drawable/toggle_hook"
+                android:text=" "
+                android:textOff=" "
+                android:textOn=" "
+                android:textSize="45px" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50px"
+                android:text="@string/range_3"
+                android:textColor="@android:color/white"
+                android:textSize="25px" />
+
+            <EditText
+                android:id="@+id/eTlcl3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10px"
+                android:ems="4"
+                android:enabled="false"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                android:textSize="25px" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10px"
+                android:text="~"
+                android:textColor="@android:color/white"
+                android:textSize="25px" />
+
+            <EditText
+                android:id="@+id/eTlch3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10px"
+                android:ems="4"
+                android:enabled="false"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                android:textSize="25px" />
+
+            <TextView
+                android:id="@+id/textlc3dw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10px"
+                android:textColor="@android:color/white"
+                android:textSize="25px" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

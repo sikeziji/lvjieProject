@@ -1,0 +1,662 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="800px"
+        android:layout_height="427px"
+        android:layout_marginTop="25px"
+        android:background="@drawable/bj_p"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40px"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btnReturn_p3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10px"
+                android:background="@null"
+                android:src="@drawable/btn_return" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/tcp_setting"
+                android:textColor="@android:color/white"
+                android:textSize="20px" />
+        </LinearLayout>
+
+
+        <!---->
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!--客户端配置-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20px"
+                    android:layout_marginTop="40px"
+                    android:focusableInTouchMode="true"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="40px"
+                        android:layout_weight="1"
+                        android:text="客户端配置"
+                        android:textColor="@android:color/white"
+                        android:textSize="25px" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20px"
+                        android:layout_marginLeft="40px"
+                        android:gravity="center_vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="40px"
+                                android:layout_weight="1"
+                                android:text="@string/outPut1"
+                                android:textColor="@android:color/white"
+                                android:textSize="25px" />
+
+                            <ToggleButton
+                                android:id="@+id/togTCP1"
+                                android:layout_width="92px"
+                                android:layout_height="42px"
+                                android:layout_marginLeft="20px"
+                                android:layout_weight="1"
+                                android:background="@drawable/togglebtn"
+                                android:textOff=" "
+                                android:textOn=" " />
+
+                            <LinearLayout
+                                android:id="@+id/layout_XYXZ1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="40px"
+                                    android:layout_weight="1"
+                                    android:text="@string/protocol_configuration"
+                                    android:textColor="@android:color/white"
+                                    android:textSize="25px" />
+
+                                <Spinner
+                                    android:id="@+id/spXY1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="40px"
+                                    android:animationCache="true"
+                                    android:drawSelectorOnTop="true"
+                                    android:popupBackground="@android:color/white" />
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layout_XY1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="40px"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10px">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="40px"
+                                android:text="ip"
+                                android:textColor="@android:color/white"
+                                android:textSize="25px" />
+
+                            <EditText
+                                android:id="@+id/eTIp1"
+                                style="@style/CEditText"
+                                android:layout_width="180px"
+                                android:layout_marginLeft="38px"
+                                android:layout_marginTop="1px"
+                                android:layout_marginBottom="1px"
+                                android:imeOptions="actionDone" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="40px"
+                                android:text="@string/the_port_number"
+                                android:textColor="@android:color/white"
+                                android:textSize="25px" />
+
+                            <EditText
+                                android:id="@+id/eTPort1"
+                                style="@style/CEditText"
+                                android:layout_width="150px"
+                                android:layout_marginLeft="38px"
+                                android:layout_marginTop="1px"
+                                android:layout_marginBottom="1px"
+                                android:imeOptions="actionDone"
+                                android:inputType="number|numberSigned" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="40px"
+                        android:layout_marginTop="30px">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="40px"
+                                android:layout_weight="1"
+                                android:text="@string/outPut2"
+                                android:textColor="@android:color/white"
+                                android:textSize="25px" />
+
+                            <ToggleButton
+                                android:id="@+id/togTCP2"
+                                android:layout_width="92px"
+                                android:layout_height="42px"
+                                android:layout_marginLeft="20px"
+                                android:layout_weight="1"
+                                android:background="@drawable/togglebtn"
+                                android:textOff=" "
+                                android:textOn=" " />
+
+                            <LinearLayout
+                                android:id="@+id/layout_XYXZ2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="40px"
+                                    android:layout_weight="1"
+                                    android:text="@string/protocol_configuration"
+                                    android:textColor="@android:color/white"
+                                    android:textSize="25px" />
+
+                                <Spinner
+                                    android:id="@+id/spXY2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="40px"
+                                    android:animationCache="true"
+                                    android:drawSelectorOnTop="true"
+                                    android:popupBackground="@android:color/white" />
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layout_XY2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="40px"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10px">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="40px"
+                                android:text="ip"
+                                android:textColor="@android:color/white"
+                                android:textSize="25px" />
+
+                            <EditText
+                                android:id="@+id/eTIp2"
+                                style="@style/CEditText"
+                                android:layout_width="180px"
+                                android:layout_marginLeft="38px"
+                                android:layout_marginTop="1px"
+                                android:layout_marginBottom="1px"
+                                android:imeOptions="actionDone" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="40px"
+                                android:text="@string/the_port_number"
+                                android:textColor="@android:color/white"
+                                android:textSize="25px" />
+
+                            <EditText
+                                android:id="@+id/eTPort2"
+                                style="@style/CEditText"
+                                android:layout_width="150px"
+                                android:layout_marginLeft="38px"
+                                android:layout_marginTop="1px"
+                                android:layout_marginBottom="1px"
+                                android:imeOptions="actionDone"
+
+                                android:inputType="number|numberSigned" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30px"
+                        android:layout_marginLeft="40px"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="40px"
+                                android:layout_weight="1"
+                                android:text="@string/outPut3"
+                                android:textColor="@android:color/white"
+                                android:textSize="25px" />
+
+                            <ToggleButton
+                                android:id="@+id/togTCP3"
+                                android:layout_width="92px"
+                                android:layout_height="42px"
+                                android:layout_marginLeft="20px"
+                                android:layout_weight="1"
+                                android:background="@drawable/togglebtn"
+                                android:textOff=" "
+                                android:textOn=" " />
+
+                            <LinearLayout
+                                android:id="@+id/layout_XYXZ3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="40px"
+                                    android:layout_weight="1"
+                                    android:text="@string/protocol_configuration"
+                                    android:textColor="@android:color/white"
+                                    android:textSize="25px" />
+
+                                <Spinner
+                                    android:id="@+id/spXY3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="40px"
+                                    android:animationCache="true"
+                                    android:drawSelectorOnTop="true"
+                                    android:popupBackground="@android:color/white" />
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layout_XY3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="40px"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10px">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="40px"
+                                android:text="ip"
+                                android:textColor="@android:color/white"
+                                android:textSize="25px" />
+
+                            <EditText
+                                android:id="@+id/eTIp3"
+                                style="@style/CEditText"
+                                android:layout_width="180px"
+                                android:layout_marginLeft="38px"
+                                android:layout_marginTop="1px"
+                                android:layout_marginBottom="1px"
+                                android:imeOptions="actionDone" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="40px"
+                                android:text="@string/the_port_number"
+                                android:textColor="@android:color/white"
+                                android:textSize="25px" />
+
+                            <EditText
+                                android:id="@+id/eTPort3"
+                                style="@style/CEditText"
+                                android:layout_width="150px"
+                                android:layout_marginLeft="38px"
+                                android:layout_marginTop="1px"
+                                android:layout_marginBottom="1px"
+                                android:imeOptions="actionDone"
+                                android:inputType="number|numberSigned" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <!--服务端配置-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20px"
+                    android:layout_marginTop="40px"
+                    android:layout_marginBottom="40px"
+                    android:focusableInTouchMode="true"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="40px"
+                        android:layout_weight="1"
+                        android:text="服务端配置"
+                        android:textColor="@android:color/white"
+                        android:textSize="25px" />
+
+                    <!--配置1-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="40px"
+                        android:layout_marginTop="20px"
+                        android:gravity="center_vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="40px"
+                            android:gravity="center_vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/configured1"
+                                android:textColor="@android:color/white"
+                                android:textSize="25px" />
+
+                            <ToggleButton
+                                android:id="@+id/togServer1"
+                                android:layout_width="92px"
+                                android:layout_height="42px"
+                                android:layout_marginLeft="20px"
+                                android:layout_weight="1"
+                                android:background="@drawable/togglebtn"
+                                android:textOff=" "
+                                android:textOn=" " />
+
+                            <LinearLayout
+                                android:id="@+id/layout_XY4"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="40px"
+                                    android:layout_weight="1"
+                                    android:text="@string/protocol_configuration"
+                                    android:textColor="@android:color/white"
+                                    android:textSize="25px" />
+
+                                <Spinner
+                                    android:id="@+id/spXY4"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="40px"
+                                    android:animationCache="true"
+                                    android:drawSelectorOnTop="true"
+                                    android:popupBackground="@android:color/white" />
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layout_Server_XYXZ1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="40px"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10px">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="40px"
+                                android:text="ip"
+                                android:textColor="@android:color/white"
+                                android:textSize="25px" />
+
+                            <EditText
+                                android:id="@+id/eTIp4"
+                                style="@style/CEditText"
+                                android:layout_width="180px"
+                                android:layout_marginLeft="38px"
+                                android:layout_marginTop="1px"
+                                android:layout_marginBottom="1px"
+                                android:imeOptions="actionDone" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="40px"
+                                android:text="@string/the_port_number"
+                                android:textColor="@android:color/white"
+                                android:textSize="25px" />
+
+                            <EditText
+                                android:id="@+id/eTPort4"
+                                style="@style/CEditText"
+                                android:layout_width="150px"
+                                android:layout_marginLeft="38px"
+                                android:layout_marginTop="1px"
+                                android:layout_marginBottom="1px"
+                                android:imeOptions="actionDone"
+                                android:inputType="number|numberSigned" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                    <!--配置2-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="40px"
+                        android:layout_marginTop="20px"
+                        android:gravity="center_vertical"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="40px"
+                            android:gravity="center_vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/configured2"
+                                android:textColor="@android:color/white"
+                                android:textSize="25px" />
+
+                            <ToggleButton
+                                android:id="@+id/togServer2"
+                                android:layout_width="92px"
+                                android:layout_height="42px"
+                                android:layout_marginLeft="20px"
+                                android:layout_weight="1"
+                                android:background="@drawable/togglebtn"
+                                android:textOff=" "
+                                android:textOn=" " />
+
+                            <LinearLayout
+                                android:id="@+id/layout_XY5"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="40px"
+                                    android:layout_weight="1"
+                                    android:text="@string/protocol_configuration"
+                                    android:textColor="@android:color/white"
+                                    android:textSize="25px" />
+
+                                <Spinner
+                                    android:id="@+id/spXY5"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="40px"
+                                    android:animationCache="true"
+                                    android:drawSelectorOnTop="true"
+                                    android:popupBackground="@android:color/white" />
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layout_Server_XYXZ2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="40px"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10px">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="40px"
+                                android:text="ip"
+                                android:textColor="@android:color/white"
+                                android:textSize="25px" />
+
+                            <EditText
+                                android:id="@+id/eTIp5"
+                                style="@style/CEditText"
+                                android:layout_width="180px"
+                                android:layout_marginLeft="38px"
+                                android:layout_marginTop="1px"
+                                android:layout_marginBottom="1px"
+                                android:imeOptions="actionDone" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="40px"
+                                android:text="@string/the_port_number"
+                                android:textColor="@android:color/white"
+                                android:textSize="25px" />
+
+                            <EditText
+                                android:id="@+id/eTPort5"
+                                style="@style/CEditText"
+                                android:layout_width="150px"
+                                android:layout_marginLeft="38px"
+                                android:layout_marginTop="1px"
+                                android:layout_marginBottom="1px"
+                                android:imeOptions="actionDone"
+                                android:inputType="number|numberSigned" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</LinearLayout>

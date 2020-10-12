@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="50px">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_analog_test"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txt_analog_test_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20px"
+
+            android:shadowColor="@android:color/white"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="5"
+            android:text="@string/analog_test"
+            android:textColor="@android:color/white"
+            android:textSize="25px" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40px"
+            android:layout_marginTop="5px"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnIOTest"
+                android:layout_width="144px"
+                android:layout_height="35px"
+                android:layout_marginLeft="40px"
+                android:background="@drawable/btn_b"
+                android:paddingLeft="5px"
+                android:paddingRight="5px"
+
+                android:text="@string/output_test"
+                android:textAllCaps="false"
+                android:textSize="20px" />
+
+            <Button
+                android:id="@+id/btnTD12"
+                android:layout_width="144px"
+                android:layout_height="35px"
+                android:layout_marginLeft="40px"
+                android:background="@drawable/btn_b"
+                android:paddingLeft="5px"
+                android:paddingRight="5px"
+                android:text="@string/channel_1"
+                android:textAllCaps="false"
+                android:textSize="20px" />
+
+            <EditText
+                android:id="@+id/eTmnl"
+                style="@style/CEditText"
+                android:layout_marginTop="1px"
+                android:layout_marginBottom="1px"
+                android:ems="4"
+                android:imeOptions="actionDone"
+                android:inputType="numberDecimal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10px"
+                android:text="mA"
+                android:textColor="@android:color/white"
+                android:textSize="20px" />
+
+            <Button
+                android:id="@+id/btnAnalogTest"
+                android:layout_width="100px"
+                android:layout_height="35px"
+                android:layout_marginLeft="40px"
+                android:background="@drawable/btn_b"
+                android:paddingLeft="5px"
+                android:paddingRight="5px"
+                android:text="@string/sure"
+                android:textAllCaps="false"
+                android:textSize="20px" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="8px"
+            android:layout_marginTop="10px"
+            android:background="@drawable/line_h"
+            android:orientation="horizontal"></LinearLayout>
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20px"
+        android:layout_marginTop="5px"
+        android:shadowColor="@android:color/white"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="5"
+        android:text="@string/digital_out_test"
+        android:textColor="@android:color/white"
+        android:textSize="25px" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5px"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnType"
+            android:layout_width="120px"
+            android:layout_height="35px"
+            android:layout_marginLeft="40px"
+            android:background="@drawable/btn_b"
+            android:paddingLeft="5px"
+            android:paddingRight="5px"
+            android:text="@string/uart"
+            android:textAllCaps="false"
+            android:textSize="20px" />
+
+        <LinearLayout
+            android:id="@+id/layout_TcpTestCfg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+
+            <Button
+                android:id="@+id/btnTypeChannel"
+                android:layout_width="120px"
+                android:layout_height="35px"
+                android:layout_marginLeft="25px"
+                android:background="@drawable/btn_b"
+                android:paddingLeft="5px"
+                android:paddingRight="5px"
+                android:textAllCaps="false"
+                android:textSize="20px" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_uartTestCfg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btnSCBY"
+                android:layout_width="120px"
+                android:layout_height="35px"
+                android:layout_marginLeft="25px"
+                android:background="@drawable/btn_b"
+                android:paddingLeft="5px"
+                android:paddingRight="5px"
+                android:text="RS232"
+                android:textAllCaps="false"
+                android:textSize="20px" />
+
+            <Button
+                android:id="@+id/btNoIo"
+                android:layout_width="120px"
+                android:layout_height="35px"
+                android:layout_marginLeft="25px"
+                android:background="@drawable/btn_b"
+                android:paddingLeft="5px"
+                android:paddingRight="5px"
+                android:text="@string/outPut1"
+                android:textAllCaps="false"
+                android:textSize="20px" />
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btReHexAscii"
+            android:layout_width="64px"
+            android:layout_height="35px"
+            android:layout_marginLeft="25px"
+            android:background="@drawable/btn_b"
+            android:paddingLeft="5px"
+            android:paddingRight="5px"
+            android:text="@string/hex"
+            android:textAllCaps="false"
+            android:textSize="20px" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="75px"
+            android:shadowColor="@android:color/white"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="5"
+            android:text="协议测试"
+            android:textColor="@android:color/white"
+            android:textSize="25px" />
+
+        <Spinner
+            android:id="@+id/spXY"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40px"
+            android:animationCache="true"
+            android:drawSelectorOnTop="true"
+            android:popupBackground="@android:color/white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5px"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="40px"
+            android:layout_marginRight="30px"
+            android:layout_weight="1"
+            android:background="@drawable/test_bj"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txReceTest"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scrollbarAlwaysDrawVerticalTrack="true"
+                    android:scrollbars="vertical"
+                    android:text="@string/receivingArea"
+                    android:textColor="@android:color/white"
+                    android:textSize="15px" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnKSJS"
+                android:layout_width="70px"
+                android:layout_height="30px"
+                android:layout_marginBottom="10px"
+                android:background="@drawable/btn_b"
+                android:paddingLeft="5px"
+                android:paddingRight="5px"
+                android:text="@string/startReceive"
+                android:textAllCaps="false"
+                android:textSize="15px" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30px"
+            android:layout_marginRight="30px"
+            android:layout_weight="1"
+            android:background="@drawable/test_bj"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtSendMsg"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scrollbarAlwaysDrawVerticalTrack="true"
+                    android:scrollbars="vertical"
+                    android:text="@string/sendingArea"
+                    android:textColor="@android:color/white"
+                    android:textSize="15px" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10px"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/measurement_value"
+                    android:textColor="@android:color/white"
+                    android:textSize="20px" />
+
+                <EditText
+                    android:id="@+id/eTclz"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10px"
+                    android:ems="4"
+                    android:gravity="center"
+                    android:imeOptions="actionDone"
+                    android:inputType="numberDecimal"
+                    android:textSize="20px" />
+
+                <Button
+                    android:id="@+id/btnSend"
+                    android:layout_width="70px"
+                    android:layout_height="30px"
+                    android:layout_marginLeft="10px"
+                    android:background="@drawable/btn_b"
+                    android:paddingLeft="5px"
+                    android:paddingRight="5px"
+                    android:text="@string/sending"
+                    android:textAllCaps="false"
+                    android:textSize="15px" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

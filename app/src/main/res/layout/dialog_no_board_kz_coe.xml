@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15px"
+            android:layout_marginTop="10px"
+            android:text="@string/turbidityComCoe"
+            android:textColor="@color/white"
+            android:textSize="30px" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_KzRange1"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_marginTop="35px"
+        android:layout_weight="1"
+        android:focusableInTouchMode="true"
+        android:gravity="center|center_vertical"
+        android:visibility="gone"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15px"
+            android:text="@string/range1kz1"
+            android:textColor="@color/white"
+            android:textSize="20px" />
+
+        <EditText
+            android:id="@+id/edit_range1KZ1"
+            style="@style/CEditText1"
+            android:layout_marginLeft="10px"
+            android:ems="4"
+            android:imeOptions="actionDone"
+            android:inputType="numberSigned|numberDecimal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15px"
+            android:text="KZ2:"
+            android:textColor="@color/white"
+            android:textSize="20px" />
+
+        <EditText
+            android:id="@+id/edit_range1KZ2"
+            style="@style/CEditText1"
+            android:layout_marginLeft="10px"
+            android:ems="4"
+            android:imeOptions="actionDone"
+            android:inputType="numberSigned|numberDecimal" />
+
+        <LinearLayout
+            android:id="@+id/layout_Kz3Range1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15px"
+                android:text="KZ3:"
+                android:textColor="@color/white"
+                android:textSize="20px" />
+
+            <EditText
+                android:id="@+id/edit_range1KZ3"
+                style="@style/CEditText1"
+                android:layout_marginLeft="10px"
+                android:layout_marginRight="10px"
+                android:ems="4"
+                android:imeOptions="actionDone"
+                android:inputType="numberSigned|numberDecimal" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_KzRange2"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_marginTop="15px"
+        android:visibility="gone"
+        android:layout_weight="1"
+        android:focusableInTouchMode="true"
+        android:gravity="center|center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15px"
+            android:text="@string/range2kz1"
+            android:textColor="@color/white"
+            android:textSize="20px" />
+
+        <EditText
+            android:id="@+id/edit_range2KZ1"
+            style="@style/CEditText1"
+            android:layout_marginLeft="10px"
+            android:ems="4"
+            android:imeOptions="actionDone"
+            android:inputType="numberSigned|numberDecimal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15px"
+            android:text="KZ2:"
+            android:textColor="@color/white"
+            android:textSize="20px" />
+
+        <EditText
+            android:id="@+id/edit_range2KZ2"
+            style="@style/CEditText1"
+            android:layout_marginLeft="10px"
+            android:ems="4"
+            android:imeOptions="actionDone"
+            android:inputType="numberSigned|numberDecimal" />
+
+        <LinearLayout
+            android:id="@+id/layout_Kz3Range2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15px"
+                android:text="KZ3:"
+                android:textColor="@color/white"
+                android:textSize="20px" />
+
+            <EditText
+                android:id="@+id/edit_range2KZ3"
+                style="@style/CEditText1"
+                android:layout_marginLeft="10px"
+                android:ems="4"
+                android:layout_marginRight="10px"
+                android:imeOptions="actionDone"
+                android:inputType="numberSigned|numberDecimal" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_KzRange3"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_marginTop="15px"
+        android:visibility="gone"
+        android:layout_weight="1"
+        android:focusableInTouchMode="true"
+        android:gravity="center|center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15px"
+            android:text="@string/range3kz1"
+            android:textColor="@color/white"
+            android:textSize="20px" />
+
+        <EditText
+            android:id="@+id/edit_range3KZ1"
+            style="@style/CEditText1"
+            android:layout_marginLeft="10px"
+            android:ems="4"
+            android:imeOptions="actionDone"
+            android:inputType="numberSigned|numberDecimal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15px"
+            android:text="KZ2:"
+            android:textColor="@color/white"
+            android:textSize="20px" />
+
+        <EditText
+            android:id="@+id/edit_range3KZ2"
+            style="@style/CEditText1"
+            android:layout_marginLeft="10px"
+            android:ems="4"
+            android:imeOptions="actionDone"
+            android:inputType="numberSigned|numberDecimal" />
+
+        <LinearLayout
+            android:id="@+id/layout_Kz3Range3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15px"
+                android:text="KZ3:"
+                android:textColor="@color/white"
+                android:textSize="20px" />
+
+            <EditText
+                android:id="@+id/edit_range3KZ3"
+                style="@style/CEditText1"
+                android:layout_marginLeft="10px"
+                android:ems="4"
+                android:layout_marginRight="10px"
+                android:imeOptions="actionDone"
+                android:inputType="numberSigned|numberDecimal" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_marginTop="10px"
+        android:layout_marginBottom="10px"
+        android:layout_weight="1"
+        android:gravity="center|center_vertical"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnClose"
+            android:layout_width="100px"
+            android:layout_height="45px"
+            android:layout_marginLeft="10px"
+            android:text="@string/back"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="20px" />
+
+    </LinearLayout>
+
+</LinearLayout>

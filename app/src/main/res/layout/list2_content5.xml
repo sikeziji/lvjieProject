@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80px"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/eTy_comp"
+            style="@style/CEditText"
+            android:layout_marginLeft="100px"
+            android:ems="4"
+            android:imeOptions="actionDone"
+            android:inputType="number" />
+
+        <TextView
+            android:layout_width="80px"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15px"
+            android:text="@string/year"
+            android:textColor="@android:color/white"
+            android:textSize="25px" />
+
+        <EditText
+            android:id="@+id/eTM_comp"
+            style="@style/CEditText"
+            android:layout_marginLeft="60px"
+            android:ems="4"
+            android:imeOptions="actionDone"
+            android:inputType="number" />
+
+        <TextView
+            android:layout_width="80px"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15px"
+            android:text="@string/month"
+            android:textColor="@android:color/white"
+            android:textSize="25px" />
+
+        <EditText
+            android:id="@+id/eTd_comp"
+            style="@style/CEditText"
+            android:layout_marginLeft="60px"
+            android:ems="4"
+            android:imeOptions="actionDone"
+            android:inputType="number" />
+
+        <TextView
+            android:layout_width="80px"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15px"
+            android:text="@string/day"
+            android:textColor="@android:color/white"
+            android:textSize="25px" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20px"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/eTH_comp"
+            style="@style/CEditText"
+            android:layout_marginLeft="100px"
+            android:ems="4"
+            android:imeOptions="actionDone"
+            android:inputType="number" />
+
+        <TextView
+            android:layout_width="80px"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15px"
+            android:text="@string/hour"
+            android:textColor="@android:color/white"
+            android:textSize="25px" />
+
+        <EditText
+            android:id="@+id/eTm_comp"
+            style="@style/CEditText"
+            android:layout_marginLeft="60px"
+            android:ems="4"
+            android:imeOptions="actionDone"
+            android:inputType="number" />
+
+        <TextView
+            android:layout_width="80px"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15px"
+            android:text="@string/minute"
+            android:textColor="@android:color/white"
+            android:textSize="25px" />
+
+        <EditText
+            android:id="@+id/eTs_comp"
+            style="@style/CEditText"
+            android:layout_marginLeft="60px"
+            android:ems="4"
+            android:imeOptions="actionDone"
+            android:inputType="number" />
+
+        <TextView
+            android:layout_width="80px"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15px"
+            android:text="@string/second"
+            android:textColor="@android:color/white"
+            android:textSize="25px" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40px"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/Btn_timeManageOK_comp"
+            style="@style/CButton_Dialog"
+            android:layout_marginLeft="180px"
+            android:text="@string/setting" />
+        <Button
+            android:id="@+id/Btn_timeManageReset_comp"
+            style="@style/CButton_Dialog"
+            android:layout_marginLeft="25px"
+            android:text="@string/synchronization" />
+        <Button
+            android:id="@+id/Btn_timeManageRead_comp"
+            style="@style/CButton_Dialog"
+            android:layout_marginLeft="25px"
+            android:text="@string/read" />
+    </LinearLayout>
+
+</LinearLayout>

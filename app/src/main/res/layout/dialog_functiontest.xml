@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="392px"
+    android:layout_height="201px"
+    android:background="@drawable/dialog"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1"
+        android:gravity="center|center_vertical"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center|center_vertical"
+            >
+            <TextView
+                android:id="@+id/D_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:textSize="20px" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20px"
+            android:gravity="center|center_vertical"
+            >
+
+            <TextView
+                android:id="@+id/txtFunTestTemp"
+                android:layout_width="150px"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:gravity="center|center_vertical"
+                android:singleLine="false"
+                android:textSize="20px"
+                android:text="@string/func_temper" />
+            <TextView
+                android:id="@+id/txtFunTestPressure"
+                android:layout_width="80px"
+                android:layout_height="wrap_content"
+                android:gravity="center|center_vertical"
+                android:textColor="@android:color/white"
+                android:textSize="20px"
+                android:visibility="gone"
+                />
+
+            <TextView
+                android:id="@+id/txtFunTestTime"
+                android:layout_width="150px"
+                android:layout_height="wrap_content"
+                android:gravity="center|center_vertical"
+                android:textColor="@android:color/white"
+                android:textSize="20px"
+                android:text="@string/func_action_time" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center|center_vertical"
+        android:orientation="horizontal"
+        android:padding="10px">
+
+        <ImageButton
+            android:id="@+id/dialog_jjtz"
+            android:layout_width="144px"
+            android:layout_height="61px"
+            android:background="@android:color/transparent"
+            android:scaleType="fitXY"
+            android:src="@drawable/btn_jjtz" />
+    </LinearLayout>
+</LinearLayout>

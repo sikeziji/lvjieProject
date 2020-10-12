@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="30px"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="visible">
+
+            <ImageButton
+                android:id="@+id/btnReturn_p0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10px"
+                android:background="@null"
+                android:src="@drawable/btn_return" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0px"
+            android:layout_weight="0.2">
+
+            <LinearLayout
+                android:id="@+id/layout_zhcs_set"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:focusableInTouchMode="true">
+
+
+                <Spinner
+                    android:id="@+id/spCombinatorial"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="120px"
+                    android:animationCache="true"
+                    android:drawSelectorOnTop="true"
+                    android:popupBackground="@android:color/white"></Spinner>
+
+                <EditText
+                    android:id="@+id/edFlowSumNum"
+                    style="@style/CEditText"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20px"
+                    android:ems="4"
+                    android:imeOptions="actionDone"
+                    android:inputType="number"
+                    android:text="1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10px"
+                    android:text="@string/times"
+                    android:textColor="@android:color/white"
+                    android:textSize="25px" />
+
+                <Button
+                    android:id="@+id/BtnFlowAdd"
+                    style="@style/CButton_Dialog"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="50px"
+                    android:text="@string/add" />
+
+
+            </LinearLayout>
+
+
+            <ToggleButton
+                android:id="@+id/togBtnCombination"
+                android:layout_width="92px"
+                android:layout_height="42px"
+                android:layout_gravity="center"
+                android:layout_marginLeft="30px"
+                android:background="@drawable/togglebtn"
+                android:text="@string/combination_test"
+                android:textOff=" "
+                android:textOn=" " />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0px"
+            android:layout_weight="0.6">
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:focusableInTouchMode="true">
+
+                <LinearLayout
+                    android:id="@+id/gl_flow"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"></LinearLayout>
+            </HorizontalScrollView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutCombinatorialTestStart"
+            android:layout_width="match_parent"
+            android:layout_height="0px"
+            android:layout_weight="0.2"
+            android:gravity="right">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="160px"
+                android:text="@string/combination_test_info"
+                android:textColor="@color/white"
+                android:textSize="25px" />
+
+            <Button
+                android:id="@+id/BtnFlowStart"
+                style="@style/CButton_Dialog"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="50px"
+                android:text="@string/launch"
+                android:visibility="invisible" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

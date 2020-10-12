@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="332px"
+    android:layout_height="201px"
+    android:background="@drawable/dialog"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1"
+        android:gravity="center|center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:shadowColor="@android:color/white"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="5"
+            android:text="@string/loginUser"
+            android:textColor="@android:color/white"
+            android:textSize="25px" />
+
+        <Spinner
+            android:id="@+id/spLogIn"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20px"
+            android:animationCache="true"
+            android:drawSelectorOnTop="true"
+            android:popupBackground="@android:color/white"></Spinner>
+
+        <TextView
+            android:id="@+id/txtNowLoginName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20px"
+            android:text="@string/loginUser"
+            android:textColor="@android:color/white"
+            android:textSize="25px"
+            android:visibility="gone" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutLoginPassword"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1"
+        android:gravity="center|center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:shadowColor="@android:color/white"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="5"
+            android:text="@string/loginPassword"
+            android:textColor="@android:color/white"
+            android:textSize="25px" />
+
+        <EditText
+            android:id="@+id/D_ET"
+            style="@style/CEditText"
+            android:layout_marginLeft="20px"
+            android:ems="6"
+            android:imeOptions="actionDone"
+            android:inputType="numberPassword" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/layoutNewPassword"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1"
+        android:visibility="gone"
+        android:gravity="center|center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:shadowColor="@android:color/white"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="5"
+            android:text="@string/loginNewPassword"
+            android:textColor="@android:color/white"
+            android:textSize="25px" />
+
+        <EditText
+            android:id="@+id/edit_NewPassword"
+            style="@style/CEditText"
+            android:layout_marginLeft="20px"
+            android:ems="6"
+            android:imeOptions="actionDone"
+            android:inputType="numberPassword" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center|center_vertical"
+        android:orientation="horizontal"
+        android:padding="5px">
+
+        <Button
+            android:id="@+id/D_LogInOK"
+            style="@style/CButton_Dialog"
+            android:layout_margin="8px"
+            android:text="@string/login" />
+
+        <Button
+            android:id="@+id/D_LogInOut"
+            style="@style/CButton_Dialog"
+            android:layout_margin="8px"
+            android:visibility="gone"
+            android:text="@string/loginOut" />
+
+        <Button
+            android:id="@+id/D_LogInPasswordAmendOk"
+            style="@style/CButton_Dialog"
+            android:layout_margin="8px"
+            android:visibility="gone"
+            android:text="@string/sure" />
+
+        <Button
+            android:id="@+id/D_LogInPasswordAmend"
+            style="@style/CButton_Dialog"
+            android:visibility="gone"
+            android:layout_margin="8px"
+            android:text="@string/modifyPassword" />
+
+        <Button
+            android:id="@+id/D_LogInCancel"
+            style="@style/CButton_Dialog"
+            android:layout_margin="8px"
+            android:text="@string/cancel" />
+
+    </LinearLayout>
+</LinearLayout>

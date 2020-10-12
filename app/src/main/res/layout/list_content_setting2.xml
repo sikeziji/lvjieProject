@@ -1,0 +1,466 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20px">
+
+        <Button
+            android:id="@+id/btnSampleSysDev"
+            style="@style/CButton_Big"
+            android:layout_marginLeft="20px"
+            android:textColor="@color/white"
+            android:textSize="20px" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/layout_sampleA"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10px"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="70px"
+                android:text="@string/waterPumpSetTime"
+                android:textColor="@android:color/white"
+                android:textSize="25px" />
+
+            <EditText
+                android:id="@+id/eTcybsz"
+                style="@style/CEditText"
+                android:layout_marginBottom="1px"
+                android:layout_marginTop="1px"
+                android:ems="4"
+                android:imeOptions="actionDone"
+                android:inputType="number" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10px"
+                android:text="@string/second"
+                android:textColor="@android:color/white"
+                android:textSize="25px" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10px"
+                android:text="@string/second"
+                android:textColor="@android:color/white"
+                android:textSize="25px"
+                android:visibility="gone" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="55px"
+                android:text="@string/LiquidLevelAlarm"
+                android:textColor="@android:color/white"
+                android:textSize="25px" />
+
+            <Button
+                android:id="@+id/btnLevelSwitch1"
+                style="@style/CButton_Big"
+                android:layout_marginLeft="10px"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10px"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnCKSampleTest"
+                style="@style/CButton_Big"
+                android:layout_marginLeft="70px"
+                android:text="@string/doSample"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_sampleB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10px"
+            android:focusableInTouchMode="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="70px"
+                android:text="@string/waterPumpSetTime"
+                android:textColor="@android:color/white"
+                android:textSize="25px" />
+
+            <EditText
+                android:id="@+id/etSampleTime"
+                style="@style/CEditText"
+                android:layout_marginBottom="1px"
+                android:layout_marginTop="1px"
+                android:ems="4"
+                android:imeOptions="actionDone"
+                android:inputType="number" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10px"
+                android:text="@string/second"
+                android:textColor="@android:color/white"
+                android:textSize="25px" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10px"
+                android:text="秒"
+                android:textColor="@android:color/black"
+                android:textSize="25px"
+                android:visibility="gone" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="55px"
+                android:text="@string/LiquidLevelAlarm"
+                android:textColor="@android:color/white"
+                android:textSize="25px" />
+
+            <Button
+                android:id="@+id/btnLevelSwitch2"
+                style="@style/CButton_Big"
+                android:layout_marginLeft="10px"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10px"
+                android:text="@string/second"
+                android:textColor="@android:color/white"
+                android:textSize="25px"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10px"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnSampleTest"
+                style="@style/CButton_Big"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="70px"
+                android:text="@string/doSample"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/btnQX"
+                style="@style/CButton_Big"
+                android:layout_marginLeft="50px"
+                android:text="@string/clean"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/btnMix"
+                style="@style/CButton_Big"
+                android:layout_marginLeft="50px"
+                android:text="@string/mix"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/btnWaste"
+                style="@style/CButton_Big"
+                android:layout_marginLeft="50px"
+                android:text="@string/waste_discharge"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_sampleC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10px"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="70px"
+                android:text="@string/waterPumpSetTime"
+                android:textColor="@android:color/white"
+                android:textSize="25px" />
+
+            <EditText
+                android:id="@+id/eTkcysz"
+                style="@style/CEditText"
+                android:layout_marginBottom="1px"
+                android:layout_marginTop="1px"
+                android:ems="4"
+                android:imeOptions="actionDone"
+                android:inputType="number" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10px"
+                android:text="@string/second"
+                android:textColor="@android:color/white"
+                android:textSize="25px" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10px"
+                android:text="@string/second"
+                android:textColor="@android:color/white"
+                android:textSize="25px"
+                android:visibility="gone" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="55px"
+                android:text="@string/LiquidLevelAlarm"
+                android:textColor="@android:color/white"
+                android:textSize="25px" />
+
+            <Button
+                android:id="@+id/btnLevelSwitch3"
+                style="@style/CButton_Big"
+                android:layout_marginLeft="10px"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10px"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnKCYSampleTest"
+                style="@style/CButton_Big"
+                android:layout_marginLeft="70px"
+                android:text="@string/doSample"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_controlDevicesSetting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10px"
+            android:background="@drawable/line_h"
+            android:orientation="horizontal"></LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10px"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20px"
+                    android:shadowColor="@android:color/white"
+                    android:shadowDx="1"
+                    android:shadowDy="1"
+                    android:shadowRadius="5"
+                    android:text="@string/control_measure"
+                    android:textColor="@android:color/white"
+                    android:textSize="25px" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10px"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="70px"
+                    android:shadowColor="@android:color/white"
+                    android:shadowDx="1"
+                    android:shadowDy="1"
+                    android:shadowRadius="5"
+                    android:text="@string/channel"
+                    android:textColor="@android:color/white"
+                    android:textSize="25px" />
+
+                <Button
+                    android:id="@+id/btnChannel"
+                    style="@style/CButton_Big"
+                    android:layout_marginLeft="10px"
+                    android:textColor="@color/white"
+                    android:textSize="20px" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40px"
+                    android:text="@string/devices"
+                    android:textColor="@android:color/white"
+                    android:textSize="25px" />
+
+                <Button
+                    android:id="@+id/btnChannelDev"
+                    style="@style/CButton_Big"
+                    android:layout_marginLeft="10px"
+                    android:textColor="@color/white"
+                    android:textSize="20px" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40px"
+                    android:text="@string/current_status"
+                    android:textColor="@android:color/white"
+                    android:textSize="25px" />
+
+                <TextView
+                    android:id="@+id/txtDevStatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10px"
+                    android:text="———"
+                    android:textColor="@android:color/holo_red_light"
+                    android:textSize="22px" />
+
+                <TextView
+                    android:id="@+id/txtDevStatusUnit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10px"
+                    android:textColor="@android:color/white"
+                    android:textSize="22px" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutDevSetting"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20px"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="70px"
+                    android:shadowColor="@android:color/white"
+                    android:shadowDx="1"
+                    android:shadowDy="1"
+                    android:shadowRadius="5"
+                    android:text="@string/unit"
+                    android:textColor="@android:color/white"
+                    android:textSize="25px" />
+
+                <Button
+                    android:id="@+id/btnChannelUnit"
+                    style="@style/CButton_Big"
+                    android:layout_marginLeft="10px"
+                    android:textColor="@color/white"
+                    android:textSize="20px" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40px"
+                    android:text="@string/range"
+                    android:textColor="@android:color/white"
+                    android:textSize="25px" />
+
+                <EditText
+                    android:id="@+id/eTChannelRange"
+                    style="@style/CEditText"
+                    android:layout_marginTop="1px"
+                    android:layout_marginBottom="1px"
+                    android:ems="4"
+                    android:imeOptions="actionDone"
+                    android:inputType="number" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40px"
+                    android:text="@string/limit"
+                    android:textColor="@android:color/white"
+                    android:textSize="25px" />
+
+                <EditText
+                    android:id="@+id/eTChannelLimit"
+                    style="@style/CEditText"
+                    android:layout_marginTop="1px"
+                    android:layout_marginBottom="1px"
+                    android:ems="4"
+                    android:imeOptions="actionDone"
+                    android:inputType="number" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

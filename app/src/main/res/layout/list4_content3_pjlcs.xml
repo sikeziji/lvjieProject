@@ -1,0 +1,672 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="800px"
+        android:layout_height="427px"
+        android:layout_marginTop="25px"
+        android:background="@drawable/bj_p"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40px"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btnReturn_p1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10px"
+                android:background="@null"
+                android:src="@drawable/btn_return" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="250px"
+                android:text="@string/metering_par_options"
+                android:textColor="@android:color/white"
+                android:textSize="20px" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="200px"
+                android:layout_height="match_parent"
+                android:layout_marginTop="30px">
+
+                <Spinner
+                    android:id="@+id/spfwh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="60px"
+                    android:animationCache="true"
+                    android:drawSelectorOnTop="true"
+                    android:popupBackground="@android:color/white" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="15px"
+                android:focusableInTouchMode="true"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55px"
+                    android:focusableInTouchMode="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="90px"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="FES1"
+                            android:textColor="@android:color/white"
+                            android:textSize="12px" />
+
+                        <EditText
+                            android:id="@+id/eT_pjlcs_FES1"
+                            style="@style/CEditText"
+                            android:layout_height="40px"
+                            android:layout_marginLeft="0px"
+                            android:ems="4"
+                            android:imeOptions="actionDone"
+                            android:inputType="number" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="90px"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="20px"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="FET1"
+                            android:textColor="@android:color/white"
+                            android:textSize="12px" />
+
+                        <EditText
+                            android:id="@+id/eT_pjlcs_FET1"
+                            style="@style/CEditText"
+                            android:layout_height="40px"
+                            android:layout_marginLeft="0px"
+                            android:ems="4"
+                            android:imeOptions="actionDone"
+                            android:inputType="number" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="90px"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="20px"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="SE1"
+                            android:textColor="@android:color/white"
+                            android:textSize="12px" />
+
+                        <EditText
+                            android:id="@+id/eT_pjlcs_SE1"
+                            style="@style/CEditText"
+                            android:layout_height="40px"
+                            android:layout_marginLeft="0px"
+                            android:ems="4"
+                            android:imeOptions="actionDone"
+                            android:inputType="number" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="90px"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="20px"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="C-L"
+                            android:textColor="@android:color/white"
+                            android:textSize="12px" />
+
+                        <EditText
+                            android:id="@+id/eT_pjlcs_C_L"
+                            style="@style/CEditText"
+                            android:layout_height="40px"
+                            android:layout_marginLeft="0px"
+                            android:ems="4"
+                            android:imeOptions="actionDone"
+                            android:inputType="number" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="90px"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="20px"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="C-H"
+                            android:textColor="@android:color/white"
+                            android:textSize="12px" />
+
+                        <EditText
+                            android:id="@+id/eT_pjlcs_C_H"
+                            style="@style/CEditText"
+                            android:layout_height="40px"
+                            android:layout_marginLeft="0px"
+                            android:ems="4"
+                            android:imeOptions="actionDone"
+                            android:inputType="number" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55px"
+                    android:layout_marginTop="6px"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="90px"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="RS"
+                            android:textColor="@android:color/white"
+                            android:textSize="12px" />
+
+                        <EditText
+                            android:id="@+id/eT_pjlcs_RS"
+                            style="@style/CEditText"
+                            android:layout_height="40px"
+                            android:layout_marginLeft="0px"
+                            android:ems="4"
+                            android:imeOptions="actionDone"
+                            android:inputType="number" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="90px"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="20px"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="RT-L"
+                            android:textColor="@android:color/white"
+                            android:textSize="12px" />
+
+                        <EditText
+                            android:id="@+id/eT_pjlcs_RT"
+                            style="@style/CEditText"
+                            android:layout_height="40px"
+                            android:layout_marginLeft="0px"
+                            android:ems="4"
+                            android:imeOptions="actionDone"
+                            android:inputType="number" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="90px"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="20px"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="C-L"
+                            android:textColor="@android:color/white"
+                            android:textSize="12px" />
+
+                        <EditText
+                            android:id="@+id/eT_pjlcs_C_L_1"
+                            style="@style/CEditText"
+                            android:layout_height="40px"
+                            android:layout_marginLeft="0px"
+                            android:ems="4"
+                            android:imeOptions="actionDone"
+                            android:inputType="number" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="90px"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="20px"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="C-H"
+                            android:textColor="@android:color/white"
+                            android:textSize="12px" />
+
+                        <EditText
+                            android:id="@+id/eT_pjlcs_C_H_1"
+                            style="@style/CEditText"
+                            android:layout_height="40px"
+                            android:layout_marginLeft="0px"
+                            android:ems="4"
+                            android:imeOptions="actionDone"
+                            android:inputType="number" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="90px"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="20px"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="RT-H"
+                            android:textColor="@android:color/white"
+                            android:textSize="12px" />
+
+                        <EditText
+                            android:id="@+id/eT_pjlcs_RT_H"
+                            style="@style/CEditText"
+                            android:layout_height="40px"
+                            android:layout_marginLeft="0px"
+                            android:ems="4"
+                            android:imeOptions="actionDone"
+                            android:inputType="number" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55px"
+                    android:layout_marginTop="6px"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="90px"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="SES2"
+                            android:textColor="@android:color/white"
+                            android:textSize="12px" />
+
+                        <EditText
+                            android:id="@+id/eT_pjlcs_SES2"
+                            style="@style/CEditText"
+                            android:layout_height="40px"
+                            android:layout_marginLeft="0px"
+                            android:ems="4"
+                            android:imeOptions="actionDone"
+                            android:inputType="number" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="90px"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="20px"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="C-L"
+                            android:textColor="@android:color/white"
+                            android:textSize="12px" />
+
+                        <EditText
+                            android:id="@+id/eT_pjlcs_CL"
+                            style="@style/CEditText"
+                            android:layout_height="40px"
+                            android:layout_marginLeft="0px"
+                            android:ems="4"
+                            android:imeOptions="actionDone"
+                            android:inputType="number" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="90px"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="20px"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="C-H"
+                            android:textColor="@android:color/white"
+                            android:textSize="12px" />
+
+                        <EditText
+                            android:id="@+id/eT_pjlcs_CH"
+                            style="@style/CEditText"
+                            android:layout_height="40px"
+                            android:layout_marginLeft="0px"
+                            android:ems="4"
+                            android:imeOptions="actionDone"
+                            android:inputType="number" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55px"
+                    android:layout_marginTop="6px"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="90px"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="FLS"
+                            android:textColor="@android:color/white"
+                            android:textSize="12px" />
+
+                        <EditText
+                            android:id="@+id/eT_pjlcs_FLS"
+                            style="@style/CEditText"
+                            android:layout_height="40px"
+                            android:layout_marginLeft="0px"
+                            android:ems="4"
+                            android:imeOptions="actionDone"
+                            android:inputType="number" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="90px"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="20px"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="EVT"
+                            android:textColor="@android:color/white"
+                            android:textSize="12px" />
+
+                        <EditText
+                            android:id="@+id/eT_pjlcs_EVT"
+                            style="@style/CEditText"
+                            android:layout_height="40px"
+                            android:layout_marginLeft="0px"
+                            android:ems="4"
+                            android:imeOptions="actionDone"
+                            android:inputType="number" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="90px"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="20px"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="FLC-L"
+                            android:textColor="@android:color/white"
+                            android:textSize="12px" />
+
+                        <EditText
+                            android:id="@+id/eT_pjlcs_FLCL"
+                            style="@style/CEditText"
+                            android:layout_height="40px"
+                            android:layout_marginLeft="0px"
+                            android:ems="4"
+                            android:imeOptions="actionDone"
+                            android:inputType="number" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="90px"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="20px"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="FLC-H"
+                            android:textColor="@android:color/white"
+                            android:textSize="12px" />
+
+                        <EditText
+                            android:id="@+id/eT_pjlcs_FLCH"
+                            style="@style/CEditText"
+                            android:layout_height="40px"
+                            android:layout_marginLeft="0px"
+                            android:ems="4"
+                            android:imeOptions="actionDone"
+                            android:inputType="number" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55px"
+                    android:layout_marginTop="6px"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="90px"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="IS"
+                            android:textColor="@android:color/white"
+                            android:textSize="12px" />
+
+                        <EditText
+                            android:id="@+id/eT_pjlcs_IS"
+                            style="@style/CEditText"
+                            android:layout_height="40px"
+                            android:layout_marginLeft="0px"
+                            android:ems="4"
+                            android:imeOptions="actionDone"
+                            android:inputType="number" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="90px"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="20px"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="IT-H"
+                            android:textColor="@android:color/white"
+                            android:textSize="12px" />
+
+                        <EditText
+                            android:id="@+id/eT_pjlcs_IT_H"
+                            style="@style/CEditText"
+                            android:layout_height="40px"
+                            android:layout_marginLeft="0px"
+                            android:ems="4"
+                            android:imeOptions="actionDone"
+                            android:inputType="number" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="90px"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="20px"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="IT-L"
+                            android:textColor="@android:color/white"
+                            android:textSize="12px" />
+
+                        <EditText
+                            android:id="@+id/eT_pjlcs_IT_L"
+                            style="@style/CEditText"
+                            android:layout_height="40px"
+                            android:layout_marginLeft="0px"
+                            android:ems="4"
+                            android:imeOptions="actionDone"
+                            android:inputType="number" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55px"
+                    android:layout_marginTop="6px"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="90px"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="EMS"
+                            android:textColor="@android:color/white"
+                            android:textSize="12px" />
+
+                        <EditText
+                            android:id="@+id/eT_pjlcs_EMS"
+                            style="@style/CEditText"
+                            android:layout_height="40px"
+                            android:layout_marginLeft="0px"
+                            android:ems="4"
+                            android:imeOptions="actionDone"
+                            android:inputType="number" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="90px"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="20px"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="EMT-H"
+                            android:textColor="@android:color/white"
+                            android:textSize="12px" />
+
+                        <EditText
+                            android:id="@+id/eT_pjlcs_EMT_H"
+                            style="@style/CEditText"
+                            android:layout_height="40px"
+                            android:layout_marginLeft="0px"
+                            android:ems="4"
+                            android:imeOptions="actionDone"
+                            android:inputType="number" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="90px"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="20px"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="EMT-L"
+                            android:textColor="@android:color/white"
+                            android:textSize="12px" />
+
+                        <EditText
+                            android:id="@+id/eT_pjlcs_EMT_L"
+                            style="@style/CEditText"
+                            android:layout_height="40px"
+                            android:layout_marginLeft="0px"
+                            android:ems="4"
+                            android:imeOptions="actionDone"
+                            android:inputType="number" />
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/Btn_pjlcs_save"
+                        style="@style/CButton_Dialog"
+                        android:layout_gravity="bottom"
+                        android:layout_marginLeft="115px"
+                        android:text="@string/save" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

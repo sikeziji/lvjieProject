@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="800px"
+        android:layout_height="427px"
+        android:layout_marginTop="25px"
+        android:background="@drawable/bj_p"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40px"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btnNoBoardReturn_p2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10px"
+                android:background="@null"
+                android:src="@drawable/btn_return" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/adminiPar"
+                android:textColor="@android:color/white"
+                android:textSize="20px" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/list2con1line1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100px"
+                android:layout_marginTop="31px"
+                android:focusableInTouchMode="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20px"
+                    android:shadowDx="1"
+                    android:shadowDy="1"
+                    android:shadowRadius="5"
+                    android:text="@string/LowLimit"
+                    android:textColor="@android:color/white"
+                    android:textSize="25px" />
+                <EditText
+                    android:id="@+id/eTLimitValue"
+                    style="@style/CEditText"
+                    android:layout_width="120px"
+                    android:layout_marginLeft="20px"
+                    android:ems="4"
+                    android:imeOptions="actionDone"
+                    android:inputType="numberSigned|numberDecimal" />
+
+                <EditText
+                    android:id="@+id/eTLimitLow"
+                    style="@style/CEditText"
+                    android:layout_width="120px"
+                    android:layout_marginLeft="20px"
+                    android:ems="4"
+                    android:imeOptions="actionDone"
+                    android:inputType="numberSigned|numberDecimal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20px"
+                    android:text=" ~ "
+                    android:textColor="@android:color/white"
+                    android:textSize="25px" />
+
+                <EditText
+                    android:id="@+id/eTLimitHigh"
+                    style="@style/CEditText"
+                    android:layout_width="120px"
+                    android:layout_marginLeft="20px"
+                    android:ems="4"
+                    android:imeOptions="actionDone"
+                    android:inputType="numberSigned|numberDecimal" />
+
+
+                <ToggleButton
+                    android:id="@+id/BtnLimitSwitch"
+                    android:layout_width="92px"
+                    android:layout_height="42px"
+                    android:layout_marginLeft="10px"
+                    android:background="@drawable/togglebtn"
+                    android:textOff=" "
+                    android:textOn=" " />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50px"
+                android:layout_marginTop="30px"
+                android:focusableInTouchMode="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20px"
+                    android:shadowDx="1"
+                    android:shadowDy="1"
+                    android:shadowRadius="5"
+                    android:text="@string/quantitativeLimit"
+                    android:textColor="@android:color/white"
+                    android:textSize="25px" />
+                <EditText
+                    android:id="@+id/eTQtLimitValue"
+                    style="@style/CEditText"
+                    android:layout_width="120px"
+                    android:layout_marginLeft="20px"
+                    android:ems="4"
+                    android:imeOptions="actionDone"
+                    android:inputType="numberSigned|numberDecimal" />
+                <EditText
+                    android:id="@+id/eTQtLimitLow"
+                    style="@style/CEditText"
+                    android:layout_width="120px"
+                    android:layout_marginLeft="20px"
+                    android:ems="4"
+                    android:imeOptions="actionDone"
+                    android:inputType="numberSigned|numberDecimal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20px"
+                    android:text=" ~ "
+                    android:textColor="@android:color/white"
+                    android:textSize="25px" />
+
+                <EditText
+                    android:id="@+id/eTQtLimitHigh"
+                    style="@style/CEditText"
+                    android:layout_width="120px"
+                    android:layout_marginLeft="20px"
+                    android:ems="4"
+                    android:imeOptions="actionDone"
+                    android:inputType="numberSigned|numberDecimal" />
+
+
+                <ToggleButton
+                    android:id="@+id/BtnQtLimitSwitch"
+                    android:layout_width="92px"
+                    android:layout_height="42px"
+                    android:layout_marginLeft="10px"
+                    android:background="@drawable/togglebtn"
+                    android:textOff=" "
+                    android:textOn=" " />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100px"
+                android:layout_marginTop="30px"
+                android:focusableInTouchMode="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15px"
+                    android:shadowDx="1"
+                    android:shadowDy="1"
+                    android:shadowRadius="5"
+                    android:text="@string/alarmNowRange"
+                    android:textColor="@android:color/white"
+                    android:textSize="25px" />
+
+                <ToggleButton
+                    android:id="@+id/tBtnNowRange"
+                    android:layout_width="92px"
+                    android:layout_height="42px"
+                    android:layout_marginLeft="10px"
+                    android:background="@drawable/togglebtn"
+                    android:textOff=" "
+                    android:textOn=" " />
+
+                <LinearLayout
+                    android:id="@+id/mLayout_NowRangeSet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/eTLimitRange"
+                        style="@style/CEditText"
+                        android:layout_width="120px"
+                        android:layout_marginLeft="20px"
+                        android:ems="4"
+                        android:imeOptions="actionDone"
+                        android:inputType="numberSigned|numberDecimal" />
+
+                    <ToggleButton
+                        android:id="@+id/tBtnNowRangeOutLimit"
+                        android:layout_width="92px"
+                        android:layout_height="42px"
+                        android:layout_marginLeft="10px"
+                        android:background="@drawable/togglebtn"
+                        android:textOff=" "
+                        android:textOn=" " />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100px"
+                android:layout_marginTop="30px"
+                android:focusableInTouchMode="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15px"
+                    android:shadowDx="1"
+                    android:shadowDy="1"
+                    android:shadowRadius="5"
+                    android:text="@string/alarmDevRange"
+                    android:textColor="@android:color/white"
+                    android:textSize="25px" />
+
+                <ToggleButton
+                    android:id="@+id/tBtnDevRange"
+                    android:layout_width="92px"
+                    android:layout_height="42px"
+                    android:layout_marginLeft="10px"
+                    android:background="@drawable/togglebtn"
+                    android:textOff=" "
+                    android:textOn=" " />
+
+                <LinearLayout
+                    android:id="@+id/mLayout_DevRangeSet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/eTLimitDevRange"
+                        style="@style/CEditText"
+                        android:layout_width="120px"
+                        android:layout_marginLeft="20px"
+                        android:ems="4"
+                        android:imeOptions="actionDone"
+                        android:inputType="numberSigned|numberDecimal" />
+
+                    <ToggleButton
+                        android:id="@+id/tBtnDevRangeOutLimit"
+                        android:layout_width="92px"
+                        android:layout_height="42px"
+                        android:layout_marginLeft="10px"
+                        android:background="@drawable/togglebtn"
+                        android:textOff=" "
+                        android:textOn=" " />
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

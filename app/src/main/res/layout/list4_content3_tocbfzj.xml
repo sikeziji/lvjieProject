@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="800px"
+        android:layout_height="427px"
+        android:layout_marginTop="25px"
+        android:background="@drawable/bj_p"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40px"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btnReturn_p1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10px"
+                android:background="@null"
+                android:src="@drawable/btn_return" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/pump_value_components"
+                android:textColor="@android:color/white"
+                android:textSize="20px" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:id="@+id/layout_injectionPumpTest"
+                android:layout_width="390px"
+                android:layout_height="match_parent"
+                android:focusableInTouchMode="true"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/injectionPump"
+                        android:textColor="@android:color/white"
+                        android:textSize="22px" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_weight="1"
+                    android:focusableInTouchMode="true"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+
+                    <EditText
+                        android:id="@+id/editInjectionValue"
+                        style="@style/CEditText"
+                        android:layout_marginLeft="15px"
+                        android:ems="4"
+                        android:imeOptions="actionDone"
+                        android:inputType="numberDecimal"
+                        android:text="2.5" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10px"
+                        android:text="ml"
+                        android:textColor="@android:color/white"
+                        android:textSize="22px" />
+
+                    <ToggleButton
+                        android:id="@+id/togBtnDir"
+                        style="@style/CButton_Dialog"
+                        android:layout_marginLeft="15px"
+                        android:background="@drawable/toggle_botton"
+                        android:textAllCaps="false"
+                        android:textOff="@string/left"
+                        android:textOn="@string/right"
+                        android:textSize="18px" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_weight="1"
+                    android:focusableInTouchMode="true"
+                    android:gravity="center">
+
+                    <Button
+                        android:id="@+id/Btn_injectionPump_start"
+                        style="@style/CButton_Dialog"
+                        android:text="@string/start" />
+
+                    <Button
+                        android:id="@+id/Btn_injectionPump_zero"
+                        style="@style/CButton_Dialog"
+                        android:layout_marginLeft="15px"
+                        android:text="@string/zeroOperation" />
+
+                    <Button
+                        android:id="@+id/Btn_injectionPump_reset"
+                        style="@style/CButton_Dialog"
+                        android:layout_marginLeft="15px"
+                        android:text="@string/init" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/rotaryValve"
+                        android:textColor="@android:color/white"
+                        android:textSize="22px" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_weight="1"
+                    android:focusableInTouchMode="true"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/currentPosition"
+                        android:textColor="@android:color/white"
+                        android:textSize="22px" />
+
+                    <TextView
+                        android:id="@+id/Txt_position"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15px"
+                        android:textColor="@android:color/white"
+                        android:textSize="22px" />
+
+                    <Button
+                        android:id="@+id/Btn_injectionPump_read_position"
+                        style="@style/CButton_Dialog"
+                        android:layout_marginLeft="15px"
+                        android:text="@string/read" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_weight="1"
+                    android:focusableInTouchMode="true"
+                    android:gravity="center">
+
+                    <EditText
+                        android:id="@+id/edit_channel"
+                        style="@style/CEditText"
+                        android:layout_marginLeft="15px"
+                        android:ems="4"
+                        android:imeOptions="actionDone"
+                        android:inputType="numberDecimal"
+                        android:text="1" />
+
+
+                    <Button
+                        android:id="@+id/btnSwitchValve"
+                        style="@style/CButton_Dialog"
+                        android:layout_marginLeft="15px"
+                        android:text="@string/switchValve" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="362px"
+                android:layout_height="328px"
+                android:layout_marginTop="25px"
+                android:background="@drawable/valve_bj"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40px"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/valve_control"
+                        android:textColor="@android:color/white"
+                        android:textSize="25px" />
+                </LinearLayout>
+
+                <GridLayout
+                    android:id="@+id/GL_pbfzj"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10px"
+                    android:columnCount="4">
+
+                </GridLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

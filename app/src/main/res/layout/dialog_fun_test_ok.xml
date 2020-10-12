@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="332px"
+    android:layout_height="201px"
+    android:background="@drawable/dialog"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1"
+        android:gravity="center|center_vertical">
+
+        <TextView
+            android:id="@+id/D_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textSize="20px" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Linear_show"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center|center_vertical"
+        android:orientation="horizontal"
+        android:padding="5px">
+
+        <Button
+            android:id="@+id/Bth_high_low"
+            style="@style/CButton_Dialog"
+            android:layout_margin="8px"
+            android:text="@string/high" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20px"
+            android:text="@string/number"
+            android:textColor="@android:color/white"
+            android:textSize="25px" />
+
+        <EditText
+            android:id="@+id/eNumber"
+            style="@style/CEditText"
+            android:layout_margin="8px"
+            android:digits="1234567890"
+            android:ems="4"
+            android:imeOptions="actionDone"
+            android:inputType="numberDecimal" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center|center_vertical"
+        android:orientation="horizontal"
+        android:padding="5px">
+
+        <Button
+            android:id="@+id/D_OK"
+            style="@style/CButton_Dialog"
+            android:layout_margin="8px"
+            android:text="@string/sure" />
+
+        <Button
+            android:id="@+id/D_Cancel"
+            style="@style/CButton_Dialog"
+            android:layout_margin="8px"
+            android:text="@string/cancel" />
+    </LinearLayout>
+</LinearLayout>

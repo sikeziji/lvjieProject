@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_marginTop="35px"
+        android:layout_weight="1"
+        android:focusableInTouchMode="true"
+        android:gravity="center|center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15px"
+            android:text="@string/displayKDHC"
+            android:textColor="@color/white"
+            android:textSize="25px" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20px" />
+
+        <Spinner
+            android:id="@+id/spKDHCRange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:animationCache="true"
+            android:drawSelectorOnTop="true"
+            android:popupBackground="@android:color/white" />
+
+        <ToggleButton
+            android:id="@+id/togBtnKDHCManualRange"
+            android:layout_width="92px"
+            android:layout_height="42px"
+            android:layout_marginLeft="20px"
+            android:background="@drawable/togglebtn"
+            android:textOff=" "
+            android:textOn=" " />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_marginTop="10px"
+        android:layout_marginBottom="10px"
+        android:layout_weight="1"
+        android:gravity="center|center_vertical"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnClose"
+            android:layout_width="100px"
+            android:layout_height="45px"
+            android:layout_marginLeft="10px"
+            android:text="@string/back"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="20px" />
+
+    </LinearLayout>
+
+</LinearLayout>

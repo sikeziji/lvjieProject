@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="800px"
+        android:layout_height="427px"
+        android:layout_marginTop="25px"
+        android:background="@drawable/bj_p"
+        android:orientation="vertical">
+
+        <!--返回标题栏-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40px"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btnReturn_p1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10px"
+                android:background="@null"
+                android:src="@drawable/btn_return" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/metering_board_parC_setup"
+                android:textColor="@android:color/white"
+                android:textSize="20px" />
+        </LinearLayout>
+
+        <!--主内容区-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="200px"
+                android:layout_height="match_parent"
+                android:layout_marginTop="30px">
+
+                <Spinner
+                    android:id="@+id/spJlbcsc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="60px"
+                    android:animationCache="true"
+                    android:drawSelectorOnTop="true"
+                    android:popupBackground="@android:color/white" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="15px"
+                android:focusableInTouchMode="true"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="90px"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="260px"
+                        android:layout_height="wrap_content"
+                        android:focusableInTouchMode="true"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="120px"
+                                android:layout_height="wrap_content"
+                                android:gravity="right"
+                                android:text="@string/calcv1"
+                                android:textColor="@android:color/white"
+                                android:textSize="23px" />
+
+                            <EditText
+                                android:id="@+id/eT_jlbc_volume1"
+                                style="@style/CEditText"
+                                android:layout_height="40px"
+                                android:layout_marginLeft="10px"
+                                android:ems="4"
+                                android:imeOptions="actionDone"
+                                android:inputType="number" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:layout_marginTop="10px"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="120px"
+                                android:layout_height="wrap_content"
+                                android:gravity="right"
+                                android:text="@string/clacv2"
+                                android:textColor="@android:color/white"
+                                android:textSize="23px" />
+
+                            <EditText
+                                android:id="@+id/eT_jlbc_volume2"
+                                style="@style/CEditText"
+                                android:layout_height="40px"
+                                android:layout_marginLeft="10px"
+                                android:ems="4"
+                                android:imeOptions="actionDone"
+                                android:inputType="number" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:layout_marginTop="10px"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="120px"
+                                android:layout_height="wrap_content"
+                                android:text="@string/inSpeed"
+                                android:gravity="right"
+                                android:textColor="@android:color/white"
+                                android:textSize="23px" />
+
+                            <EditText
+                                android:id="@+id/eT_jlbc_infusionSpeed"
+                                style="@style/CEditText"
+                                android:layout_height="40px"
+                                android:layout_marginLeft="10px"
+                                android:ems="4"
+                                android:imeOptions="actionDone"
+                                android:inputType="number" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:layout_marginTop="10px"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="120px"
+                                android:layout_height="wrap_content"
+                                android:text="@string/backRowSpeed"
+                                android:gravity="right"
+                                android:textColor="@android:color/white"
+                                android:textSize="23px" />
+
+                            <EditText
+                                android:id="@+id/eT_jlbc_backRowSpeed"
+                                style="@style/CEditText"
+                                android:layout_height="40px"
+                                android:layout_marginLeft="10px"
+                                android:ems="4"
+                                android:imeOptions="actionDone"
+                                android:inputType="number" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:focusableInTouchMode="true"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <Button
+                                android:id="@+id/Btn_pjlbjlcs_tjjz"
+                                style="@style/CButton_Dialog"
+                                android:visibility="invisible"
+                                android:text="@string/volume_calibration" />
+
+                            <TextView
+                                android:layout_width="100px"
+                                android:gravity="right"
+                                android:layout_height="wrap_content"
+                                android:text="@string/BackRowTime"
+                                android:textColor="@android:color/white"
+                                android:textSize="23px" />
+
+                            <EditText
+                                android:id="@+id/eT_jlbc_backRowTime"
+                                style="@style/CEditText"
+                                android:layout_height="40px"
+                                android:layout_marginLeft="10px"
+                                android:ems="4"
+                                android:imeOptions="actionDone"
+                                android:inputType="number" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="10px"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="200px"
+                                android:layout_height="wrap_content"
+                                android:gravity="right"
+                                android:text="@string/prepumpOutTime"
+                                android:textColor="@android:color/white"
+                                android:textSize="23px" />
+
+                            <EditText
+                                android:id="@+id/eT_jlbc_infusionOutTime"
+                                style="@style/CEditText"
+                                android:layout_height="40px"
+                                android:layout_marginLeft="10px"
+                                android:ems="4"
+                                android:imeOptions="actionDone"
+                                android:inputType="number" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="10px"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="200px"
+                                android:layout_height="wrap_content"
+                                android:gravity="right"
+                                android:text="@string/high_number_of_points"
+                                android:textColor="@android:color/white"
+                                android:textSize="23px" />
+
+                            <EditText
+                                android:id="@+id/eT_jlbc_highNumberOfPoint"
+                                style="@style/CEditText"
+                                android:layout_height="40px"
+                                android:layout_marginLeft="10px"
+                                android:ems="4"
+                                android:imeOptions="actionDone"
+                                android:inputType="number" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="10px"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="200px"
+                                android:layout_height="wrap_content"
+                                android:gravity="right"
+                                android:text="@string/low_number_of_points"
+                                android:textColor="@android:color/white"
+                                android:textSize="23px" />
+
+                            <EditText
+                                android:id="@+id/eT_jlbc_lowNumberOfPoint"
+                                style="@style/CEditText"
+                                android:layout_height="40px"
+                                android:layout_marginLeft="10px"
+                                android:ems="4"
+                                android:imeOptions="actionDone"
+                                android:inputType="number" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:gravity="right"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/Btn_pjlbjlcs_save"
+                style="@style/CButton_Dialog"
+                android:layout_marginRight="55px"
+                android:text="@string/save" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

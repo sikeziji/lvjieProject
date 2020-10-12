@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <!--返回标题栏-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40px"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/btnReturnFlow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10px"
+            android:background="@null"
+            android:src="@drawable/btn_return" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="250px"
+            android:text="@string/flow_config_info"
+            android:textColor="@android:color/white"
+            android:textSize="20px" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20px"
+            android:layout_marginTop="10px">
+
+            <ListView
+                android:id="@+id/lvLocalityFlow"
+                android:layout_width="320px"
+                android:layout_height="wrap_content"></ListView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="30px"
+            android:orientation="vertical">
+
+            <Spinner
+                android:id="@+id/spFlow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:animationCache="true"
+                android:drawSelectorOnTop="true"
+                android:popupBackground="@android:color/white">
+
+            </Spinner>
+
+            <Button
+                android:id="@+id/btnflowRead"
+                style="@style/CButton_Big"
+                android:layout_marginTop="30px"
+                android:text="@string/read" />
+
+            <Button
+                android:id="@+id/btnflowSet"
+                style="@style/CButton_Big"
+                android:layout_marginTop="30px"
+                android:text="@string/single_setting"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/btnflowAllSet"
+                style="@style/CButton_Big"
+                android:layout_marginTop="30px"
+                android:text="@string/all_setting" />
+
+            <Button
+                android:id="@+id/btnflowClean"
+                style="@style/CButton_Big"
+                android:layout_marginTop="30px"
+                android:text="@string/empty"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/txtFlowCrcInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30px"
+                android:textColor="@android:color/black"
+                android:textSize="20px" />
+
+            <TextView
+                android:id="@+id/txtFlowUpdateInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30px"
+                android:gravity="center"
+                android:singleLine="false"
+                android:textColor="@android:color/black"
+                android:textSize="20px" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10px"
+            android:orientation="horizontal">
+
+            <ListView
+                android:id="@+id/lvDeviceFlow"
+                android:layout_width="320px"
+                android:layout_height="match_parent">
+
+
+            </ListView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

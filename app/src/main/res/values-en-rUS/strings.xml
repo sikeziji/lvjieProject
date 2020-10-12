@@ -1,0 +1,718 @@
+<resources>
+    <string name="app_name">Water</string>
+    <string name="SDZY">Meas</string>
+    <string name="LYCL">Z.S.meas</string>
+    <string name="GLCX">Flushing</string>
+    <string name="SDJZ">Cal.</string>
+    <string name="BYCL">S.S.1meas</string>
+    <string name="YBQX">Cleaning</string>
+    <string name="BY2CL">S.S.2meas</string>
+    <string name="CSZY">Intl.filling</string>
+    <string name="ZY">Meas</string>
+    <string name="XSJZ">Dilution Cal.</string>
+
+
+    <string name="tankTemperature">Tank temp</string>
+    <string name="meterBoxTemperature">Instrument box temp</string>
+    <string name="unitT">℃</string>
+    <string name="unitHour">hour</string>
+    <string name="unitMin">min</string>
+
+    <string name="autoJob">Auto Meas</string>
+    <string name="displayAutoJob">Auto meas</string>
+    <string name="displayManualJob">Manual meas</string>
+    <string name="continuousMea">Con.meas</string>
+    <string name="cycleMea">Per.meas</string>
+    <string name="intervalTime">Interval</string>
+    <string name="startTime">time</string>
+    <string name="devProtectTile">Water quality analyzer after-sales service information</string>
+    <string name="beforeMeaData">Previous measured value</string>
+    <string name="Pressure_CorrK">Pressure correction coefficient K</string>
+    <string name="Pressure_CorrB">Pressure correction coefficient B</string>
+    <string name="runningMode">Running mode</string>
+    <string name="meaMode">Meas mode</string>
+    <string name="name">Name</string>
+
+    <string-array name="jdqpz">
+        <item>Null</item>
+        <item>Pretreatment A</item>
+        <item>Bound R1</item>
+    </string-array>
+
+    <string-array name="reserve">
+        <item>Null</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+
+    <string-array name="cldw">
+        <item>mg/L</item>
+        <item>μg/L</item>
+        <item>ppm</item>
+        <item>ppb</item>
+    </string-array>
+
+    <string-array name="baud">
+        <item>2400bps</item>
+        <item>9600bps</item>
+        <item>14400bps</item>
+        <item>19200bps</item>
+        <item>38400bps</item>
+        <item>56000bps</item>
+        <item>57600bps</item>
+        <item>115200bps</item>
+    </string-array>
+    <string-array name="Gain">
+        <item>Null</item>
+        <item>Channel_1</item>
+        <item>Channel_2</item>
+        <item>Channel_3</item>
+        <item>Channel_4</item>
+    </string-array>
+    <string-array name="flow">
+        <item>Meas_1</item>
+        <item>Meas_2</item>
+        <item>Meas_3</item>
+        <item>Cal.1_1</item>
+        <item>Cal.1_2</item>
+        <item>Cal.1_3</item>
+        <item>Cal.2_1</item>
+        <item>Cal.2_2</item>
+        <item>Cal.2_3</item>
+        <item>Z.S.meas_1</item>
+        <item>Z.S.meas_2</item>
+        <item>Z.S.meas_3</item>
+        <item>S.S.1meas_1</item>
+        <item>S.S.1meas_2</item>
+        <item>S.S.1meas_3</item>
+        <item>S.S.2meas_1</item>
+        <item>S.S.2meas_2</item>
+        <item>S.S.2meas_3</item>
+        <item>Cleaning_0</item>
+        <item>Flushing_0</item>
+        <item>Intl.filling_0</item>
+        <item>Exec.handling_0</item>
+        <item>Dilution Cal._1</item>
+        <item>Dilution Cal._2</item>
+        <item>Dilution Cal._3</item>
+        <item>零点核查_1</item>
+        <item>零点核查_2</item>
+        <item>零点核查_3</item>
+        <item>跨度核查_1</item>
+        <item>跨度核查_2</item>
+        <item>跨度核查_3</item>
+        <item>标样核查_1</item>
+        <item>标样核查_2</item>
+        <item>标样核查_3</item>
+        <item>平行样_1</item>
+        <item>平行样_2</item>
+        <item>平行样_3</item>
+        <item>加标回收_1</item>
+        <item>加标回收_2</item>
+        <item>加标回收_3</item>
+        <item>异常处理2_0</item>
+        <item>光源稳定性_1</item>
+        <item>进样稳定性_1</item>
+        <item>催化剂再生_0</item>
+    </string-array>
+
+    <string-array name="strComponents">
+        <item>CODcr</item>
+        <item>NH3N</item>
+        <item>TP</item>
+        <item>TN</item>
+        <item>Cr6+</item>
+        <item>TCr</item>
+        <item>TPb</item>
+        <item>CN</item>
+        <item>SYSN</item>
+        <item>TCu</item>
+        <item>AS</item>
+        <item>TNi</item>
+    </string-array>
+
+    <string-array name="strZHCS">
+        <item>Meas</item>
+        <item>Z.S.meas</item>
+        <item>Flushing</item>
+        <item>Cal.</item>
+        <item>S.S.1meas</item>
+        <item>Cleaning</item>
+        <item>Flushing</item>
+        <item>S.S.2meas</item>
+        <item>光源稳定性</item>
+        <item>进样稳定性</item>
+    </string-array>
+
+
+    <string name="waiting_for_instructions">Waiting</string>
+
+    <string name="ready">Preparation</string>
+    <string name="normal">Normal</string>
+    <string name="span_1">Cal.1</string>
+    <string name="span_2">Cal.2</string>
+    <string name="measure">Measure</string>
+    <string name="realTime">Real-time</string>
+    <string name="infusionTest">Infusion test</string>
+    <string name="drainageTest">Drainage test</string>
+    <string name="error">Error</string>
+    <string name="warning">Warning</string>
+    <string name="selfCheck">Self-checking</string>
+    <string name="clean">Clean</string>
+    <string name="exceptionHandling">Exec.handling</string>
+    <string name="exceptionHandling2">Exec.handling 2</string>
+    <string name="dilutionCal">Dilution Cal.</string>
+    <string name="sendFlowing">Carrying on flow…</string>
+    <string name="sendFlowError">Flow carrying on appError, please inspect device!</string>
+    <string name="sendFlowSucceed">Flow completed！Please check!</string>
+    <string name="readyStarted">Ready to start_</string>
+    <string name="pleaseWaiting">Waiting…</string>
+
+    <string name="digestionTemper">Digestion temp</string>
+    <string name="digestionTimer">Digestion time</string>
+    <string name="colorTemper">Color temp</string>
+    <string name="colorTimer">Color time</string>
+    <string name="dispellingCooling">Digestion cool</string>
+    <string name="colorCooling">Color cool</string>
+    <string name="colorStand">Color settle</string>
+
+    <string name="waterVolume">Water sample volume</string>
+    <string name="oxidantVolume">Oxidant volume</string>
+    <string name="reductantVolume">Reductant volume</string>
+    <string name="reductantCoc">Reductant concentration</string>
+    <string name="titrationVolume">Titration volume</string>
+
+
+    <string name="digestion_temper_is_set_error">Digestion temp appError</string>
+    <string name="digestion_temper_is_empty">Digestion temp can’t be empty</string>
+
+    <string name="digestion_timer_is_set_error">：Digestion time appError</string>
+    <string name="digestion_timer_is_empty">Digestion time can’t be empty</string>
+
+    <string name="color_temper_is_set_error">Color temp appError</string>
+    <string name="color_temper_is_empty">Color temp can’t be empty</string>
+
+    <string name="color_timer_is_set_error">Color time appError</string>
+    <string name="color_timer_is_empty">Color time can’t be empty</string>
+
+    <string name="dispelling_cooling_is_set_error">Digestion cooling appError</string>
+    <string name="dispelling_cooling_is_empty">Digestion cooling can’t be empty</string>
+
+
+    <string name="color_cooling_is_set_error">Color cooling appError</string>
+    <string name="color_cooling_is_empty">Color cooling can’t be empty</string>
+
+
+    <string name="color_stand_is_set_error">Color stewing appError</string>
+    <string name="color_stand_is_empty">Color stewing can’t be empty</string>
+
+
+    <string name="titration_volume_is_set_error">Titration liquid appError</string>
+    <string name="titration_volume_is_empty">Titration liquid can’t be empty</string>
+
+    <string name="reductant_coc_is_set_error">Reductant concentration appError</string>
+    <string name="reductant_coc_is_empty">Reductant concentration can’t be empty</string>
+
+    <string name="reductant_volume_is_set_error">Reductant volume appError</string>
+    <string name="reductant_volume_is_empty">Reductant volume can’t be empty</string>
+
+    <string name="water_volume_is_set_error">Water sample volume appError</string>
+    <string name="water_volume_is_empty">Water sample volume can’t be empty</string>
+    <string name="the_oxidizer_must_not_be_empty">Oxidant volume appError</string>
+    <string name="the_size_of_the_oxidizer_is_not_correct">Oxidant volume can’t be empty</string>
+
+    <string name="range">Range</string>
+
+    <string name="uart">Serial port</string>
+    <string name="TCP">TCP</string>
+    <string name="TCP1">Output one</string>
+    <string name="TCP2">Output two</string>
+    <string name="TCP3">Output three</string>
+
+    <string name="scope_k">Scope:0.95~1.05</string>
+    <string name="scopeCODcrb">Scope:-10~+10</string>
+    <string name="scopeCODmnb">Scope:-0.2~+0.2</string>
+    <string name="scopeNH3Nb">Scope:-0.3~+0.3</string>
+    <string name="scopeTPb">Scope:-0.2~+0.2</string>
+    <string name="scopeTNb">Scope:-1.00~+1.00</string>
+    <string name="scope">Scope:</string>
+    <string name="number">Number</string>
+    <string name="temp_A">TempA</string>
+    <string name="temp_B">TempB</string>
+    <string name="temp_C">TempC</string>
+    <string name="temp_D">TempD</string>
+
+    <string name="exception">Error</string>
+
+    <string name="set_standard_sample_to_same_coc">Set standard gas concentration the same!</string>
+    <string name="set_rtu2018_id_exception">Sorry, the current ID is conflict with other factor ID. Please check and reset.!</string>
+
+    <string name="high_alarm">Alarm UL</string>
+    <string name="low_alarm">Alarm LL</string>
+
+    <string name="inputParException">The parameter input is wrong, please check.</string>
+    <string name="make_sure_the_reagent_bottle">Reagent is filled up？</string>
+
+    <string name="failed_find_action_command">Unable to find the corresponding command in action schedule！</string>
+
+    <string name="device_temper_to_high">Digestion tube temp is higher than</string>
+    <string name="temper_unit">℃</string>
+
+    <string name="startReceive">Start</string>
+    <string name="stopReceive">Stop</string>
+
+    <string name="sendingArea">Sending area</string>
+    <string name="receivingArea">Receiving area</string>
+    <string name="forInstrument">Data collector</string>
+
+    <string name="outputTest">Output test</string>
+    <string name="inputTest">Input test</string>
+
+    <string name="channel">Channel</string>
+    <string name="please_Configure">Please configure</string>
+    <string name="sorry_input_data_not_normative">Sorry, the data input can’t meet the specification.</string>
+    <string name="notSet">Not set</string>
+    <string name="device_no_job">The device stops working, please contact the manufacturer!</string>
+
+    <string name="reserve">Null</string>
+    <string name="infusion">Pump</string>
+
+    <string name="liquid_detection_value_is_set_error">Liquid detection value appError</string>
+    <string name="liquid_detection_value_is_empty">Liquid detection value can’t be empty</string>
+
+    <string name="please_set_the_titration_speed">Please set titration speed!</string>
+    <string name="please_confirm_the_range_input_par">Please check input parameter range!</string>
+
+    <string name="set_factory_settings">Set factory setting？</string>
+    <string name="restore_factory_settings">Restore factory setting？</string>
+
+
+    <string name="clear_all_running_records">Clear all running records？</string>
+    <string name="clear_all_cal_records">Clear all calibration records？</string>
+    <string name="clear_all_history_records">Clear all historical records？</string>
+    <string name="clear_all_alarm_records">Clear all alarm records？</string>
+    <string name="clear_all_operation_records">Clear all operating records？</string>
+    <string name="cannot_be_set_empty">Setup can’t be empty！</string>
+    <string name="automatic_switch_to_range_1">Auto switch to range 1！</string>
+
+    <string name="set_finished">The warehouse is empty, do not click....</string>
+    <string name="spec_address_empty">Spectrum address can’t be empty</string>
+    <string name="integral_time_empty">Moving time can’t be empty</string>
+    <string name="average_time_empty">Average time can’t be empty</string>
+    <string name="dark_current_empty">Dark current processing can’t be empty</string>
+    <string name="lamp_voltage_empty"> Lighting voltage can’t be empty</string>
+    <string name="lamp_times_empty">Lighting time can’t be empty</string>
+    <string name="dark_current_compensation_empty">Dark current compensation can’t be empty</string>
+    <string name="spec_coe_k_empty">Spectral coefficient K can’t be empty</string>
+    <string name="spec_coe_b_empty">Spectral coefficient B can’t be empty</string>
+    <string name="measurement_par_empty">Metrological parameter can’t be empty</string>
+    <string name="is_dirty">Updated</string>
+    <string name="exception_par">Parameter appError</string>
+    <string name="please_config_metering_board_info">Please configure metrological acquisition board information!</string>
+
+    <string name="change_to_default">Default value changed!</string>
+    <string name="please_select_comm_board"> Please select communication module. Not set at present!</string>
+    <string name="zero">Zero</string>
+    <string name="vitriol">H2SO4</string>
+    <string name="water">Water</string>
+
+    <string name="high_dose_a">High</string>
+    <string name="low_dose_a"> Low</string>
+    <string name="set_meter_empty">Metering can’t be empty</string>
+    <string name="is_under_installation">Installing</string>
+    <string name="titration_working_curve_info">Working curve introduction：\nMeasuring value=[(V1+Vn)*K-V2]*N*8*1000/V3\nV1represents oxidant volume\nV2represents reductant volume\nV3represents water sample volume\nKrepresents calibration coefficient\nVnrepresents final volume\nNrepresents reductant concentration</string>
+    <string name="working_curve_info">Working curve introduction：\nMeasuring value=K*A+B\nK and B represents curve slope and intercept for each range respectively\nA represents absorbance measured every time\n\r\Deviation ratio description:\nDeviation ratio=KPrior/K\n“K-Prior” represents the slope of previous curve\nK represents the slope of curve this time\nIt is used to determine if the curve is abnormal.\nWhen deviation ratio is between 0.8 and 1.2, linearity is normal.</string>
+
+    <string name="time">Time</string>
+    <string name="component">Component</string>
+    <string name="flow">Flow</string>
+    <string name="measurement_value">Measuring value</string>
+    <string name="unit">Unit</string>
+    <string name="temperature">Temp</string>
+    <string name="energy">Energy</string>
+    <string name="tag">Tag</string>
+    <string name="absorbancy">Absorbance</string>
+    <string name="historyData">Historical data</string>
+    <string name="no_data_to_export">Sorry, there is no data can be exported.</string>
+    <string name="no_external_SD_card">No external SD card or USB device found, please insert first.</string>
+    <string name="data_export">Exporting, please wait…</string>
+
+    <string name="data_export_fail">Data exports failed，please check the SD card or USB device.</string>
+    <string name="data_export_success">Data exports successfully, please remove SD card or USB device.</string>
+
+    <string name="the_last_page"> Last page</string>
+
+    <string name="printing">printing</string>
+
+    <string name="error_num">Error number</string>
+    <string name="info">Information</string>
+    <string name="alarm">Alarm record</string>
+
+    <string name="configured">Configured</string>
+    <string name="unConfigured">Null</string>
+    <string name="configured1">Configured1</string>
+    <string name="configured2">Configured2</string>
+
+
+    <string name="please_input_7_place">Please input 7 digits</string>
+    <string name="please_input_12_place"> Please input 12 digits</string>
+    <string name="please_input_24_place"> Please input 24 digits</string>
+
+    <string name="open_pump_time_empty">Sample pump opening time can’t be empty!</string>
+
+    <string name="open_pump_time_is_set_error">Sample pump opening time appError.</string>
+    <string name="cleaning">Cleaning…</string>
+    <string name="mixing">Stirring…</string>
+    <string name="waste_discharging">Discharging…</string>
+    <string name="open_pump">Open sample pump</string>
+    <string name="time_empty">Time can’t be empty!</string>
+    <string name="LED">LED</string>
+    <string name="SPEC">SPEC</string>
+    <string name="titration">Titration</string>
+    <string name="dilution">Dilution</string>
+    <string name="autoWashUnit">mg/L</string>
+
+    <string name="add_comp_to_more">Normally display 12 at most on five-parameter interface, over limit!</string>
+    <string name="the_most_select">Select</string>
+    <string name="a_component">at most components</string>
+    <string name="please_click_restart_button">Please click “Restart” key on the top right corner!</string>
+    <string name="component_already_exists">The component has existed</string>
+    <string name="please_sure_par">Please confirm parameter</string>
+    <string name="address_already_exists">The address has existed</string>
+    <string name="been_deleted">Deleted</string>
+    <string name="latest_exceed_bid_component">The latest over-standard component:</string>
+    <string name="modify_component_name">Change component name</string>
+    <string name="modify">OK</string>
+    <string name="cancel">Cancel</string>
+
+    <string name="set_value_is_empty">Set value can’t be empty</string>
+    <string name="set_value_is_error">Set value appError</string>
+
+    <string name="start_time_before_end_time">The starting time is after end time, please input again!</string>
+    <string name="year">year</string>
+    <string name="month">month</string>
+    <string name="day">day</string>
+    <string name="doing">In the process of</string>
+
+
+    <string name="pressure">pressure</string>
+
+    <string name="the_measurement_points_set_failed">Measurement point can’t meet specification</string>
+    <string name="set_measurement_points_beyond_range">Measurement point is out of range</string>
+    <string name="first_points_value_set_failed">The first measurement point can’t be larger than the second one.</string>
+    <string name="the_points_is_empty">Measurement point can’t be empty.</string>
+    <string name="whether_if">Whether</string>
+    <string name="auto_measurement_is_closed">Error, auto measurement is closed.</string>
+    <string name="working_condition">Working state</string>
+    <string name="valve">Valve</string>
+    <string name="use_range">Range used</string>
+    <string name="current_status">State</string>
+    <string name="current_action">Current</string>
+    <string name="next_action">Next</string>
+    <string name="meaEnergy">Energy</string>
+    <string name="beforeMea">Last meas</string>
+    <string name="steps_left">Remaining steps</string>
+    <string name="sample_model">Meas mode</string>
+
+    <string name="digestion_temperature">DT temp.</string>
+    <string name="restart_time">Restart time</string>
+    <string name="close_devices_3_day_info">System will enter protection state in three days.\r\Contact the manufacturer.</string>
+    <string name="close_devices_info">Equipment suspension，\r\ Contact the manufacturer!</string>
+    <string name="calibration_tip">o ensure correct measurement of device,Please calibrate as soon as possible!</string>
+
+
+    <string name="devices_running">Measuring…</string>
+    <string name="auto_calibration">Auto Cal.</string>
+    <string name="auto">Auto</string>
+    <string name="off_line">Off-line</string>
+
+    <string name="water_devices_name">Water quality online auto analyzer</string>
+    <string name="original_component_name"> Previous component name</string>
+    <string name="new_component_name">New component name</string>
+    <string name="component_address">Component address</string>
+    <string name="back">return</string>
+    <string name="please_select_time">Please select time interval</string>
+    <string name="sure">OK</string>
+    <string name="print">Print</string>
+    <string name="func_temper">Temp:</string>
+    <string name="func_action_time">Time</string>
+    <string name="hour">hour</string>
+    <string name="minute">min</string>
+    <string name="second">sec</string>
+    <string name="sign">Mark</string>
+    <string name="input_mea_point">Please input the  measurement point and voltage and lampTimes </string>
+    <string name="please_input_password">Please enter password:</string>
+    <string name="stop">Stop</string>
+    <string name="mea_component">Measuring</string>
+    <string name="mea_data">Measuring value</string>
+    <string name="display_range">Range</string>
+
+    <string name="flow_config">Flow configuration option</string>
+    <string name="read">Read</string>
+    <string name="single_setting">Singe set</string>
+    <string name="all_setting">All set</string>
+    <string name="empty">Clear</string>
+    <string name="times">time</string>
+    <string name="add">Add </string>
+    <string name="combination_test">Combined test</string>
+    <string name="combination_test_info">Click start button after configuration flow!</string>
+    <string name="launch">Start</string>
+    <string name="minute_unit">min</string>
+    <string name="span_coc">S.S.conc.</string>
+    <string name="spanCoc_1">S.S.1</string>
+    <string name="spanCoc_2">S.S.2</string>
+    <string name="auto_clean">Auto clean</string>
+    <string name="clean_info">time/clean</string>
+    <string name="range_switch">Range switch</string>
+    <string name="Cal_OK"> Cal prompt</string>
+    <string name="relay_config">Relay conf.</string>
+    <string name="print_data">Data print</string>
+    <string name="mea_unit">Unit</string>
+    <string name="cal_data_upload">Upload Cal.data</string>
+    <string name="significant_digit">Digit</string>
+    <string name="absorb_upload">Upload absorbance</string>
+    <string name="low_alarm_set">Alarm LL:</string>
+    <string name="high_alarm_set">Alarm UL:</string>
+    <string name="setting">Setting</string>
+    <string name="synchronization">Sync</string>
+    <string name="reagent_allowance">Reagent remainder</string>
+    <string name="allowance_alarm">Remainder alarm</string>
+    <string name="reagent">Name</string>
+    <string name="full_bottle">Full(ml)</string>
+    <string name="regent_value">surplus(%)</string>
+    <string name="allowance_alarm_value">Alarm(%)</string>
+    <string name="full_all_bottle">Fill bottle</string>
+    <string name="analog_test">Analog test</string>
+    <string name="output_test">Output test</string>
+    <string name="channel_1">Channel1</string>
+    <string name="channel_2">Channel2</string>
+    <string name="channel_3">Channel3</string>
+    <string name="digital_out_test">Digital test</string>
+    <string name="sending">Send</string>
+    <string name="pump_value_components">Pump valve components option</string>
+    <string name="drains">Drains</string>
+    <string name="valve_control">Valve control</string>
+    <string name="mea_unit_select">Measurement unit option</string>
+    <string name="real_time_measurement">Live measure</string>
+    <string name="liquid_detection">Liquid detection</string>
+    <string name="temperature_calibration">Temp calibration</string>
+    <string name="led_channel">LED channel</string>
+    <string name="calibration_light">Calibration optical path</string>
+    <string name="calibration_coe"> Calibration coefficient</string>
+    <string name="operation_record"> Operation log</string>
+    <string name="query">Query</string>
+    <string name="absorb_energy">Counting intensity</string>
+    <string name="measurement_test">Metrology test</string>
+    <string name="measurement_threshold">Measurement threshold value</string>
+    <string name="titration_pump">Titration pump</string>
+    <string name="titration_speed">Titration speed</string>
+    <string name="fill_speed">Filling speed</string>
+    <string name="end_point">Terminal drop number</string>
+    <string name="calibration_time">Calibration time</string>
+    <string name="minimum_volume">Minimum volume</string>
+    <string name="maximum_volume">Maximum volume</string>
+    <string name="minimum_time">Minimum time</string>
+    <string name="maximum_time">Maximum time</string>
+    <string name="device_info">Water quality analyzer information</string>
+    <string name="restore_factory_set">Factory restore</string>
+    <string name="set_factory_set">Factory set</string>
+    <string name="device_number">Dev. No.</string>
+    <string name="history_data_empty">Historical clear</string>
+    <string name="alarm_data_empty">Alarm clear</string>
+    <string name="device_range">Dev. range</string>
+    <string name="calibration_data_empty">Calibration clear</string>
+    <string name="running_data_empty">Running clear</string>
+    <string name="range_1">Range 1</string>
+    <string name="operation_data_empty">Operation clear</string>
+    <string name="range_2">Range 2</string>
+    <string name="range_3">Range 3</string>
+    <string name="K2Cr2O7_coc">K2Cr2O7 coc.</string>
+    <string name="mea_point">Meas point</string>
+    <string name="save">Save</string>
+    <string name="get_energy">Obtain</string>
+    <string name="get_spec">address</string>
+    <string name="integral_time">Integral</string>
+    <string name="average_time">Average</string>
+    <string name="dark_current">current</string>
+    <string name="lamp_voltage">Voltage</string>
+    <string name="lamp_times">Times</string>
+    <string name="dark_current_compensation">Dark</string>
+    <string name="auto_adjust">Auto regulation</string>
+    <string name="reference_wavelength">Reference wavelength</string>
+    <string name="minimum_energy">Minimum energy</string>
+    <string name="maximum_energy">Maximum energy</string>
+    <string name="spec_coe_k">Spec.K</string>
+    <string name="spec_coe_b">Spec.B</string>
+    <string name="light_measurement">lights</string>
+    <string name="spec_curve">Spectral curve</string>
+    <string name="temper_calibration">Temp calibration</string>
+    <string name="metering_par_options">Metrological parameter option</string>
+    <string name="metering_board_setup">Metering board setting</string>
+    <string name="address">Address</string>
+    <string name="all_clear">Delete all</string>
+    <string name="metering_collection">Metrological acquisition</string>
+    <string name="tee_valve">Three-way valve</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="speed">Speed</string>
+    <string name="sample_pump">Sample pump</string>
+    <string name="measuring_threshold">Metrological threshold valve</string>
+    <string name="measurement_unit_options">Metrological unit option</string>
+    <string name="set_par">Parameter setting</string>
+    <string name="measuring_low">Low measurement</string>
+    <string name="measuring_high">High measurement</string>
+    <string name="end_pressure_po">Compression terminal pressure Po</string>
+    <string name="add_pressure_value_a">Compression threshold value a</string>
+    <string name="inlet_end_pressure_po">Sampling terminal pressure Po</string>
+    <string name="CK_A">CK A</string>
+    <string name="CK_B">CK B</string>
+    <string name="measure_board">Metering</string>
+    <string name="metering_board">Metering</string>
+    <string name="orp_board">Metering</string>
+    <string name="runningBoard">Metering</string>
+    <string name="IO_board">IO</string>
+    <string name="first_page">Top</string>
+    <string name="before_page">Previous </string>
+    <string name="next_page">Next</string>
+    <string name="tail_page">End</string>
+    <string name="export">Export</string>
+    <string name="comm_board_setting">Comm board conf.</string>
+    <string name="analog_out">Analog output</string>
+    <string name="digital_out">Digital output</string>
+    <string name="baud_rate">Baud rate</string>
+    <string name="protocol_setting">Protocol configuration</string>
+    <string name="institution_code">Institution</string>
+    <string name="device_code">Instrument</string>
+    <string name="crc">CRC</string>
+    <string name="forInstrument_port">Data collector</string>
+    <string name="protocol_address">Address</string>
+    <string name="pc_port"> PC</string>
+    <string name="rs485_port">RS485</string>
+    <string name="rs232_port">RS232</string>
+    <string name="serial_number">Device serial number</string>
+    <string name="sample_pretreatment">Pretreatment</string>
+    <string name="sample_pump_setting">Sampling pump set</string>
+    <string name="mix">Stir</string>
+    <string name="waste_discharge">Discharge </string>
+    <string name="multi_par_monitoring">Multi param. monitor</string>
+    <string name="display_current_par">Display</string>
+    <string name="par_unit">Unit</string>
+    <string name="par_range">Range</string>
+    <string name="par_limit">Threshold</string>
+    <string name="standard_sample">Over-standard sample retention</string>
+    <string name="exceed_threshold">Threshold</string>
+    <string name="component_management">Component management</string>
+    <string name="add_components_name">Component name</string>
+    <string name="add_components">Add</string>
+    <string name="restart">Restart</string>
+    <string name="use_select">Selectable component</string>
+    <string name="unused_select">Selected component</string>
+    <string name="all">Select all</string>
+    <string name="display_mea_absorb">Meas energy： ——————</string>
+    <string name="display_before_mea">Last measurement： ——————</string>
+    <string name="display_use_range">Range used： ——————</string>
+    <string name="display_current_status">State：Waiting</string>
+    <string name="display_current_action">Current action： ——————</string>
+    <string name="display_next_action">Next action： ——————</string>
+    <string name="display_steps_left">Remaining steps： ——————</string>
+    <string name="display_sample_model">Meas mode： ——————</string>
+    <string name="display_digestion_temperature">DT temp： ——————</string>
+    <string name="display_restart_time">Restart time： ——————</string>
+    <string name="low_high">Low/High</string>
+    <string name="high">High</string>
+    <string name="low">Low</string>
+    <string name="water_pump">Water pump</string>
+    <string name="pump">Peristaltic pump</string>
+    <string name="measuring_module">Metering module</string>
+    <string name="leakage_detection">Leakage detection</string>
+    <string name="digestion_Tube">Digestion Tube</string>
+    <string name="single_operation">one-step</string>
+    <string name="flow_file_read_failed">Unable to read flow file</string>
+    <string name="flow_cmd_failed">Error command of flow table </string>
+    <string name="flow_file_lost">File loss of flow configuration</string>
+    <string name="action_file_read_failed">Unable to read action file</string>
+    <string name="action_cmd_failed">Error command of action table</string>
+    <string name="action_file_lost">File loss of action configuration</string>
+    <string name="valve_file_lost">Valve number file loss</string>
+    <string name="valve_file_read_failed">Unable to read valve number file</string>
+    <string name="calculate_file_lost">Algorithm file loss</string>
+    <string name="calculate_file_read_failed">Unable to read algorithm file</string>
+    <string name="calculate_table_failed">Error algorithm of algorithm table</string>
+    <string name="error_file_read_failed">Unable to read appError file</string>
+    <string name="CK_reported">CK</string>
+    <string name="cmd_find_filed_show_info">Unable to find the corresponding command in flow table, flow can’t carry on.</string>
+    <string name="component_name_file_error">Component name file appError</string>
+    <string name="component_name_file_lost">Component name file loss</string>
+    <string name="protocol_name_file_error">Protocol name file loss</string>
+    <string name="component_name_file_read_failed">Unable to read component name file</string>
+    <string name="error_file_lost">Error file loss</string>
+    <string name="error_table_failed">Error table appError</string>
+    <string name="manual">Manual</string>
+    <string name="mea_cfg_file_lost">Measurement parameter configuration file loss</string>
+    <string name="mea_cfg_file_read_failed">Unable to read measurement parameter configuration file</string>
+    <string name="mea_cfg_table_error">Measurement parameter configuration file appError</string>
+    <string name="reagent_file_read_failed">Unable to read reagent remainder configuration file</string>
+    <string name="reagent_file_table_error">Reagent remainder configuration file appError</string>
+    <string name="voc_par_cfg_table_error">Parameter configuration table appError</string>
+    <string name="yes">Yes</string>
+    <string name="flows_high_limit_info">Flow measurement times over limit</string>
+    <string name="please_config_flows">Please configure the process</string>
+    <string name="CKB_Num">CKA No.</string>
+    <string name="slow">slow</string>
+    <string name="fast">fast</string>
+    <string name="unread_ver">Version not read</string>
+    <string name="time_o">o ’</string>
+    <string name="time_hour"> clock</string>
+
+    <string name="turbidityComCoe">Turbidity compensation coefficient</string>
+    <string name="range1kz1">Range1  KZ1:</string>
+    <string name="range2kz1">Range2  KZ1:</string>
+    <string name="range3kz1">Range3  KZ1:</string>
+    <string name="opened">Opened</string>
+    <string name="closeed">Closeed</string>
+    <string name="and">And</string>
+    <string name="adminiPar">Administrator parameters</string>
+    <string name="LowLimit">Low limit:</string>
+    <string name="xs_base_range">Base on range</string>
+    <string name="userPar">User preferences</string>
+    <string name="calculate_table2_failed">Error algorithm of algorithm table 2</string>
+    <string name="set_standard_sample_up_rangeDown">设置标样浓度超量程下限!</string>
+    <string name="set_standard_sample_up_rangeHigh">设置标样浓度超量程上限!</string>
+    <string name="set_standard_sample1_high_sample2">设置标样1浓度高于标样2浓度!</string>
+    <string name="set_standard_sample2_low_sample1">标样2低于标样1浓度!</string>
+    <string name="process_is_empty">The pending process is empty</string>
+    <string name="spec_calibration">Spectral calibration</string>
+    <string name="startSpecCal">Starting</string>
+    <string name="DevRangeLimit">Alarm over gauge range</string>
+    <string name="RangeLimit">Over range alarm</string>
+    <string name="checkVersion">Please check the file version</string>
+    <string name="findNotFile">File not found</string>
+
+    <string name="hex">hex</string>
+    <string name="ascii">ascii</string>
+    <string name="ml">ml</string>
+    <string name="start">Start</string>
+    <string name="orp">ORP</string>
+    <string name="led">LED</string>
+    <string name="delete">Delete</string>
+
+    <string-array name="runningMode">
+        <item>在线</item>
+        <item>离线</item>
+        <item>维护</item>
+
+
+    </string-array>
+
+
+    <string-array name="meaMode">
+        <item>连续模式</item>
+        <item>周期模式</item>
+        <item>定点模式</item>
+        <item>受控模式</item>
+        <item>手动模式</item>
+    </string-array>
+
+</resources>

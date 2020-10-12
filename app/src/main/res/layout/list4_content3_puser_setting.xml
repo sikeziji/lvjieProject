@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="800px"
+        android:layout_height="427px"
+        android:layout_marginTop="25px"
+        android:background="@drawable/bj_p"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40px"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btnReturn_p4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10px"
+                android:background="@null"
+                android:src="@drawable/btn_return" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="250px"
+                android:text="@string/userParSetting"
+                android:textColor="@android:color/white"
+                android:textSize="20px" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/lay_line1"
+                android:layout_width="match_parent"
+                android:layout_height="50px"
+                android:layout_marginTop="30px"
+                android:gravity="center|left">
+
+                <TextView
+                    android:layout_width="180px"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50px"
+                    android:gravity="right"
+                    android:text="@string/enShow"
+                    android:textColor="@android:color/white"
+                    android:textSize="20px" />
+
+                <ToggleButton
+                    android:id="@+id/tBtnIsShowEn"
+                    android:layout_width="92px"
+                    android:layout_height="42px"
+                    android:layout_marginLeft="15px"
+                    android:background="@drawable/togglebtn"
+                    android:text=" "
+                    android:textOff=" "
+                    android:textOn=" " />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50px"
+                android:layout_marginTop="10px"
+                android:gravity="center|left">
+
+                <TextView
+                    android:layout_width="180px"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50px"
+                    android:gravity="right"
+                    android:text="@string/clearNotesShow"
+                    android:textColor="@android:color/white"
+                    android:textSize="20px" />
+
+                <ToggleButton
+                    android:id="@+id/tBtnIsShowClearNotes"
+                    android:layout_width="92px"
+                    android:layout_height="42px"
+                    android:layout_marginLeft="15px"
+                    android:background="@drawable/togglebtn"
+                    android:text=" "
+                    android:textOff=" "
+                    android:textOn=" " />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/layout_IsShowASwitch"
+                android:layout_width="match_parent"
+                android:layout_height="50px"
+                android:layout_marginTop="10px"
+                android:gravity="center|left">
+
+                <TextView
+                    android:layout_width="180px"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50px"
+                    android:gravity="right"
+                    android:text="@string/AShow"
+                    android:textColor="@android:color/white"
+                    android:textSize="20px" />
+
+                <ToggleButton
+                    android:id="@+id/tBtnIsShowAValue"
+                    android:layout_width="92px"
+                    android:layout_height="42px"
+                    android:layout_marginLeft="15px"
+                    android:background="@drawable/togglebtn"
+                    android:text=" "
+                    android:textOff=" "
+                    android:textOn=" " />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

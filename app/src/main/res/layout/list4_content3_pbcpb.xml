@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="800px"
+        android:layout_height="427px"
+        android:layout_marginTop="25px"
+        android:background="@drawable/bj_p"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40px"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btnReturn_p2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10px"
+                android:background="@null"
+                android:src="@drawable/btn_return" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="250px"
+                android:text="@string/errorCfg"
+                android:textColor="@android:color/white"
+                android:textSize="20px" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50px"
+                android:layout_marginTop="30px"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50px"
+                    android:text="进水样超时"
+                    android:textColor="@android:color/white"
+                    android:textSize="20px" />
+
+                <ToggleButton
+                    android:layout_width="92px"
+                    android:layout_height="42px"
+                    android:layout_marginLeft="50px"
+                    android:background="@drawable/togglebtn"
+                    android:text="进水样超时"
+                    android:textOff=" "
+                    android:textOn=" " />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50px"
+                android:layout_marginTop="30px"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50px"
+                    android:text="水样异常"
+                    android:textColor="@android:color/white"
+                    android:textSize="20px" />
+
+                <ToggleButton
+                    android:layout_width="92px"
+                    android:layout_height="42px"
+                    android:layout_marginLeft="70px"
+                    android:background="@drawable/togglebtn"
+                    android:text="水样异常"
+                    android:textOff=" "
+                    android:textOn=" " />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50px"
+                android:layout_marginTop="30px"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50px"
+                    android:text="泵阀板通讯异常"
+                    android:textColor="@android:color/white"
+                    android:textSize="20px" />
+
+                <ToggleButton
+                    android:layout_width="92px"
+                    android:layout_height="42px"
+                    android:layout_marginLeft="10px"
+                    android:background="@drawable/togglebtn"
+                    android:text="泵阀板通讯异常"
+                    android:textOff=" "
+                    android:textOn=" " />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50px"
+                android:layout_marginTop="30px">
+
+                <TextView
+                    android:layout_width="150px"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50px"
+                    android:text="@string/errorRinse"
+                    android:textColor="@android:color/white"
+                    android:textSize="20px" />
+
+                <ToggleButton
+                    android:id="@+id/tBtnRinse"
+                    android:layout_width="92px"
+                    android:layout_height="42px"
+                    android:layout_marginLeft="10px"
+                    android:background="@drawable/togglebtn"
+                    android:text=" "
+                    android:textOff=" "
+                    android:textOn=" " />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearProtection"
+                android:layout_width="match_parent"
+                android:layout_height="50px"
+                android:layout_marginTop="30px"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="150px"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50px"
+                    android:text="@string/errorProtection"
+                    android:textColor="@android:color/white"
+                    android:textSize="20px" />
+
+                <ToggleButton
+                    android:id="@+id/tBtnProtection"
+                    android:layout_width="92px"
+                    android:layout_height="42px"
+                    android:layout_marginLeft="10px"
+                    android:background="@drawable/togglebtn"
+                    android:text=" "
+                    android:textOff=" "
+                    android:textOn=" " />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

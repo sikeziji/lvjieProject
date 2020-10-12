@@ -1,0 +1,855 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50px">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/list2con1line1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10px"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tvxjwd"
+                            android:layout_width="200px"
+                            android:layout_height="wrap_content"
+                            android:gravity="right"
+                            android:shadowColor="@android:color/white"
+                            android:shadowDx="1"
+                            android:shadowDy="1"
+                            android:shadowRadius="5"
+                            android:text="@string/digestionTemper"
+                            android:textColor="@android:color/white"
+                            android:textSize="25px" />
+
+                        <EditText
+                            android:id="@+id/eTxjwd"
+                            style="@style/CEditText"
+                            android:layout_marginLeft="10px"
+                            android:ems="4"
+                            android:imeOptions="actionDone"
+                            android:inputType="number" />
+
+                        <TextView
+                            android:layout_width="50px"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10px"
+                            android:text="@string/temper_unit"
+                            android:textColor="@android:color/white"
+                            android:textSize="25px" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/list2con1line2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15px"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tvxjsc"
+                            android:layout_width="200px"
+                            android:layout_height="wrap_content"
+                            android:gravity="right"
+                            android:shadowColor="@android:color/white"
+                            android:shadowDx="1"
+                            android:shadowDy="1"
+                            android:shadowRadius="5"
+                            android:text="@string/digestionTimer"
+                            android:textColor="@android:color/white"
+                            android:textSize="25px" />
+
+                        <EditText
+                            android:id="@+id/eTxjsc"
+                            style="@style/CEditText"
+                            android:layout_marginLeft="10px"
+                            android:ems="4"
+                            android:imeOptions="actionDone"
+                            android:inputType="number" />
+
+                        <TextView
+                            android:layout_width="50px"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10px"
+                            android:text="@string/minute_unit"
+                            android:textColor="@android:color/white"
+                            android:textSize="25px" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/list2con1line3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15px"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tvxswd"
+                            android:layout_width="200px"
+                            android:layout_height="wrap_content"
+                            android:gravity="right"
+                            android:shadowColor="@android:color/white"
+                            android:shadowDx="1"
+                            android:shadowDy="1"
+                            android:shadowRadius="5"
+                            android:text="@string/colorTemper"
+                            android:textColor="@android:color/white"
+                            android:textSize="25px" />
+
+                        <EditText
+                            android:id="@+id/eTxswd"
+                            style="@style/CEditText"
+                            android:layout_marginLeft="10px"
+                            android:ems="4"
+                            android:imeOptions="actionDone"
+                            android:inputType="number" />
+
+                        <TextView
+                            android:layout_width="50px"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10px"
+                            android:text="@string/temper_unit"
+                            android:textColor="@android:color/white"
+                            android:textSize="25px" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/list2con1line4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15px"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tvxssc"
+                            android:layout_width="200px"
+                            android:layout_height="wrap_content"
+                            android:gravity="right"
+                            android:shadowColor="@android:color/white"
+                            android:shadowDx="1"
+                            android:shadowDy="1"
+                            android:shadowRadius="5"
+                            android:text="@string/colorTimer"
+                            android:textColor="@android:color/white"
+                            android:textSize="25px" />
+
+                        <EditText
+                            android:id="@+id/eTxssc"
+                            style="@style/CEditText"
+                            android:layout_marginLeft="10px"
+                            android:ems="4"
+                            android:imeOptions="actionDone"
+                            android:inputType="number" />
+
+                        <TextView
+                            android:layout_width="50px"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10px"
+                            android:text="@string/minute_unit"
+                            android:textColor="@android:color/white"
+                            android:textSize="25px" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/list2con1line5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15px"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tvxjjw"
+                            android:layout_width="200px"
+                            android:layout_height="wrap_content"
+                            android:gravity="right"
+                            android:shadowColor="@android:color/white"
+                            android:shadowDx="1"
+                            android:shadowDy="1"
+                            android:shadowRadius="5"
+                            android:text="@string/dispellingCooling"
+                            android:textColor="@android:color/white"
+                            android:textSize="25px" />
+
+                        <EditText
+                            android:id="@+id/eTddwd"
+                            style="@style/CEditText"
+                            android:layout_marginLeft="10px"
+                            android:ems="4"
+                            android:imeOptions="actionDone"
+                            android:inputType="number" />
+
+                        <TextView
+                            android:layout_width="50px"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10px"
+                            android:text="@string/temper_unit"
+                            android:textColor="@android:color/white"
+                            android:textSize="25px" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/list2con1line6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15px"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tvxsjw"
+                            android:layout_width="200px"
+                            android:layout_height="wrap_content"
+                            android:gravity="right"
+                            android:shadowColor="@android:color/white"
+                            android:shadowDx="1"
+                            android:shadowDy="1"
+                            android:shadowRadius="5"
+                            android:text="@string/colorCooling"
+                            android:textColor="@android:color/white"
+                            android:textSize="25px" />
+
+                        <EditText
+                            android:id="@+id/eTxiajwd"
+                            style="@style/CEditText"
+                            android:layout_marginLeft="10px"
+                            android:ems="4"
+                            android:imeOptions="actionDone"
+                            android:inputType="number" />
+
+                        <TextView
+                            android:layout_width="50px"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10px"
+                            android:text="@string/temper_unit"
+                            android:textColor="@android:color/white"
+                            android:textSize="25px" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/list2con1line7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15px"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tvxsjz"
+                            android:layout_width="200px"
+                            android:layout_height="wrap_content"
+                            android:gravity="right"
+                            android:shadowColor="@android:color/white"
+                            android:shadowDx="1"
+                            android:shadowDy="1"
+                            android:shadowRadius="5"
+                            android:text="@string/colorStand"
+                            android:textColor="@android:color/white"
+                            android:textSize="25px" />
+
+                        <EditText
+                            android:id="@+id/eTxsjz"
+                            style="@style/CEditText"
+                            android:layout_marginLeft="10px"
+                            android:ems="4"
+                            android:imeOptions="actionDone"
+                            android:inputType="number" />
+
+                        <TextView
+                            android:layout_width="50px"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10px"
+                            android:text="@string/unitMin"
+                            android:textColor="@android:color/white"
+                            android:textSize="25px" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/list2con1line8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15px"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tvddjz"
+                            android:layout_width="200px"
+                            android:layout_height="wrap_content"
+                            android:gravity="right"
+                            android:shadowColor="@android:color/white"
+                            android:shadowDx="1"
+                            android:shadowDy="1"
+                            android:shadowRadius="5"
+                            android:text="@string/waitingStand"
+                            android:textColor="@android:color/white"
+                            android:textSize="25px" />
+
+                        <EditText
+                            android:id="@+id/eTWaitStanding"
+                            style="@style/CEditText"
+                            android:layout_marginLeft="10px"
+                            android:ems="4"
+                            android:imeOptions="actionDone"
+                            android:inputType="number" />
+
+                        <TextView
+                            android:layout_width="50px"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10px"
+                            android:text="@string/unitMin"
+                            android:textColor="@android:color/white"
+                            android:textSize="25px" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/list2con1line9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15px"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tCalibrationTemp"
+                            android:layout_width="200px"
+                            android:layout_height="wrap_content"
+                            android:gravity="right"
+                            android:shadowColor="@android:color/white"
+                            android:shadowDx="1"
+                            android:shadowDy="1"
+                            android:shadowRadius="5"
+                            android:text="@string/calibrationDigestionTempe"
+                            android:textColor="@android:color/white"
+                            android:textSize="25px" />
+
+                        <EditText
+                            android:id="@+id/eTCalibrationTemp"
+                            style="@style/CEditText"
+                            android:layout_marginLeft="10px"
+                            android:ems="4"
+                            android:imeOptions="actionDone"
+                            android:inputType="number" />
+
+                        <TextView
+                            android:layout_width="50px"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10px"
+                            android:text="@string/temper_unit"
+                            android:textColor="@android:color/white"
+                            android:textSize="25px" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/list2con1line10"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15px"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tCalibrationTime"
+                            android:layout_width="200px"
+                            android:layout_height="wrap_content"
+                            android:gravity="right"
+                            android:shadowColor="@android:color/white"
+                            android:shadowDx="1"
+                            android:shadowDy="1"
+                            android:shadowRadius="5"
+                            android:text="@string/calibrationDigestionTime"
+                            android:textColor="@android:color/white"
+                            android:textSize="25px" />
+
+                        <EditText
+                            android:id="@+id/eTCalibrationTime"
+                            style="@style/CEditText"
+                            android:layout_marginLeft="10px"
+                            android:ems="4"
+                            android:imeOptions="actionDone"
+                            android:inputType="number" />
+
+                        <TextView
+                            android:layout_width="50px"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10px"
+                            android:text="@string/unitMin"
+                            android:textColor="@android:color/white"
+                            android:textSize="25px" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/list2con1line11"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15px"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tvxsyz"
+                            android:layout_width="200px"
+                            android:layout_height="wrap_content"
+                            android:gravity="right"
+                            android:shadowColor="@android:color/white"
+                            android:shadowDx="1"
+                            android:shadowDy="1"
+                            android:shadowRadius="5"
+                            android:text="@string/XJThresholdVal"
+                            android:textColor="@android:color/white"
+                            android:textSize="25px" />
+
+                        <EditText
+                            android:id="@+id/eTxsyz"
+                            style="@style/CEditText"
+                            android:layout_marginLeft="10px"
+                            android:ems="4"
+                            android:imeOptions="actionDone"
+                            android:inputType="number" />
+
+                        <TextView
+                            android:layout_width="50px"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10px"
+                            android:text="@string/temper_unit"
+                            android:textColor="@android:color/white"
+                            android:textSize="25px"
+                            android:visibility="invisible" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/list2con1line12"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15px"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tvpjsj"
+                            android:layout_width="200px"
+                            android:layout_height="wrap_content"
+                            android:gravity="right"
+                            android:shadowColor="@android:color/white"
+                            android:shadowDx="1"
+                            android:shadowDy="1"
+                            android:shadowRadius="5"
+                            android:text="@string/averagetime"
+                            android:textColor="@android:color/white"
+                            android:textSize="25px" />
+
+                        <EditText
+                            android:id="@+id/eTpjsj"
+                            style="@style/CEditText"
+                            android:layout_marginLeft="10px"
+                            android:ems="4"
+                            android:imeOptions="actionDone"
+                            android:inputType="number" />
+
+                        <TextView
+                            android:layout_width="50px"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10px"
+                            android:text="@string/unitMin"
+                            android:textColor="@android:color/white"
+                            android:textSize="25px" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/list2con1line13"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15px"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tvBurnerTemperature"
+                            android:layout_width="200px"
+                            android:layout_height="wrap_content"
+                            android:gravity="right"
+                            android:shadowColor="@android:color/white"
+                            android:shadowDx="1"
+                            android:shadowDy="1"
+                            android:shadowRadius="5"
+                            android:text="@string/burnTemperature"
+                            android:textColor="@android:color/white"
+                            android:textSize="25px" />
+
+                        <EditText
+                            android:id="@+id/eTBurnerTemperature"
+                            style="@style/CEditText"
+                            android:layout_marginLeft="10px"
+                            android:ems="4"
+                            android:imeOptions="actionDone"
+                            android:inputType="number" />
+
+                        <TextView
+                            android:layout_width="50px"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10px"
+                            android:text="@string/temper_unit"
+                            android:textColor="@android:color/white"
+                            android:textSize="25px" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/list2con1line14"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15px"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tvBurnerDownTemperature"
+                            android:layout_width="200px"
+                            android:layout_height="wrap_content"
+                            android:gravity="right"
+                            android:shadowColor="@android:color/white"
+                            android:shadowDx="1"
+                            android:shadowDy="1"
+                            android:shadowRadius="5"
+                            android:text="@string/burnDownTemperature"
+                            android:textColor="@android:color/white"
+                            android:textSize="25px" />
+
+                        <EditText
+                            android:id="@+id/eTBurnerDownTemperature"
+                            style="@style/CEditText"
+                            android:layout_marginLeft="10px"
+                            android:ems="4"
+                            android:imeOptions="actionDone"
+                            android:inputType="number" />
+
+                        <TextView
+                            android:layout_width="50px"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10px"
+                            android:text="@string/temper_unit"
+                            android:textColor="@android:color/white"
+                            android:textSize="25px" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/list2con1line15"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15px"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tvToxicityTestTime"
+                            android:layout_width="200px"
+                            android:layout_height="wrap_content"
+                            android:gravity="right"
+                            android:shadowColor="@android:color/white"
+                            android:shadowDx="1"
+                            android:shadowDy="1"
+                            android:shadowRadius="5"
+                            android:text="@string/toxicity_test_time"
+                            android:textColor="@android:color/white"
+                            android:textSize="25px" />
+
+                        <EditText
+                            android:id="@+id/eTToxicityTestTime"
+                            style="@style/CEditText"
+                            android:layout_marginLeft="10px"
+                            android:ems="4"
+                            android:imeOptions="actionDone"
+                            android:inputType="number" />
+
+                        <TextView
+                            android:layout_width="50px"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10px"
+                            android:text="@string/unitMin"
+                            android:textColor="@android:color/white"
+                            android:textSize="25px" />
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/layout_ddSetting"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <LinearLayout
+                        android:id="@+id/list2con2line1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10px"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tvsytj"
+                            android:layout_width="200px"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20px"
+                            android:gravity="right"
+                            android:shadowColor="@android:color/white"
+                            android:shadowDx="1"
+                            android:shadowDy="1"
+                            android:shadowRadius="5"
+                            android:text="@string/waterVolume"
+                            android:textColor="@android:color/white"
+                            android:textSize="25px" />
+
+                        <EditText
+                            android:id="@+id/eTsytj"
+                            style="@style/CEditText"
+                            android:layout_marginLeft="10px"
+                            android:ems="4"
+                            android:imeOptions="actionDone"
+                            android:inputType="numberDecimal" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/list2con2line2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15px"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tvyhjtj"
+                            android:layout_width="200px"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20px"
+                            android:gravity="right"
+                            android:shadowColor="@android:color/white"
+                            android:shadowDx="1"
+                            android:shadowDy="1"
+                            android:shadowRadius="5"
+                            android:text="@string/oxidantVolume"
+                            android:textColor="@android:color/white"
+                            android:textSize="25px" />
+
+                        <EditText
+                            android:id="@+id/eTyhjtj"
+                            style="@style/CEditText"
+                            android:layout_marginLeft="10px"
+                            android:ems="4"
+                            android:imeOptions="actionDone"
+                            android:inputType="numberDecimal" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/list2con2line3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15px"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tvhyjtj"
+                            android:layout_width="200px"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20px"
+                            android:gravity="right"
+                            android:shadowColor="@android:color/white"
+                            android:shadowDx="1"
+                            android:shadowDy="1"
+                            android:shadowRadius="5"
+                            android:text="@string/reductantVolume"
+                            android:textColor="@android:color/white"
+                            android:textSize="25px" />
+
+                        <EditText
+                            android:id="@+id/eThyjtj"
+                            style="@style/CEditText"
+                            android:layout_marginLeft="10px"
+                            android:ems="4"
+                            android:imeOptions="actionDone"
+                            android:inputType="numberDecimal" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/list2con2line4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15px"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tvhyjnd"
+                            android:layout_width="200px"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20px"
+                            android:gravity="right"
+                            android:shadowColor="@android:color/white"
+                            android:shadowDx="1"
+                            android:shadowDy="1"
+                            android:shadowRadius="5"
+                            android:text="@string/reductantCoc"
+                            android:textColor="@android:color/white"
+                            android:textSize="25px" />
+
+                        <EditText
+                            android:id="@+id/eThyjnd"
+                            style="@style/CEditText"
+                            android:layout_marginLeft="10px"
+                            android:ems="4"
+                            android:imeOptions="actionDone"
+                            android:inputType="numberDecimal" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/list2con2line5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15px"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tvddytj"
+                            android:layout_width="200px"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20px"
+                            android:gravity="right"
+                            android:shadowColor="@android:color/white"
+                            android:shadowDx="1"
+                            android:shadowDy="1"
+                            android:shadowRadius="5"
+                            android:text="@string/titrationVolume"
+                            android:textColor="@android:color/white"
+                            android:textSize="25px" />
+
+                        <EditText
+                            android:id="@+id/eTddytj"
+                            style="@style/CEditText"
+                            android:layout_marginLeft="10px"
+                            android:ems="4"
+                            android:imeOptions="actionDone"
+                            android:inputType="numberDecimal" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/list2con2line6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15px"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tvchjtj"
+                            android:layout_width="200px"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20px"
+                            android:gravity="right"
+                            android:shadowColor="@android:color/white"
+                            android:shadowDx="1"
+                            android:shadowDy="1"
+                            android:shadowRadius="5"
+                            android:text="@string/catalystVolume"
+                            android:textColor="@android:color/white"
+                            android:textSize="25px" />
+
+                        <EditText
+                            android:id="@+id/eTchjtj"
+                            style="@style/CEditText"
+                            android:layout_marginLeft="10px"
+                            android:ems="4"
+                            android:imeOptions="actionDone"
+                            android:inputType="numberDecimal" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/list2con2line7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15px"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tvjytj"
+                            android:layout_width="200px"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20px"
+                            android:gravity="right"
+                            android:shadowColor="@android:color/white"
+                            android:shadowDx="1"
+                            android:shadowDy="1"
+                            android:shadowRadius="5"
+                            android:text="@string/lyeVolume"
+                            android:textColor="@android:color/white"
+                            android:textSize="25px" />
+
+                        <EditText
+                            android:id="@+id/eTjytj"
+                            style="@style/CEditText"
+                            android:layout_marginLeft="10px"
+                            android:ems="4"
+                            android:imeOptions="actionDone"
+                            android:inputType="numberDecimal" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

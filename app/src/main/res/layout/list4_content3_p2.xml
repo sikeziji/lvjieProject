@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_marginTop="30px"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:visibility="gone"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnYQXX"
+            android:layout_width="382px"
+            android:layout_height="201px"
+            android:background="@drawable/btn_yqxx"/>
+        <Button
+            android:id="@+id/btnCZRZ"
+            android:layout_width="382px"
+            android:layout_height="201px"
+            android:visibility="invisible"
+            android:background="@drawable/btn_czrz"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_marginBottom="10px"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:visibility="gone"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btnBCPB"
+            android:layout_width="382px"
+            android:layout_height="201px"
+            android:layout_marginLeft="10px"
+            android:visibility="invisible"
+            android:background="@drawable/btn_bcpb"/>
+        <Button
+            android:id="@+id/btnUserParSet"
+            android:layout_width="382px"
+            android:layout_height="201px"
+            android:layout_marginLeft="10px"
+            android:visibility="invisible"
+            android:background="@drawable/btn_bcpb"/>
+
+        <Button
+            android:id="@+id/btnAdminParSet"
+            android:layout_width="382px"
+            android:layout_height="201px"
+            android:layout_marginLeft="10px"
+            android:visibility="invisible"
+            android:background="@drawable/btn_bcpb"/>
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="10px"
+        android:layout_marginLeft="30px"
+        android:layout_marginTop="30px">
+
+        <GridLayout
+            android:id="@+id/gl_302"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2"></GridLayout>
+    </ScrollView>
+
+</LinearLayout>

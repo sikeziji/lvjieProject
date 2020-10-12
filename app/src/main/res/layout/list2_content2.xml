@@ -1,0 +1,569 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50px"
+        android:layout_marginBottom="25px"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20px"
+            android:shadowColor="@android:color/white"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="5"
+            android:text="@string/runningMode"
+            android:textColor="@android:color/white"
+            android:textSize="25px" />
+
+        <Spinner
+            android:id="@+id/spRunningMode"
+            android:layout_width="143px"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20px"
+            android:animationCache="true"
+            android:drawSelectorOnTop="true"
+            android:popupBackground="@android:color/white"></Spinner>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:id="@+id/layout_meaMode"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20px"
+                android:shadowColor="@android:color/white"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="5"
+                android:text="@string/meaMode"
+                android:textColor="@android:color/white"
+                android:textSize="25px" />
+
+            <Spinner
+                android:id="@+id/spMeaMode"
+                android:layout_width="143px"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20px"
+                android:animationCache="true"
+                android:drawSelectorOnTop="true"
+                android:popupBackground="@android:color/white"></Spinner>
+
+            <LinearLayout
+                android:id="@+id/LLLXCL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15px"
+                android:focusableInTouchMode="true"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20px"
+                    android:text="@string/intervalTime"
+                    android:textColor="@android:color/white"
+                    android:textSize="25px" />
+
+                <EditText
+                    android:id="@+id/eTlxclh"
+                    style="@style/CEditText"
+                    android:layout_marginLeft="10px"
+                    android:ems="4"
+                    android:imeOptions="actionDone"
+                    android:inputType="number" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10px"
+                    android:text="@string/hour"
+                    android:textColor="@android:color/white"
+                    android:textSize="25px" />
+
+                <EditText
+                    android:id="@+id/eTlxclm"
+                    style="@style/CEditText"
+                    android:layout_marginLeft="10px"
+                    android:ems="4"
+                    android:imeOptions="actionDone"
+                    android:inputType="number" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10px"
+                    android:text="@string/minute_unit"
+                    android:textColor="@android:color/white"
+                    android:textSize="25px" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LLZQCL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15px"
+                android:focusableInTouchMode="true"
+                android:visibility="invisible">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20px"
+                    android:text="@string/startTime"
+                    android:textColor="@android:color/white"
+                    android:textSize="25px" />
+
+                <EditText
+                    android:id="@+id/eTzqclh"
+                    style="@style/CEditText"
+                    android:layout_marginLeft="10px"
+                    android:background="#2cc771"
+                    android:ems="10" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10px"
+                    android:text="@string/hour"
+                    android:textColor="@android:color/white"
+                    android:textSize="25px" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lzy1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20px"
+                android:shadowColor="@android:color/white"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="5"
+                android:text="@string/continuousMea"
+                android:textColor="@android:color/white"
+                android:textSize="25px" />
+
+            <ToggleButton
+                android:id="@+id/tBtnLXCL"
+                android:layout_width="92px"
+                android:layout_height="42px"
+                android:layout_marginLeft="10px"
+                android:background="@drawable/togglebtn"
+                android:text="@string/continuousMea"
+                android:textOff=" "
+                android:textOn=" " />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lzy2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20px"
+                android:shadowColor="@android:color/white"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="5"
+                android:text="@string/cycleMea"
+                android:textColor="@android:color/white"
+                android:textSize="25px" />
+
+            <ToggleButton
+                android:id="@+id/tBtnZQCL"
+                android:layout_width="92px"
+                android:layout_height="42px"
+                android:layout_marginLeft="10px"
+                android:background="@drawable/togglebtn"
+                android:text="@string/cycleMea"
+                android:textOff=" "
+                android:textOn=" " />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_autoClearSetting"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:focusableInTouchMode="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20px"
+                android:shadowColor="@android:color/white"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="5"
+                android:text="@string/auto_clean"
+                android:textColor="@android:color/white"
+                android:textSize="25px" />
+
+            <ToggleButton
+                android:id="@+id/tBtnZDQX"
+                android:layout_width="92px"
+                android:layout_height="42px"
+                android:layout_marginLeft="10px"
+                android:background="@drawable/togglebtn"
+                android:text="@string/auto_clean"
+                android:textOff=" "
+                android:textOn=" " />
+
+            <LinearLayout
+                android:id="@+id/LLZDQX"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15px"
+                android:focusableInTouchMode="true"
+                android:visibility="invisible">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20px"
+                    android:text="@string/measure"
+                    android:textColor="@android:color/white"
+                    android:textSize="25px" />
+
+                <EditText
+                    android:id="@+id/eTzdqxh"
+                    style="@style/CEditText"
+                    android:layout_marginLeft="10px"
+                    android:ems="4"
+                    android:imeOptions="actionDone"
+                    android:inputType="number" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10px"
+                    android:text="@string/clean_info"
+                    android:textColor="@android:color/white"
+                    android:textSize="25px" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_calSetting"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20px"
+                android:shadowColor="@android:color/white"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="5"
+                android:text="@string/auto_calibration"
+                android:textColor="@android:color/white"
+                android:textSize="25px" />
+
+            <ToggleButton
+                android:id="@+id/tBtnZDJZ"
+                android:layout_width="92px"
+                android:layout_height="42px"
+                android:layout_marginLeft="10px"
+                android:background="@drawable/togglebtn"
+                android:text="@string/auto_calibration"
+                android:textOff=" "
+                android:textOn=" " />
+
+            <LinearLayout
+                android:id="@+id/LLZDJZ"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15px"
+                android:visibility="invisible">
+
+                <Spinner
+                    android:id="@+id/spJZRange"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10px"
+                    android:animationCache="true"
+                    android:drawSelectorOnTop="true"
+                    android:popupBackground="@android:color/white"></Spinner>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20px"
+                    android:text="@string/intervalTime"
+                    android:textColor="@android:color/white"
+                    android:textSize="25px" />
+
+                <EditText
+                    android:id="@+id/eTzdjzt"
+                    style="@style/CEditText"
+                    android:layout_marginLeft="10px"
+                    android:ems="4"
+                    android:imeOptions="actionDone"
+                    android:inputType="number" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10px"
+                    android:text="@string/day"
+                    android:textColor="@android:color/white"
+                    android:textSize="25px" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10px"
+                    android:text="@string/startTime"
+                    android:textColor="@android:color/white"
+                    android:textSize="25px" />
+
+                <EditText
+                    android:id="@+id/eTzdjzh"
+                    style="@style/CEditText"
+                    android:layout_marginLeft="10px"
+                    android:ems="4"
+                    android:imeOptions="actionDone"
+                    android:inputType="number" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10px"
+                    android:text="@string/hour"
+                    android:textColor="@android:color/white"
+                    android:textSize="25px" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_spanSet"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20px"
+                android:shadowColor="@android:color/white"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="5"
+                android:text="@string/span_coc"
+                android:textColor="@android:color/white"
+                android:textSize="25px" />
+
+            <Spinner
+                android:id="@+id/spbynd"
+                android:layout_width="143px"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10px"
+                android:animationCache="true"
+                android:drawSelectorOnTop="true"
+                android:popupBackground="@android:color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20px"
+                android:text="@string/spanCoc_1"
+                android:textColor="@android:color/white"
+                android:textSize="25px" />
+
+            <EditText
+                android:id="@+id/eTby1"
+                style="@style/CEditText"
+                android:layout_marginLeft="10px"
+                android:ems="4"
+                android:imeOptions="actionDone"
+                android:inputType="numberDecimal" />
+
+            <TextView
+                android:id="@+id/txby1nddw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10px"
+                android:textColor="@android:color/white"
+                android:textSize="25px" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20px"
+                android:text="@string/spanCoc_2"
+                android:textColor="@android:color/white"
+                android:textSize="25px" />
+
+            <EditText
+                android:id="@+id/eTby2"
+                style="@style/CEditText"
+                android:layout_marginLeft="10px"
+                android:ems="4"
+                android:imeOptions="actionDone"
+                android:inputType="numberDecimal" />
+
+            <TextView
+                android:id="@+id/txby2nddw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10px"
+                android:textColor="@android:color/white"
+                android:textSize="25px" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_autoWashSetting"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:focusableInTouchMode="true"
+            android:gravity="center_vertical"
+            android:visibility="gone"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20px"
+                android:shadowColor="@android:color/white"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="5"
+                android:text="@string/auto_wash"
+                android:textColor="@android:color/white"
+                android:textSize="25px" />
+
+            <ToggleButton
+                android:id="@+id/tBtnZDCX"
+                android:layout_width="92px"
+                android:layout_height="42px"
+                android:layout_marginLeft="10px"
+                android:background="@drawable/togglebtn"
+                android:text="@string/auto_wash"
+                android:textOff=" "
+                android:textOn=" " />
+
+            <LinearLayout
+                android:id="@+id/LLZDCX"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15px"
+                android:focusableInTouchMode="true"
+                android:visibility="invisible">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20px"
+                    android:text="@string/measureLimit"
+                    android:textColor="@android:color/white"
+                    android:textSize="25px" />
+
+                <EditText
+                    android:id="@+id/eTAutoWashLimitValue"
+                    style="@style/CEditText"
+                    android:layout_marginLeft="10px"
+                    android:ems="4"
+                    android:imeOptions="actionDone"
+                    android:inputType="numberDecimal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10px"
+                    android:text="@string/autoWashUnit"
+                    android:textColor="@android:color/white"
+                    android:textSize="25px" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_autoXJSetting"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:focusableInTouchMode="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20px"
+                android:shadowColor="@android:color/white"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="5"
+                android:text="@string/smart_digest"
+                android:textColor="@android:color/white"
+                android:textSize="25px" />
+
+            <ToggleButton
+                android:id="@+id/tBtnZNXJ"
+                android:layout_width="92px"
+                android:layout_height="42px"
+                android:layout_marginLeft="10px"
+                android:background="@drawable/togglebtn"
+                android:text="@string/auto_wash"
+                android:textOff=" "
+                android:textOn=" " />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

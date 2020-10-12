@@ -1,0 +1,564 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="642px"
+        android:layout_height="409px"
+        android:layout_marginLeft="20px"
+        android:layout_marginTop="20px"
+        android:background="@drawable/main_image"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="60px"
+                    android:layout_marginTop="20px"
+                    android:gravity="right"
+                    android:text="@string/beforeMeaData"
+                    android:textColor="@android:color/white"
+                    android:textSize="25px" />
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:id="@+id/layout_VOCComp1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20px">
+
+                            <TextView
+                                android:id="@+id/VOCCompName1"
+                                android:layout_width="120px"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="60px"
+                                android:gravity="left"
+                                android:textColor="@android:color/white"
+                                android:textSize="25px" />
+
+                            <TextView
+                                android:id="@+id/VOCCompMea1"
+                                android:layout_width="120px"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="60px"
+                                android:gravity="left"
+                                android:textColor="@android:color/white"
+                                android:textSize="25px" />
+
+                            <TextView
+                                android:id="@+id/txtVocUnit1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="15px"
+                                android:gravity="right"
+                                android:textColor="@android:color/white"
+                                android:textSize="25px"
+                                android:visibility="gone" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/layout_VOCComp2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15px">
+
+                            <TextView
+                                android:id="@+id/VOCCompName2"
+                                android:layout_width="120px"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="60px"
+                                android:gravity="left"
+                                android:textColor="@android:color/white"
+                                android:textSize="25px" />
+
+                            <TextView
+                                android:id="@+id/VOCCompMea2"
+                                android:layout_width="120px"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="60px"
+                                android:gravity="left"
+                                android:textColor="@android:color/white"
+                                android:textSize="25px" />
+
+                            <TextView
+                                android:id="@+id/txtVocUnit2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="15px"
+                                android:gravity="right"
+                                android:textColor="@android:color/white"
+                                android:textSize="25px"
+                                android:visibility="gone" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/layout_VOCComp3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15px">
+
+                            <TextView
+                                android:id="@+id/VOCCompName3"
+                                android:layout_width="120px"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="60px"
+                                android:gravity="left"
+                                android:textColor="@android:color/white"
+                                android:textSize="25px" />
+
+                            <TextView
+                                android:id="@+id/VOCCompMea3"
+                                android:layout_width="120px"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="60px"
+                                android:gravity="left"
+                                android:textColor="@android:color/white"
+                                android:textSize="25px" />
+
+                            <TextView
+                                android:id="@+id/txtVocUnit3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="15px"
+                                android:gravity="right"
+                                android:textColor="@android:color/white"
+                                android:textSize="25px"
+                                android:visibility="gone" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/layout_VOCComp4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15px">
+
+                            <TextView
+                                android:id="@+id/VOCCompName4"
+                                android:layout_width="120px"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="60px"
+                                android:gravity="left"
+                                android:textColor="@android:color/white"
+                                android:textSize="25px" />
+
+                            <TextView
+                                android:id="@+id/VOCCompMea4"
+                                android:layout_width="120px"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="60px"
+                                android:gravity="left"
+                                android:textColor="@android:color/white"
+                                android:textSize="25px" />
+
+                            <TextView
+                                android:id="@+id/txtVocUnit4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="15px"
+                                android:gravity="right"
+                                android:textColor="@android:color/white"
+                                android:textSize="25px"
+                                android:visibility="gone" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/layout_VOCComp5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15px">
+
+                            <TextView
+                                android:id="@+id/VOCCompName5"
+                                android:layout_width="120px"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="60px"
+                                android:gravity="left"
+                                android:textColor="@android:color/white"
+                                android:textSize="25px" />
+
+                            <TextView
+                                android:id="@+id/VOCCompMea5"
+                                android:layout_width="120px"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="60px"
+                                android:gravity="left"
+                                android:textColor="@android:color/white"
+                                android:textSize="25px" />
+
+                            <TextView
+                                android:id="@+id/txtVocUnit5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="15px"
+                                android:gravity="right"
+                                android:textColor="@android:color/white"
+                                android:textSize="25px"
+                                android:visibility="gone" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/layout_VOCComp6"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15px">
+
+                            <TextView
+                                android:id="@+id/VOCCompName6"
+                                android:layout_width="120px"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="60px"
+                                android:gravity="left"
+                                android:textColor="@android:color/white"
+                                android:textSize="25px" />
+
+                            <TextView
+                                android:id="@+id/VOCCompMea6"
+                                android:layout_width="120px"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="60px"
+                                android:gravity="left"
+                                android:textColor="@android:color/white"
+                                android:textSize="25px" />
+
+                            <TextView
+                                android:id="@+id/txtVocUnit6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="15px"
+                                android:gravity="right"
+                                android:textColor="@android:color/white"
+                                android:textSize="25px"
+                                android:visibility="gone" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/layout_VOCComp7"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15px">
+
+                            <TextView
+                                android:id="@+id/VOCCompName7"
+                                android:layout_width="120px"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="60px"
+                                android:gravity="left"
+                                android:textColor="@android:color/white"
+                                android:textSize="25px" />
+
+                            <TextView
+                                android:id="@+id/VOCCompMea7"
+                                android:layout_width="120px"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="60px"
+                                android:gravity="left"
+                                android:textColor="@android:color/white"
+                                android:textSize="25px" />
+
+                            <TextView
+                                android:id="@+id/txtVocUnit7"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="15px"
+                                android:gravity="right"
+                                android:textColor="@android:color/white"
+                                android:textSize="25px"
+                                android:visibility="gone" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/layout_VOCComp8"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15px">
+
+                            <TextView
+                                android:id="@+id/VOCCompName8"
+                                android:layout_width="120px"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="60px"
+                                android:gravity="left"
+                                android:textColor="@android:color/white"
+                                android:textSize="25px" />
+
+                            <TextView
+                                android:id="@+id/VOCCompMea8"
+                                android:layout_width="120px"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="60px"
+                                android:gravity="left"
+                                android:textColor="@android:color/white"
+                                android:textSize="25px" />
+
+                            <TextView
+                                android:id="@+id/txtVocUnit8"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="15px"
+                                android:gravity="right"
+                                android:textColor="@android:color/white"
+                                android:textSize="25px"
+                                android:visibility="gone" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/layout_VOCComp9"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15px">
+
+                            <TextView
+                                android:id="@+id/VOCCompName9"
+                                android:layout_width="120px"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="60px"
+                                android:gravity="left"
+                                android:textColor="@android:color/white"
+                                android:textSize="25px" />
+
+                            <TextView
+                                android:id="@+id/VOCCompMea9"
+                                android:layout_width="120px"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="60px"
+                                android:gravity="left"
+                                android:textColor="@android:color/white"
+                                android:textSize="25px" />
+
+                            <TextView
+                                android:id="@+id/txtVocUnit9"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="15px"
+                                android:gravity="right"
+                                android:textColor="@android:color/white"
+                                android:textSize="25px"
+                                android:visibility="gone" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/layout_VOCComp10"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15px">
+
+                            <TextView
+                                android:id="@+id/VOCCompName10"
+                                android:layout_width="120px"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="60px"
+                                android:gravity="left"
+                                android:textColor="@android:color/white"
+                                android:textSize="25px" />
+
+                            <TextView
+                                android:id="@+id/VOCCompMea10"
+                                android:layout_width="120px"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="60px"
+                                android:gravity="left"
+                                android:textColor="@android:color/white"
+                                android:textSize="25px" />
+
+                            <TextView
+                                android:id="@+id/txtVocUnit10"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="15px"
+                                android:gravity="right"
+                                android:textColor="@android:color/white"
+                                android:textSize="25px"
+                                android:visibility="gone" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </ScrollView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingLeft="60px"
+        android:paddingTop="10px">
+        <LinearLayout
+            android:id="@+id/layout_Toppadding"
+            android:layout_width="match_parent"
+            android:layout_height="40px">
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/layout_cfgFlowSwitch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/M_FlowMsg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5px"
+                android:text="@string/configFlowStarted"
+                android:textColor="@color/red"
+                android:textSize="20px" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/M_SCCL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5px"
+            android:text="@string/display_before_mea"
+            android:textColor="@android:color/white"
+            android:textSize="20px" />
+
+        <TextView
+            android:id="@+id/M_SYLC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5px"
+            android:text="@string/display_use_range"
+            android:textColor="@android:color/white"
+            android:textSize="20px" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5px"
+
+            >
+
+            <TextView
+                android:id="@+id/M_DQZT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/display_current_status"
+                android:textColor="@android:color/white"
+                android:textSize="20px" />
+
+            <TextView
+                android:id="@+id/M_CLZT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5px"
+                android:text="@string/combination_test"
+                android:textColor="@android:color/white"
+                android:textSize="20px"
+                android:visibility="invisible" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/M_DQDZ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5px"
+            android:text="@string/display_current_action"
+            android:textColor="@android:color/white"
+            android:textSize="20px" />
+
+        <TextView
+            android:id="@+id/M_XYDZ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5px"
+            android:text="@string/display_next_action"
+            android:textColor="@android:color/white"
+            android:textSize="20px" />
+
+        <TextView
+            android:id="@+id/M_SYBZ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5px"
+            android:text="@string/display_steps_left"
+            android:textColor="@android:color/white"
+            android:textSize="20px" />
+
+        <TextView
+            android:id="@+id/M_ZYMS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5px"
+            android:text="@string/display_sample_model"
+            android:textColor="@android:color/white"
+            android:textSize="20px" />
+
+        <TextView
+            android:id="@+id/M_XJWD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5px"
+            android:text="@string/display_digestion_temperature"
+            android:textColor="@android:color/white"
+            android:textSize="20px" />
+
+        <TextView
+            android:id="@+id/M_ZQDSJ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5px"
+            android:text="@string/display_restart_time"
+            android:textColor="@android:color/white"
+            android:textSize="20px" />
+
+        <TextView
+            android:id="@+id/M_ZQDLC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5px"
+            android:text="@string/afterJobUseRange"
+            android:textColor="@android:color/white"
+            android:textSize="20px"
+            android:visibility="gone" />
+
+        <ImageButton
+            android:id="@+id/btn_jjtz"
+            android:layout_width="144px"
+            android:layout_height="61px"
+            android:layout_marginLeft="40px"
+            android:layout_marginTop="25px"
+            android:background="@android:color/transparent"
+            android:scaleType="fitXY"
+            android:src="@drawable/btn_jjtz"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/txtDevMsg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5px"
+            android:textColor="@color/red"
+            android:textSize="20px"
+
+            android:visibility="invisible" />
+    </LinearLayout>
+
+</LinearLayout>

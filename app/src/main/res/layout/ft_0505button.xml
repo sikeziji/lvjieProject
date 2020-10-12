@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Button
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/btn_ft"
+    android:layout_width="382px"
+    android:layout_height="201px"
+    android:layout_marginBottom="10px"/>

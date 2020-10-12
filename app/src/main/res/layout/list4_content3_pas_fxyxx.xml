@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="800px"
+        android:layout_height="427px"
+        android:layout_marginTop="25px"
+        android:background="@drawable/bj_p"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40px"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btnReturn_p4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10px"
+                android:background="@null"
+                android:src="@drawable/btn_return" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="250px"
+                android:text="@string/device_info"
+                android:textColor="@android:color/white"
+                android:textSize="20px" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20px"
+            android:layout_marginBottom="10px"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/Btn_szccsz"
+                style="@style/CButton_Dialog"
+                android:layout_width="140px"
+                android:text="@string/set_factory_set" />
+
+            <Button
+                android:id="@+id/Btn_hhccsz"
+                style="@style/CButton_Dialog"
+                android:layout_width="140px"
+                android:layout_marginLeft="30px"
+                android:text="@string/restore_factory_set" />
+
+            <Button
+                android:id="@+id/Btn_clearKBF"
+                style="@style/CButton_Dialog"
+                android:layout_width="140px"
+                android:layout_marginLeft="30px"
+                android:text="@string/calibration_data_empty" />
+
+            <Button
+                android:id="@+id/Btn_clearRunNote"
+                style="@style/CButton_Dialog"
+                android:layout_width="140px"
+                android:layout_marginLeft="30px"
+                android:text="@string/running_data_empty" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

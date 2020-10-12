@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="642px"
+        android:layout_height="409px"
+        android:layout_marginLeft="20px"
+        android:layout_marginTop="20px"
+        android:background="@drawable/main_image"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/layout_A"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10px">
+
+                <TextView
+                    android:layout_width="80px"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30px"
+                    android:gravity="right"
+                    android:text="A"
+                    android:textColor="@android:color/white"
+                    android:textSize="20px" />
+
+                <TextView
+                    android:id="@+id/M_A"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30px"
+                    android:text=""
+                    android:textColor="@android:color/white"
+                    android:textSize="20px" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="60px"
+                    android:text="体积/△E曲线图"
+                    android:textColor="@android:color/white"
+                    android:textSize="20px" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="155px"
+                    android:shadowColor="@android:color/white"
+                    android:shadowDx="1"
+                    android:shadowDy="1"
+                    android:text="数据监测"
+                    android:textColor="@android:color/white"
+                    android:textSize="20px" />
+
+                <ToggleButton
+                    android:id="@+id/tBtnZDZY"
+                    android:layout_width="72px"
+                    android:layout_height="32px"
+                    android:layout_marginLeft="10px"
+                    android:background="@drawable/togglebtn"
+                    android:text="数据监测"
+                    android:textOff=" "
+                    android:textOn=" " />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <com.yzlm.cyl.cfragment.Content.Chart.CurveChart
+                    android:id="@+id/curve_chart"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"></com.yzlm.cyl.cfragment.Content.Chart.CurveChart>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:visibility="gone">
+
+                <LinearLayout xmlns:tools="http://schemas.android.com/tools"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    tools:context="com.example.administrator.myapplication.MainActivity">
+
+                    <com.github.mikephil.charting.charts.LineChart
+                        android:id="@+id/chart"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingLeft="60px"
+        android:paddingTop="10px">
+
+        <LinearLayout
+            android:id="@+id/layout_Toppadding"
+            android:layout_width="match_parent"
+            android:layout_height="40px"></LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_cfgFlowSwitch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/M_FlowMsg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5px"
+                android:text="@string/configFlowStarted"
+                android:textColor="@color/red"
+                android:textSize="20px" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/M_SCCL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5px"
+            android:text="@string/display_before_mea"
+            android:textColor="@android:color/white"
+            android:textSize="20px" />
+
+        <TextView
+            android:id="@+id/M_SYLC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5px"
+            android:text="@string/display_use_range"
+            android:textColor="@android:color/white"
+            android:textSize="20px" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5px">
+
+            <TextView
+                android:id="@+id/M_DQZT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/display_current_status"
+                android:textColor="@android:color/white"
+                android:textSize="20px" />
+
+            <TextView
+                android:id="@+id/M_CLZT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5px"
+                android:text="@string/combination_test"
+                android:textColor="@android:color/white"
+                android:textSize="20px"
+                android:visibility="invisible" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/M_DQDZ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5px"
+            android:text="@string/display_current_action"
+            android:textColor="@android:color/white"
+            android:textSize="20px" />
+
+        <TextView
+            android:id="@+id/M_XYDZ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5px"
+            android:text="@string/display_next_action"
+            android:textColor="@android:color/white"
+            android:textSize="20px" />
+
+        <TextView
+            android:id="@+id/M_SYBZ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5px"
+            android:text="@string/display_steps_left"
+            android:textColor="@android:color/white"
+            android:textSize="20px" />
+
+        <TextView
+            android:id="@+id/M_ZYMS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5px"
+            android:text="@string/display_sample_model"
+            android:textColor="@android:color/white"
+            android:textSize="20px" />
+
+        <TextView
+            android:id="@+id/M_XJWD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5px"
+            android:singleLine="false"
+            android:text="@string/display_burner_temperature"
+            android:textColor="@android:color/white"
+            android:textSize="20px" />
+
+        <!--<TextView
+            android:id="@+id/M_TCLL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5px"
+            android:singleLine="false"
+            android:text="@string/display_tc_flow"
+            android:textColor="@android:color/white"
+            android:textSize="20px" />-->
+
+        <TextView
+            android:id="@+id/M_ZQDSJ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5px"
+            android:text="@string/display_restart_time"
+            android:textColor="@android:color/white"
+            android:textSize="20px" />
+
+        <TextView
+            android:id="@+id/M_ZQDLC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5px"
+            android:text="@string/afterJobUseRange"
+            android:textColor="@android:color/white"
+            android:textSize="20px"
+            android:visibility="gone" />
+
+        <ImageButton
+            android:id="@+id/btn_jjtz"
+            android:layout_width="144px"
+            android:layout_height="61px"
+            android:layout_marginLeft="40px"
+            android:layout_marginTop="25px"
+            android:background="@android:color/transparent"
+            android:scaleType="fitXY"
+            android:src="@drawable/btn_jjtz"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/txtDevMsg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5px"
+            android:textColor="@color/red"
+            android:textSize="20px"
+
+            android:visibility="invisible" />
+    </LinearLayout>
+
+</LinearLayout>

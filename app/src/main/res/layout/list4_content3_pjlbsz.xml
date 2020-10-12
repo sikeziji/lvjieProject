@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="800px"
+        android:layout_height="427px"
+        android:layout_marginTop="25px"
+        android:background="@drawable/bj_p"
+        android:orientation="vertical">
+
+        <!--返回标题栏-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40px"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btnReturn_p1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10px"
+                android:background="@null"
+                android:src="@drawable/btn_return" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="250px"
+                android:text="@string/metering_board_setup"
+                android:textColor="@android:color/white"
+                android:textSize="20px" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20px"
+            android:gravity="center_vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusableInTouchMode="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="80px"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20px"
+                    android:gravity="right"
+                    android:text="@string/address"
+                    android:textColor="@android:color/white"
+                    android:textSize="20px" />
+
+                <ToggleButton
+                    android:id="@+id/togBtnAddr"
+                    android:layout_width="92px"
+                    android:layout_height="42px"
+                    android:layout_marginLeft="30px"
+                    android:background="@drawable/togglebtn"
+                    android:checked="false"
+                    android:text=""
+                    android:textOff=" "
+                    android:textOn=" " />
+
+                <LinearLayout
+                    android:id="@+id/layout_jlbAddr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:focusableInTouchMode="true"
+                    android:visibility="invisible">
+
+                    <EditText
+                        android:id="@+id/etjlbAddr"
+                        style="@style/CEditText"
+                        android:layout_marginLeft="30px"
+                        android:ems="4"
+                        android:hint="@string/address"
+                        android:imeOptions="actionDone"
+                        android:inputType="number" />
+
+                    <EditText
+                        android:id="@+id/etjlbName"
+                        style="@style/CEditText"
+                        android:layout_marginLeft="30px"
+                        android:ems="4"
+                        android:hint="@string/name"
+                        android:imeOptions="actionDone" />
+
+                    <Button
+                        android:id="@+id/btn_AddrSave"
+                        style="@style/CButton_Dialog"
+                        android:layout_width="100px"
+                        android:layout_height="40px"
+                        android:layout_marginLeft="30px"
+                        android:text="@string/save" />
+
+                    <Button
+                        android:id="@+id/btn_AddrAllClear"
+                        style="@style/CButton_Dialog"
+                        android:layout_width="100px"
+                        android:layout_height="40px"
+                        android:layout_marginLeft="30px"
+                        android:text="@string/all_clear" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <!--主内容区-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="345px"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20px">
+
+                    <TextView
+                        android:layout_width="80px"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20px"
+                        android:gravity="right"
+                        android:text="@string/metering_collection"
+                        android:textColor="@android:color/white"
+                        android:textSize="20px" />
+
+                    <ToggleButton
+                        android:id="@+id/togBtnJlbCollect"
+                        android:layout_width="92px"
+                        android:layout_height="42px"
+                        android:layout_marginLeft="30px"
+                        android:background="@drawable/togglebtn"
+                        android:textOff=" "
+                        android:textOn=" " />
+
+                    <Spinner
+                        android:id="@+id/spJlbAddr"
+                        android:layout_width="100px"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="30px"
+                        android:animationCache="true"
+                        android:drawSelectorOnTop="true"
+                        android:popupBackground="@android:color/white">
+
+                    </Spinner>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:focusableInTouchMode="false"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="200px"
+                        android:layout_height="200px"
+                        android:background="@drawable/jlmk"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="108px"
+                            android:layout_marginTop="45px"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/txtJLB_L1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@android:color/white"
+                                    android:textSize="20px" />
+
+                                <TextView
+                                    android:id="@+id/txtJLB_L2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10px"
+                                    android:textColor="@android:color/white"
+                                    android:textSize="20px" />
+
+                                <TextView
+                                    android:id="@+id/txtJLB_L3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10px"
+                                    android:textColor="@android:color/white"
+                                    android:textSize="20px" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="15px"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/txtJLB_H1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@android:color/white"
+                                    android:textSize="20px" />
+
+                                <TextView
+                                    android:id="@+id/txtJLB_H2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10px"
+                                    android:textColor="@android:color/white"
+                                    android:textSize="20px" />
+
+                                <TextView
+                                    android:id="@+id/txtJLB_H3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10px"
+                                    android:textColor="@android:color/white"
+                                    android:textSize="20px" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:focusableInTouchMode="false"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/layout_teeValve"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20px"
+                    android:focusableInTouchMode="false"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="80px"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50px"
+                        android:gravity="right"
+                        android:text="@string/tee_valve"
+                        android:textColor="@android:color/white"
+                        android:textSize="20px" />
+
+                    <ToggleButton
+                        android:id="@+id/togBtnJlbST"
+                        android:layout_width="100px"
+                        android:layout_height="40px"
+                        android:layout_marginLeft="30px"
+                        android:background="@drawable/toggle_botton"
+                        android:text="@string/open"
+                        android:textOff="@string/open"
+                        android:textOn="@string/close"
+                        android:textSize="18px" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20px"
+                    android:focusableInTouchMode="true"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="80px"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50px"
+                        android:gravity="right"
+                        android:text="@string/speed"
+                        android:textColor="@android:color/white"
+                        android:textSize="20px" />
+
+                    <EditText
+                        android:id="@+id/edit_JLBSpeed"
+                        style="@style/CEditText"
+                        android:layout_marginLeft="30px"
+                        android:ems="4"
+                        android:text="50"
+                        android:imeOptions="actionDone"
+                        android:inputType="number" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20px"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="80px"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50px"
+                        android:gravity="right"
+                        android:text="@string/sample_pump"
+                        android:textColor="@android:color/white"
+                        android:textSize="20px" />
+
+                    <ToggleButton
+                        android:id="@+id/Btn_pJLBsz_cy"
+                        android:layout_width="100px"
+                        android:layout_height="40px"
+                        android:layout_marginLeft="30px"
+                        android:background="@drawable/toggle_botton"
+                        android:text="@string/infusion"
+                        android:textOff="@string/infusion"
+                        android:textOn="@string/infusion"
+                        android:textSize="18px" />
+
+                    <ToggleButton
+                        android:id="@+id/Btn_pJLBsz_py"
+                        android:layout_width="100px"
+                        android:layout_height="40px"
+                        android:layout_marginLeft="20px"
+                        android:background="@drawable/toggle_botton"
+                        android:text="@string/drains"
+                        android:textOff="@string/drains"
+                        android:textOn="@string/drains"
+                        android:textSize="18px" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20px"
+                    android:focusableInTouchMode="true"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="80px"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50px"
+                        android:gravity="right"
+                        android:text="@string/measuring_threshold"
+                        android:textColor="@android:color/white"
+                        android:textSize="20px" />
+
+                    <EditText
+                        android:id="@+id/edJLBL1"
+                        style="@style/CEditText"
+                        android:layout_marginLeft="30px"
+                        android:ems="4"
+                        android:imeOptions="actionDone"
+                        android:inputType="number" />
+
+                    <EditText
+                        android:id="@+id/edJLBL2"
+                        style="@style/CEditText"
+                        android:layout_marginLeft="20px"
+                        android:ems="4"
+                        android:imeOptions="actionDone"
+                        android:inputType="number" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/soft_bj"
+    android:orientation="vertical">
+
+    <com.yzlm.cyl.clibrary.Control.CPullable.CPullToRefreshLayout
+        android:id="@+id/PLwarn"
+        android:layout_width="match_parent"
+        android:layout_height="365px"
+        android:layout_marginLeft="23px"
+        android:layout_marginRight="30px"
+        android:layout_marginTop="28px">
+
+        <include layout="@layout/refresh_head" />
+
+        <com.yzlm.cyl.clibrary.Control.CPullable.CPullableScrollView
+            android:id="@+id/SVwarn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="15px">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@android:color/white"
+                android:textSize="18px" />
+        </com.yzlm.cyl.clibrary.Control.CPullable.CPullableScrollView>
+
+        <include layout="@layout/load_more" />
+    </com.yzlm.cyl.clibrary.Control.CPullable.CPullToRefreshLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="58px"
+        android:orientation="horizontal"
+        android:layout_marginBottom="11px"
+        android:layout_marginLeft="23px"
+        android:layout_marginRight="30px"
+        android:background="@drawable/listbottom"
+        android:gravity="center_vertical">
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="20px"-->
+            <!--android:shadowColor="@android:color/white"-->
+            <!--android:shadowDx="1"-->
+            <!--android:shadowDy="1"-->
+            <!--android:shadowRadius="5"-->
+            <!--android:text="报警类型"-->
+            <!--android:textColor="@android:color/white"-->
+            <!--android:textSize="18px" />-->
+
+        <!--<Spinner-->
+            <!--android:id="@+id/alarmCateg"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="35px"-->
+            <!--android:background="@drawable/spinner"-->
+            <!--android:layout_marginLeft="10px"-->
+            <!--android:popupBackground="@android:color/white" />-->
+
+        <Button
+            android:id="@+id/Btn_warn_select"
+            style="@style/CButton_Dialog"
+            android:layout_marginLeft="350px"
+            android:text="@string/query" />
+        <Button
+            android:id="@+id/Btn_warn_OutPut"
+            style="@style/CButton_Dialog"
+            android:layout_marginLeft="60px"
+            android:text="@string/export" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/line"
+    android:orientation="vertical"
+    android:splitMotionEvents="false">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/Left5_1"
+                android:layout_width="wrap_content"
+                android:layout_height="65px"
+                android:layout_marginTop="40px"
+                android:background="@android:color/transparent"
+                android:scaleType="fitXY"
+                android:src="@drawable/l5l1" />
+
+            <ImageButton
+                android:id="@+id/Left5_2"
+                android:layout_width="wrap_content"
+                android:layout_height="65px"
+                android:background="@android:color/transparent"
+                android:scaleType="fitXY"
+                android:src="@drawable/l5l21" />
+
+            <ImageButton
+                android:id="@+id/Left5_3"
+                android:layout_width="wrap_content"
+                android:layout_height="65px"
+                android:background="@android:color/transparent"
+                android:scaleType="fitXY"
+                android:src="@drawable/l5l3" />
+
+            <ImageButton
+                android:id="@+id/Left5_4"
+                android:layout_width="wrap_content"
+                android:layout_height="65px"
+                android:background="@android:color/transparent"
+                android:scaleType="fitXY"
+                android:src="@drawable/l5l4" />
+
+            <ImageButton
+                android:id="@+id/Left5_5"
+                android:layout_width="wrap_content"
+                android:layout_height="65px"
+                android:background="@android:color/transparent"
+                android:scaleType="fitXY"
+                android:src="@drawable/l5l5" />
+
+            <ImageButton
+                android:id="@+id/Left5_6"
+                android:layout_width="wrap_content"
+                android:layout_height="65px"
+                android:background="@android:color/transparent"
+                android:scaleType="fitXY"
+                android:src="@drawable/l5l6" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

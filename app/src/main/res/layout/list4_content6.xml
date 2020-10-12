@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:visibility="gone">
+        <Button
+            android:id="@+id/btn_turbidity_compensation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_big"
+            android:textSize="25px"
+            android:text="@string/turbidityCom" />
+        <Button
+            android:id="@+id/btn_homing_peak"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25px"
+            android:background="@drawable/btn_big"
+            android:text="@string/Homing_peak"
+            android:textSize="25px" />
+        <Button
+            android:id="@+id/btn_kdhc_range_select"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25px"
+            android:background="@drawable/btn_big"
+            android:text="@string/displayKDHCSetting"
+            android:textSize="25px" />
+
+        <Button
+            android:id="@+id/btn_flow_cfg_setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25px"
+            android:background="@drawable/btn_big"
+            android:text="@string/flowCfgSetting"
+            android:textSize="25px" />
+
+        <Button
+            android:id="@+id/btn_range_cal_setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25px"
+            android:background="@drawable/btn_big"
+            android:text="@string/oneKeyCal"
+            android:textSize="25px" />
+
+        <Button
+            android:id="@+id/btn_update_config"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25px"
+            android:background="@drawable/btn_big"
+            android:text="@string/updateConfig"
+            android:textSize="25px" />
+
+        <Button
+            android:id="@+id/btn_upgrade_board"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25px"
+            android:background="@drawable/btn_big"
+            android:text="@string/upgradeBoard"
+            android:textSize="25px" />
+
+
+        <Button
+            android:id="@+id/btn_sjhf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25px"
+            android:background="@drawable/btn_big"
+            android:text="@string/datarecovery"
+            android:textSize="25px" />
+        <Button
+            android:id="@+id/btn_directory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25px"
+            android:background="@drawable/btn_big"
+            android:text="@string/directoryLook"
+            android:textSize="25px" />
+
+        <Button
+            android:id="@+id/btn_fileinfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25px"
+            android:background="@drawable/btn_big"
+            android:text="@string/version"
+            android:textSize="25px" />
+    </LinearLayout>
+
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="10px"
+        android:layout_marginLeft="30px"
+        android:layout_marginTop="30px">
+
+        <GridLayout
+            android:id="@+id/gl_content4_6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2"></GridLayout>
+    </ScrollView>
+</LinearLayout>

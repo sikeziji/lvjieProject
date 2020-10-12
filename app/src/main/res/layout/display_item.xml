@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/display_item"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/Name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30px"
+        android:gravity="center"
+        android:text=""
+        android:textColor="@android:color/white"
+        android:textSize="30px" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40px"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="@android:color/white"
+            android:textSize="30px" />
+
+        <TextView
+            android:id="@+id/ParameterUnit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5px"
+            android:text="mg/L"
+            android:textColor="@android:color/white"
+            android:textSize="25px" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30px"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvLC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0-0"
+            android:textColor="@android:color/white"
+            android:textSize="25px" />
+
+        <TextView
+            android:id="@+id/RangeUnit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5px"
+            android:text="mg/L"
+            android:textColor="@android:color/white"
+            android:textSize="25px" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30px"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvSYLC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0-0"
+            android:textColor="@android:color/white"
+            android:textSize="25px" />
+
+        <TextView
+            android:id="@+id/SYRangeUnit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5px"
+            android:text="mg/L"
+            android:textColor="@android:color/white"
+            android:textSize="25px" />
+    </LinearLayout>
+
+    <!--<TextView-->
+    <!--android:id="@+id/itime"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_gravity="center"-->
+    <!--android:layout_marginTop="25px"-->
+    <!--android:text="12:00:00"-->
+    <!--android:textColor="@android:color/white"-->
+    <!--android:textSize="20px" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/idate"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_gravity="center"-->
+    <!--android:text="2016/11/20"-->
+    <!--android:textColor="@android:color/white"-->
+    <!--android:textSize="20px" />-->
+
+
+    <TextView
+        android:id="@+id/tv_runningMode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="50px"
+        android:text=""
+        android:textColor="@android:color/white"
+        android:textSize="25px" />
+
+    <TextView
+        android:id="@+id/tv_workSate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="40px"
+        android:text="@string/normal"
+        android:textColor="@android:color/white"
+        android:textSize="25px" />
+</LinearLayout>

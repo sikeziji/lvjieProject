@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    android:orientation="horizontal">
+
+
+    <LinearLayout
+        android:layout_width="0px"
+        android:layout_height="match_parent"
+        android:layout_weight="2.8"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20px">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20px"
+                android:shadowColor="@android:color/white"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="5"
+                android:text="@string/reagent_allowance"
+                android:textColor="@android:color/white"
+                android:textSize="25px" />
+
+            <ToggleButton
+                android:id="@+id/tBtnSurplus"
+                android:layout_width="92px"
+                android:layout_height="42px"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20px"
+                android:background="@drawable/togglebtn"
+                android:text="@string/allowance_alarm"
+                android:textOff=" "
+                android:textOn=" " />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/layout_surplusTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10px"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="165px"
+                    android:text="@string/reagent"
+                    android:textColor="@android:color/white"
+                    android:textSize="30px" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="80px"
+                    android:text="@string/full_bottle"
+                    android:textColor="@android:color/white"
+                    android:textSize="30px" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30px"
+                    android:text="@string/regent_value"
+                    android:textColor="@android:color/white"
+                    android:textSize="30px" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_yl1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="3px"
+                android:focusableInTouchMode="true"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/txtyl1name"
+                    android:layout_width="140px"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="130px"
+                    android:gravity="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="25px" />
+
+                <EditText
+                    android:id="@+id/edityl1Bottle"
+                    style="@style/CEditText"
+                    android:layout_marginLeft="40px"
+                    android:ems="4"
+                    android:imeOptions="actionDone"
+                    android:inputType="number" />
+
+
+                <EditText
+                    android:id="@+id/edityl1surplus"
+                    style="@style/CEditText"
+                    android:layout_marginLeft="50px"
+                    android:ems="4"
+                    android:imeOptions="actionDone"
+                    android:inputType="numberDecimal" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_yl2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="3px"
+                android:focusableInTouchMode="true"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/txtyl2name"
+                    android:layout_width="140px"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="130px"
+                    android:gravity="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="25px" />
+
+                <EditText
+                    android:id="@+id/edityl2Bottle"
+                    style="@style/CEditText"
+                    android:layout_marginLeft="40px"
+                    android:ems="4"
+                    android:imeOptions="actionDone"
+                    android:inputType="number" />
+
+
+                <EditText
+                    android:id="@+id/edityl2surplus"
+                    style="@style/CEditText"
+                    android:layout_marginLeft="50px"
+                    android:ems="4"
+                    android:imeOptions="actionDone"
+                    android:inputType="numberDecimal" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_yl3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="3px"
+                android:focusableInTouchMode="true"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/txtyl3name"
+                    android:layout_width="140px"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="130px"
+                    android:gravity="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="25px" />
+
+                <EditText
+                    android:id="@+id/edityl3Bottle"
+                    style="@style/CEditText"
+                    android:layout_marginLeft="40px"
+                    android:ems="4"
+                    android:imeOptions="actionDone"
+                    android:inputType="number" />
+
+
+                <EditText
+                    android:id="@+id/edityl3surplus"
+                    style="@style/CEditText"
+                    android:layout_marginLeft="50px"
+                    android:ems="4"
+                    android:imeOptions="actionDone"
+                    android:inputType="numberDecimal" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_yl4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="3px"
+                android:focusableInTouchMode="true"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/txtyl4name"
+                    android:layout_width="140px"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="130px"
+                    android:gravity="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="25px" />
+
+                <EditText
+                    android:id="@+id/edityl4Bottle"
+                    style="@style/CEditText"
+                    android:layout_marginLeft="40px"
+                    android:ems="4"
+                    android:imeOptions="actionDone"
+                    android:inputType="number" />
+
+
+                <EditText
+                    android:id="@+id/edityl4surplus"
+                    style="@style/CEditText"
+                    android:layout_marginLeft="50px"
+                    android:ems="4"
+                    android:imeOptions="actionDone"
+                    android:inputType="numberDecimal" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_yl5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="3px"
+                android:focusableInTouchMode="true"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/txtyl5name"
+                    android:layout_width="140px"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="130px"
+                    android:gravity="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="25px" />
+
+                <EditText
+                    android:id="@+id/edityl5Bottle"
+                    style="@style/CEditText"
+                    android:layout_marginLeft="40px"
+                    android:ems="4"
+                    android:imeOptions="actionDone"
+                    android:inputType="number" />
+
+
+                <EditText
+                    android:id="@+id/edityl5surplus"
+                    style="@style/CEditText"
+                    android:layout_marginLeft="50px"
+                    android:ems="4"
+                    android:imeOptions="actionDone"
+                    android:inputType="numberDecimal" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_yl6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="3px"
+                android:focusableInTouchMode="true"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/txtyl6name"
+                    android:layout_width="140px"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="130px"
+                    android:gravity="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="25px" />
+
+                <EditText
+                    android:id="@+id/edityl6Bottle"
+                    style="@style/CEditText"
+                    android:layout_marginLeft="40px"
+                    android:ems="4"
+                    android:imeOptions="actionDone"
+                    android:inputType="number" />
+
+
+                <EditText
+                    android:id="@+id/edityl6surplus"
+                    style="@style/CEditText"
+                    android:layout_marginLeft="50px"
+                    android:ems="4"
+                    android:imeOptions="actionDone"
+                    android:inputType="numberDecimal" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_yl7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="3px"
+                android:focusableInTouchMode="true"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/txtyl7name"
+                    android:layout_width="140px"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="130px"
+                    android:gravity="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="25px" />
+
+                <EditText
+                    android:id="@+id/edityl7Bottle"
+                    style="@style/CEditText"
+                    android:layout_marginLeft="40px"
+                    android:ems="4"
+                    android:imeOptions="actionDone"
+                    android:inputType="number" />
+
+
+                <EditText
+                    android:id="@+id/edityl7surplus"
+                    style="@style/CEditText"
+                    android:layout_marginLeft="50px"
+                    android:ems="4"
+                    android:imeOptions="actionDone"
+                    android:inputType="numberDecimal" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_surplus"
+        android:layout_width="0px"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15px"
+            android:text="@string/allowance_alarm_value"
+            android:textColor="@android:color/white"
+            android:textSize="20px" />
+
+        <EditText
+            android:id="@+id/editylsurplusAlarm"
+            style="@style/CEditText"
+            android:ems="4"
+            android:imeOptions="actionDone"
+            android:inputType="numberDecimal" />
+
+        <Button
+            android:id="@+id/btnFullBottle"
+            style="@style/CButton_Dialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10px"
+            android:layout_marginTop="40px"
+            android:text="@string/full_all_bottle" />
+
+        <TextView
+            android:id="@+id/txt_fybj"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15px"
+            android:layout_marginTop="40px"
+            android:text="@string/waste_liquid_alarm_value"
+            android:textColor="@android:color/white"
+            android:textSize="20px" />
+
+        <EditText
+            android:id="@+id/editylsurplusAlarm2"
+            style="@style/CEditText"
+            android:ems="4"
+            android:imeOptions="actionDone"
+            android:inputType="numberDecimal" />
+
+        <Button
+            android:id="@+id/btnEmptyWasteLiquid"
+            style="@style/CButton_Dialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10px"
+            android:layout_marginTop="40px"
+            android:text="@string/empty_waste_container" />
+    </LinearLayout>
+
+</LinearLayout>

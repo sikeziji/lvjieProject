@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="800px"
+        android:layout_height="427px"
+        android:layout_marginTop="25px"
+        android:layout_marginLeft="25px"
+        android:background="@drawable/bj_p"
+        android:orientation="vertical">
+
+        <!--返回标题栏-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40px"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btnReturnFlow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10px"
+                android:background="@null"
+                android:src="@drawable/btn_return" />
+
+            <TextView
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/cfg_unit_select"
+                android:textColor="@android:color/white"
+                android:textSize="20px" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30px"
+            android:focusableInTouchMode="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnUpdateConfig"
+                android:layout_width="182px"
+                android:layout_height="58px"
+                android:layout_marginLeft="50px"
+                android:background="@drawable/btn"
+                android:text="@string/updateConfig"
+                android:textAllCaps="false"
+                android:textSize="25px" />
+
+            <Button
+                android:id="@+id/btncopyConfig"
+                android:layout_width="182px"
+                android:layout_height="58px"
+                android:layout_marginLeft="50px"
+                android:background="@drawable/btn"
+                android:text="@string/copyConfig"
+                android:textAllCaps="false"
+                android:visibility="gone"
+                android:textSize="25px" />
+
+            <Button
+                android:id="@+id/btnimportConfig"
+                android:layout_width="182px"
+                android:layout_height="58px"
+                android:layout_marginLeft="50px"
+                android:visibility="gone"
+                android:background="@drawable/btn"
+                android:text="@string/importConfig"
+                android:textAllCaps="false"
+                android:textSize="25px" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30px"
+            android:focusableInTouchMode="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnbackupConfig"
+                android:layout_width="182px"
+                android:layout_height="58px"
+                android:layout_marginLeft="50px"
+                android:visibility="gone"
+                android:background="@drawable/btn"
+                android:text="@string/backupConfig"
+                android:textAllCaps="false"
+                android:textSize="25px" />
+
+            <Button
+                android:id="@+id/btnrestoreConfig"
+                android:layout_width="182px"
+                android:layout_height="58px"
+                android:layout_marginLeft="50px"
+                android:visibility="gone"
+                android:background="@drawable/btn"
+                android:text="@string/restoreConfig"
+                android:textAllCaps="false"
+                android:textSize="25px" />
+
+            <Button
+                android:id="@+id/btn_importbackupdata"
+                android:layout_width="182px"
+                android:layout_height="58px"
+                android:layout_marginLeft="50px"
+                android:background="@drawable/btn"
+                android:text="@string/import_backup_data"
+                android:textAllCaps="false"
+                android:textSize="25px" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+   <!-- <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100px"
+            android:layout_marginTop="30px"
+            android:focusableInTouchMode="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnUpdateConfig"
+                android:layout_width="182px"
+                android:layout_height="58px"
+                android:layout_marginLeft="50px"
+                android:background="@drawable/btn"
+                android:text="更新配置文件"
+                android:textAllCaps="false"
+                android:textSize="25px" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100px"
+            android:layout_marginTop="30px"
+            android:focusableInTouchMode="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnChooseFile"
+                android:layout_width="182px"
+                android:layout_height="58px"
+                android:layout_marginLeft="50px"
+                android:background="@drawable/btn"
+                android:text="选择文件"
+                android:textAllCaps="false"
+                android:textSize="25px" />
+
+            <Button
+                android:id="@+id/btnUpdateCKB"
+                android:layout_width="182px"
+                android:layout_height="58px"
+                android:layout_marginLeft="50px"
+                android:background="@drawable/btn"
+                android:text="更新测控板"
+                android:textAllCaps="false"
+                android:textSize="25px" />
+
+        </LinearLayout>
+
+    </LinearLayout>-->
+
+</LinearLayout>

@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15px"
+            android:layout_marginTop="10px"
+            android:text="@string/spec_calibration"
+            android:textColor="@color/white"
+            android:textSize="30px" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_marginTop="30px"
+        android:layout_weight="1"
+        android:focusableInTouchMode="true"
+        android:gravity="center|center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15px"
+            android:text="△C"
+            android:textColor="@color/white"
+            android:textSize="20px" />
+
+        <EditText
+            android:id="@+id/editC"
+            style="@style/CEditText1"
+            android:layout_marginLeft="10px"
+            android:ems="4"
+            android:imeOptions="actionDone"
+            android:inputType="numberSigned|numberDecimal" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15px"
+            android:text="C1"
+            android:textColor="@color/white"
+            android:textSize="20px" />
+
+        <EditText
+            android:id="@+id/editC1"
+            style="@style/CEditText1"
+            android:layout_marginLeft="10px"
+            android:ems="4"
+            android:imeOptions="actionDone"
+            android:inputType="numberSigned|numberDecimal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15px"
+            android:text="mg/L"
+            android:textColor="@color/white"
+            android:textSize="20px" />
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_marginTop="20px"
+        android:layout_weight="1"
+        android:focusableInTouchMode="true"
+        android:gravity="center|center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15px"
+            android:text="@string/spanCoc_1"
+            android:textColor="@color/white"
+            android:textSize="20px" />
+
+        <EditText
+            android:id="@+id/editS1"
+            style="@style/CEditText1"
+            android:layout_marginLeft="10px"
+            android:ems="4"
+            android:imeOptions="actionDone"
+            android:inputType="numberSigned|numberDecimal" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15px"
+            android:text="mg/L"
+            android:textColor="@color/white"
+            android:textSize="20px" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15px"
+            android:text="@string/spanCoc_2"
+            android:textColor="@color/white"
+            android:textSize="20px" />
+
+        <EditText
+            android:id="@+id/editS2"
+            style="@style/CEditText1"
+            android:layout_marginLeft="10px"
+            android:ems="4"
+            android:imeOptions="actionDone"
+            android:inputType="numberSigned|numberDecimal" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15px"
+            android:text="mg/L"
+            android:layout_marginRight="15px"
+            android:textColor="@color/white"
+            android:textSize="20px" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_marginBottom="30px"
+        android:layout_marginTop="30px"
+        android:layout_weight="1"
+        android:gravity="center|center_vertical"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btnStartSpecCal"
+            android:layout_width="wrap_content"
+            android:layout_height="45px"
+            android:layout_marginLeft="10px"
+            android:text="@string/startSpecCal"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="20px" />
+        <Button
+            android:id="@+id/btnClose"
+            android:layout_width="100px"
+            android:layout_height="45px"
+            android:layout_marginLeft="40px"
+            android:text="@string/back"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="20px" />
+
+    </LinearLayout>
+
+</LinearLayout>

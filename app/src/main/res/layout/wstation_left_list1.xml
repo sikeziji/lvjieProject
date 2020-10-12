@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/line"
+    android:orientation="vertical">
+
+    <ImageButton
+        android:id="@+id/wstation_Left1_1"
+        android:layout_width="170px"
+        android:layout_height="65px"
+        android:layout_marginTop="90px"
+        android:background="@android:color/transparent"
+        android:src="@drawable/wstationl1l1"
+        android:scaleType="fitXY"/>
+
+
+    <ImageButton
+        android:id="@+id/wstation_Left1_2"
+        android:layout_width="170px"
+        android:layout_height="65px"
+        android:layout_marginTop="50px"
+        android:background="@android:color/transparent"
+        android:src="@drawable/wstationl2l2"
+        android:scaleType="fitXY"/>
+
+    <ImageButton
+        android:id="@+id/wstation_Left1_3"
+        android:layout_width="170px"
+        android:layout_height="65px"
+        android:layout_marginTop="50px"
+        android:background="@android:color/transparent"
+        android:src="@drawable/wstationl3l3"
+        android:scaleType="fitXY"/>
+    <ImageButton
+        android:layout_width="170px"
+        android:layout_height="65px"
+        android:background="@android:color/transparent"
+
+        android:scaleType="fitXY"/>
+</LinearLayout>

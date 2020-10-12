@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@drawable/dialog"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10px"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/original_component_name"
+            android:textSize="25px"/>
+
+        <EditText
+            android:id="@+id/eTOldPoint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:enabled="false"
+            android:inputType="textPersonName"
+            android:textSize="25px"/>
+
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/eTChangePoint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10px"
+        android:ems="10"
+        android:hint="@string/new_component_name"
+        android:inputType="textPersonName"
+        android:textSize="25px"/>
+    <EditText
+        android:id="@+id/eTChangePointAddr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10px"
+        android:ems="10"
+        android:hint="@string/component_address"
+        android:inputType="textPersonName"
+        android:textSize="25px"/>
+</LinearLayout>

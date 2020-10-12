@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="20px"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/component_management"
+        android:textSize="25px" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50px"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+
+        <Spinner
+            android:id="@+id/spBoardType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5px"
+            android:animationCache="true"
+            android:drawSelectorOnTop="true"
+            android:popupBackground="@android:color/white"></Spinner>
+
+        <Spinner
+            android:id="@+id/pointMeasCategory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10px"
+            android:animationCache="true"
+            android:drawSelectorOnTop="true"
+            android:popupBackground="@android:color/white"></Spinner>
+
+        <Spinner
+            android:id="@+id/spComponents"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10px"
+            android:animationCache="true"
+            android:drawSelectorOnTop="true"
+            android:popupBackground="@android:color/white"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/eTpoint"
+            style="@style/CEditText"
+            android:layout_width="200px"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25px"
+            android:layout_marginTop="1px"
+            android:layout_marginBottom="1px"
+            android:gravity="center_vertical|left"
+            android:hint="@string/add_components_name"
+            android:imeOptions="actionDone"
+            android:inputType="textPersonName"
+            android:paddingLeft="8px" />
+
+        <EditText
+            android:id="@+id/eTpointAddr"
+            style="@style/CEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1px"
+            android:layout_marginBottom="1px"
+            android:layout_weight="1"
+            android:gravity="center_vertical|left"
+            android:hint="添加设备地址"
+            android:imeOptions="actionDone"
+            android:inputType="number"
+            android:paddingLeft="8px"
+            android:visibility="gone" />
+
+        <!--<EditText-->
+        <!--android:id="@+id/eTpointMeasCategory"-->
+        <!--style="@style/CEditText"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginBottom="1px"-->
+        <!--android:layout_marginTop="1px"-->
+        <!--android:layout_weight="1"-->
+        <!--android:gravity="center_vertical|left"-->
+        <!--android:hint="添加测量单元类型"-->
+        <!--android:imeOptions="actionDone"-->
+        <!--android:inputType="textPersonName"-->
+        <!--android:paddingLeft="8px"/>-->
+
+
+        <Button
+            android:id="@+id/addPoint"
+            style="@style/CButton_Big"
+            android:layout_width="132px"
+            android:layout_height="45px"
+            android:layout_marginLeft="25px"
+            android:layout_marginRight="25px"
+            android:text="@string/add_components" />
+
+        <Button
+            android:id="@+id/Btn_reStart"
+            style="@style/CButton_Big"
+            android:layout_width="132px"
+            android:layout_height="45px"
+            android:layout_marginRight="20px"
+            android:text="@string/restart" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/use_select"
+            android:textSize="25px" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/unused_select"
+            android:textSize="25px" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <com.yzlm.cyl.clibrary.Control.CSideslipListView
+            android:id="@+id/CsList"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_margin="10px"
+            android:layout_weight="1"></com.yzlm.cyl.clibrary.Control.CSideslipListView>
+
+        <com.yzlm.cyl.clibrary.Control.CSideslipListView
+            android:id="@+id/CsLists"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_margin="10px"
+            android:layout_weight="1"></com.yzlm.cyl.clibrary.Control.CSideslipListView>
+
+
+    </LinearLayout>
+
+</LinearLayout>

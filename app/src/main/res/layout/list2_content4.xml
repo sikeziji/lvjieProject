@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_marginTop="50px"
+        android:layout_weight="1"
+        android:focusableInTouchMode="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80px"
+            android:shadowColor="@android:color/white"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="5"
+            android:text="@string/Cal_OK"
+            android:textColor="@android:color/white"
+            android:textSize="25px" />
+
+        <ToggleButton
+            android:id="@+id/tBtnJZTS"
+            android:layout_width="92px"
+            android:layout_height="42px"
+            android:layout_marginLeft="20px"
+            android:background="@drawable/togglebtn"
+            android:text="@string/Cal_OK"
+            android:textOff=" "
+            android:textOn=" " />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30px"
+            android:shadowColor="@android:color/white"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="5"
+            android:text="@string/relay_config"
+            android:textColor="@android:color/white"
+            android:textSize="25px" />
+
+        <Spinner
+            android:id="@+id/spjdqpz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20px"
+            android:animationCache="true"
+            android:drawSelectorOnTop="true"
+            android:popupBackground="@android:color/white" />
+
+        <EditText
+            android:id="@+id/eTAlarmTime"
+            style="@style/CEditText"
+            android:layout_marginLeft="20px"
+            android:ems="4"
+            android:imeOptions="actionDone"
+            android:inputType="number" />
+
+        <TextView
+            android:id="@+id/tvAlarmTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10px"
+            android:shadowColor="@android:color/white"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="5"
+            android:text="@string/second"
+            android:textColor="@android:color/white"
+            android:textSize="20px" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80px"
+            android:shadowColor="@android:color/white"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="5"
+            android:text="@string/print_data"
+            android:textColor="@android:color/white"
+            android:textSize="25px" />
+
+        <ToggleButton
+            android:id="@+id/tBtnSZDY"
+            android:layout_width="92px"
+            android:layout_height="42px"
+            android:layout_marginLeft="20px"
+            android:background="@drawable/togglebtn"
+            android:text="数字打印"
+            android:textOff=" "
+            android:textOn=" " />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30px"
+            android:shadowColor="@android:color/white"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="5"
+            android:text="@string/mea_unit"
+            android:textColor="@android:color/white"
+            android:textSize="25px" />
+
+        <Spinner
+            android:id="@+id/spcldw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="45px"
+            android:animationCache="true"
+            android:drawSelectorOnTop="true"
+            android:popupBackground="@android:color/white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20px"
+            android:shadowColor="@android:color/white"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="5"
+            android:text="@string/significant_digit"
+            android:textColor="@android:color/white"
+            android:textSize="25px" />
+
+        <EditText
+            android:id="@+id/eTyxws"
+            style="@style/CEditText"
+            android:layout_marginLeft="20px"
+            android:ems="4"
+            android:imeOptions="actionDone"
+            android:inputType="number" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_OutMeaDataAndoneKeyCal"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1"
+        android:focusableInTouchMode="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/layout_outMeaData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80px"
+            android:shadowColor="@android:color/white"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="5"
+            android:text="@string/out_data"
+            android:textColor="@android:color/white"
+            android:textSize="25px" />
+
+
+        <Spinner
+            android:id="@+id/spOutMeaDataShowMode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20px"
+            android:animationCache="true"
+            android:drawSelectorOnTop="true"
+            android:popupBackground="@android:color/white" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/layout_oneKeyCalSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="80px"
+                android:shadowColor="@android:color/white"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="5"
+                android:text="@string/oneKeyCal"
+                android:textColor="@android:color/white"
+                android:textSize="25px" />
+
+            <ToggleButton
+                android:id="@+id/tBtnOneKeyCalSwitch"
+                android:layout_width="92px"
+                android:layout_height="42px"
+                android:layout_marginLeft="20px"
+                android:background="@drawable/togglebtn"
+                android:text="@string/oneKeyCal"
+                android:textOff=" "
+                android:textOn=" " />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/layout_StandardJudge"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80px"
+            android:shadowColor="@android:color/white"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="5"
+            android:text="@string/bh_determination"
+            android:textColor="@android:color/white"
+            android:textSize="25px" />
+
+        <ToggleButton
+            android:id="@+id/tBtnBHPD"
+            android:layout_width="92px"
+            android:layout_height="42px"
+            android:layout_marginLeft="20px"
+            android:background="@drawable/togglebtn"
+            android:text="@string/Cal_OK"
+            android:textOff=" "
+            android:textOn=" " />
+
+        <LinearLayout
+            android:id="@+id/layout_BHPD_ALL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30px"
+            android:shadowColor="@android:color/white"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="5"
+            android:text="@string/bh_concentration"
+            android:textColor="@android:color/white"
+            android:textSize="25px" />
+
+        <EditText
+            android:id="@+id/eTbhnd"
+            style="@style/CEditText"
+            android:layout_marginLeft="10px"
+            android:ems="4"
+            android:imeOptions="actionDone"
+            android:inputType="numberDecimal" />
+
+        <TextView
+            android:id="@+id/mTbhnd_unit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:shadowColor="@android:color/white"
+            android:layout_marginLeft="10px"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="5"
+            android:text="mg/L"
+            android:textColor="@android:color/white"
+            android:textSize="25px" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutAlarm"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_marginBottom="40px"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:visibility="invisible">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="50px"
+            android:shadowColor="@android:color/white"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="5"
+            android:text="上/下限报警"
+            android:textColor="@android:color/white"
+            android:textSize="25px" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="100px"
+            android:orientation="vertical">
+
+            <com.yzlm.cyl.clibrary.Control.CSeekBarPressure
+                android:id="@+id/CSBP"
+                android:layout_width="460px"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30px" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvBJXX"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50px"
+                    android:text="@string/low_alarm_set"
+                    android:textSize="15px" />
+
+                <TextView
+                    android:id="@+id/tvBJSX"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="180px"
+                    android:text="@string/high_alarm_set"
+                    android:textSize="15px" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

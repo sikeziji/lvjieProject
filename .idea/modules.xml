@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/app.iml" group="lvjieProject/app" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/caoyilianglibrary/caoyilianglibrary.iml" filepath="$PROJECT_DIR$/.idea/modules/caoyilianglibrary/caoyilianglibrary.iml" group="lvjieProject/caoyilianglibrary" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/jxl/jxl.iml" filepath="$PROJECT_DIR$/.idea/modules/jxl/jxl.iml" group="lvjieProject/jxl" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/lvjieProject.iml" filepath="$PROJECT_DIR$/.idea/modules/lvjieProject.iml" group="lvjieProject" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/sdUpdate/sdUpdate.iml" filepath="$PROJECT_DIR$/.idea/modules/sdUpdate/sdUpdate.iml" group="lvjieProject/sdUpdate" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/weiqian/weiqian.iml" filepath="$PROJECT_DIR$/.idea/modules/weiqian/weiqian.iml" group="lvjieProject/weiqian" />
+    </modules>
+  </component>
+</project>

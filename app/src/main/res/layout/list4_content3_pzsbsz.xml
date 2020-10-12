@@ -1,0 +1,544 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="800px"
+        android:layout_height="427px"
+        android:layout_marginTop="25px"
+        android:background="@drawable/bj_p"
+        android:orientation="vertical">
+
+        <!--返回标题栏-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40px"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btnReturn_p1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10px"
+                android:background="@null"
+                android:src="@drawable/btn_return" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/pump_par_select"
+                android:textColor="@android:color/white"
+                android:textSize="20px" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/layout_injectionPumpTest"
+                android:layout_width="370px"
+                android:layout_height="match_parent"
+                android:focusableInTouchMode="true"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginTop="10px"
+                    android:layout_weight="1"
+                    android:focusableInTouchMode="true"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <Spinner
+                        android:id="@+id/spZSB"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:animationCache="true"
+                        android:drawSelectorOnTop="true"
+                        android:popupBackground="@android:color/white" />
+
+                    <!--<TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/injectionPump"
+                        android:textColor="@android:color/white"
+                        android:textSize="22px" />-->
+
+                    <ToggleButton
+                        android:id="@+id/Btn_injectionPumpDir"
+                        android:layout_width="100px"
+                        android:layout_height="40px"
+                        android:layout_marginLeft="10px"
+                        android:background="@drawable/toggle_botton"
+                        android:textAllCaps="false"
+                        android:textOff="@string/infusion"
+                        android:textOn="@string/drains"
+                        android:textSize="18px" />
+
+                    <EditText
+                        android:id="@+id/edit_injectionValue"
+                        style="@style/CEditText"
+                        android:layout_marginLeft="10px"
+                        android:ems="4"
+                        android:imeOptions="actionDone"
+                        android:inputType="numberDecimal"
+                        android:text="5" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10px"
+                        android:text="mL"
+                        android:textColor="@android:color/white"
+                        android:textSize="22px" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_weight="1"
+                    android:focusableInTouchMode="true"
+                    android:gravity="center">
+
+                    <Button
+                        android:id="@+id/Btn_injectionPump_start"
+                        style="@style/CButton_Dialog"
+                        android:text="@string/start" />
+
+                    <Button
+                        android:id="@+id/Btn_injectionPump_zero"
+                        style="@style/CButton_Dialog"
+                        android:layout_marginLeft="15px"
+                        android:text="@string/zeroOperation" />
+
+                    <Button
+                        android:id="@+id/Btn_injectionPump_reset"
+                        style="@style/CButton_Dialog"
+                        android:layout_marginLeft="15px"
+                        android:text="@string/reset" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lay_line3"
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_weight="1"
+                    android:focusableInTouchMode="true"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/currentPosition"
+                        android:textColor="@android:color/white"
+                        android:textSize="22px" />
+
+                    <TextView
+                        android:id="@+id/Txt_position"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15px"
+                        android:textColor="@android:color/white"
+                        android:textSize="22px" />
+
+                    <Button
+                        android:id="@+id/Btn_injectionPump_read_position"
+                        style="@style/CButton_Dialog"
+                        android:layout_marginLeft="15px"
+                        android:text="@string/read" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lay_line4"
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_weight="1"
+                    android:focusableInTouchMode="true"
+                    android:gravity="center">
+
+                    <EditText
+                        android:id="@+id/edit_channel"
+                        style="@style/CEditText"
+                        android:layout_marginLeft="15px"
+                        android:ems="4"
+                        android:imeOptions="actionDone"
+                        android:inputType="numberDecimal"
+                        android:text="1" />
+
+
+                    <Button
+                        android:id="@+id/Btn_injectionPump_clockwise"
+                        style="@style/CButton_Dialog"
+                        android:layout_marginLeft="15px"
+                        android:text="@string/clockwise" />
+
+                    <Button
+                        android:id="@+id/Btn_injectionPump_anticlockwise"
+                        style="@style/CButton_Dialog"
+                        android:layout_marginLeft="15px"
+                        android:text="@string/anticlockwise" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="400px"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:shadowColor="@android:color/white"
+                        android:text="@string/volume_setting"
+                        android:textColor="@android:color/white"
+                        android:textSize="22px" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10px"
+                        android:shadowColor="@android:color/white"
+                        android:text="μL"
+                        android:textColor="@android:color/white"
+                        android:textSize="22px" />
+
+                    <ToggleButton
+                        android:id="@+id/tBtnTJSZ"
+                        android:layout_width="92px"
+                        android:layout_height="42px"
+                        android:layout_marginLeft="10px"
+                        android:background="@drawable/togglebtn"
+                        android:textOff=" "
+                        android:textOn=" " />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lay_zsb_tjsz"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:id="@+id/list2con1line1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10px"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/tvqxtj"
+                                android:layout_width="90px"
+                                android:layout_height="wrap_content"
+                                android:gravity="right"
+                                android:shadowColor="@android:color/white"
+                                android:text="@string/clean_volume"
+                                android:textColor="@android:color/white"
+                                android:textSize="22px" />
+
+                            <EditText
+                                android:id="@+id/eTqxtj"
+                                style="@style/CEditText"
+                                android:layout_marginLeft="10px"
+                                android:ems="4"
+                                android:imeOptions="actionDone"
+                                android:inputType="number" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/list2con1line2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15px"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/tvhctj"
+                                android:layout_width="90px"
+                                android:layout_height="wrap_content"
+                                android:gravity="right"
+                                android:shadowColor="@android:color/white"
+                                android:text="@string/withdrawal_volume"
+                                android:textColor="@android:color/white"
+                                android:textSize="22px" />
+
+                            <EditText
+                                android:id="@+id/eThctj"
+                                style="@style/CEditText"
+                                android:layout_marginLeft="10px"
+                                android:ems="4"
+                                android:imeOptions="actionDone"
+                                android:inputType="number" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/list2con1line3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15px"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/tvrxtj"
+                                android:layout_width="90px"
+                                android:layout_height="wrap_content"
+                                android:gravity="right"
+                                android:shadowColor="@android:color/white"
+                                android:text="@string/rinse_settings"
+                                android:textColor="@android:color/white"
+                                android:textSize="22px" />
+
+                            <EditText
+                                android:id="@+id/eTrxtj"
+                                style="@style/CEditText"
+                                android:layout_marginLeft="10px"
+                                android:ems="4"
+                                android:imeOptions="actionDone"
+                                android:inputType="number" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/list2con1line4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15px"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/tvsytj"
+                                android:layout_width="90px"
+                                android:layout_height="wrap_content"
+                                android:gravity="right"
+                                android:shadowColor="@android:color/white"
+                                android:text="@string/waterVolume"
+                                android:textColor="@android:color/white"
+                                android:textSize="22px" />
+
+                            <EditText
+                                android:id="@+id/eTsytj"
+                                style="@style/CEditText"
+                                android:layout_marginLeft="10px"
+                                android:ems="4"
+                                android:imeOptions="actionDone"
+                                android:inputType="number" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/list2con1line5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15px"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/tvystj"
+                                android:layout_width="90px"
+                                android:layout_height="wrap_content"
+                                android:gravity="right"
+                                android:shadowColor="@android:color/white"
+                                android:text="@string/brine_error"
+                                android:textColor="@android:color/white"
+                                android:textSize="22px" />
+
+                            <EditText
+                                android:id="@+id/eTystj"
+                                style="@style/CEditText"
+                                android:layout_marginLeft="10px"
+                                android:ems="4"
+                                android:imeOptions="actionDone"
+                                android:inputType="number" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/list2con1line6"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15px"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/tvdktj"
+                                android:layout_width="90px"
+                                android:layout_height="wrap_content"
+                                android:gravity="right"
+                                android:shadowColor="@android:color/white"
+                                android:text="@string/headspace_success"
+                                android:textColor="@android:color/white"
+                                android:textSize="22px" />
+
+                            <EditText
+                                android:id="@+id/eTdktj"
+                                style="@style/CEditText"
+                                android:layout_marginLeft="10px"
+                                android:ems="4"
+                                android:imeOptions="actionDone"
+                                android:inputType="number" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:id="@+id/list2con1line7"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15px"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/tvjytj"
+                                android:layout_width="90px"
+                                android:layout_height="wrap_content"
+                                android:gravity="right"
+                                android:shadowColor="@android:color/white"
+                                android:text="@string/bacterial_liquid_success"
+                                android:textColor="@android:color/white"
+                                android:textSize="22px" />
+
+                            <EditText
+                                android:id="@+id/eTjytj"
+                                style="@style/CEditText"
+                                android:layout_marginLeft="10px"
+                                android:ems="4"
+                                android:imeOptions="actionDone"
+                                android:inputType="number" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/list2con1line8"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15px"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/tvfstj"
+                                android:layout_width="90px"
+                                android:layout_height="wrap_content"
+                                android:gravity="right"
+                                android:shadowColor="@android:color/white"
+                                android:text="@string/recovery_success"
+                                android:textColor="@android:color/white"
+                                android:textSize="22px" />
+
+                            <EditText
+                                android:id="@+id/eTfstj"
+                                style="@style/CEditText"
+                                android:layout_marginLeft="10px"
+                                android:ems="4"
+                                android:imeOptions="actionDone"
+                                android:inputType="number" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/list2con1line9"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15px"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/ttctj"
+                                android:layout_width="90px"
+                                android:layout_height="wrap_content"
+                                android:gravity="right"
+                                android:shadowColor="@android:color/white"
+                                android:text="@string/fill_volume"
+                                android:textColor="@android:color/white"
+                                android:textSize="22px" />
+
+                            <EditText
+                                android:id="@+id/eTtctj"
+                                style="@style/CEditText"
+                                android:layout_marginLeft="10px"
+                                android:ems="4"
+                                android:imeOptions="actionDone"
+                                android:inputType="number" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/list2con1line10"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15px"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/hctj"
+                                android:layout_width="90px"
+                                android:layout_height="wrap_content"
+                                android:gravity="right"
+                                android:shadowColor="@android:color/white"
+                                android:text="@string/buffer_volume"
+                                android:textColor="@android:color/white"
+                                android:textSize="22px" />
+
+                            <EditText
+                                android:id="@+id/eThuanccuntj"
+                                style="@style/CEditText"
+                                android:layout_marginLeft="10px"
+                                android:ems="4"
+                                android:imeOptions="actionDone"
+                                android:inputType="number" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/list2con1line11"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15px"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/dztj"
+                                android:layout_width="90px"
+                                android:layout_height="wrap_content"
+                                android:gravity="right"
+                                android:shadowColor="@android:color/white"
+                                android:text="@string/control_volume"
+                                android:textColor="@android:color/white"
+                                android:textSize="22px" />
+
+                            <EditText
+                                android:id="@+id/eTdztj"
+                                style="@style/CEditText"
+                                android:layout_marginLeft="10px"
+                                android:ems="4"
+                                android:imeOptions="actionDone"
+                                android:inputType="number" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

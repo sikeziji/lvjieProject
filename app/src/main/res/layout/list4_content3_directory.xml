@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="800px"
+        android:layout_height="427px"
+        android:layout_marginTop="25px"
+        android:background="@drawable/bj_p"
+        android:orientation="vertical">
+
+        <!--返回标题栏-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40px"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btnReturnFlow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10px"
+                android:background="@null"
+                android:src="@drawable/btn_return" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="当前文件夹内容"
+                android:textColor="@android:color/white"
+                android:textSize="20px" />
+        </LinearLayout>
+
+        <!--主内容区矩形显示区-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="334px"
+            android:orientation="horizontal">
+
+            ............................................
+            <!--左半部分-->
+            <LinearLayout
+                android:id="@+id/layout_leftrect1"
+                android:layout_width="200px"
+                android:layout_height="324px"
+                android:layout_marginLeft="15px"
+                android:layout_marginTop="10px"
+                android:background="@drawable/gp_leftrect"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="314px"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="33px"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="130px"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10px"
+                            android:layout_marginTop="6px"
+                            android:gravity="center"
+                            android:text="目录"
+                            android:textAlignment="center"
+                            android:textColor="@android:color/white"
+                            android:textSize="20px" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="281px"
+                        android:orientation="horizontal">
+
+                        <ListView
+                            android:id="@+id/listview_directory"
+                            android:layout_width="match_parent"
+                            android:layout_height="291px"
+                            android:background="#00000000"
+                            android:divider="#00000000"></ListView>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!--右半部分-->
+            <LinearLayout
+                android:layout_width="576px"
+                android:layout_height="324px"
+                android:layout_marginLeft="10px"
+                android:layout_marginTop="10px"
+                android:background="@drawable/gp_rightrect"
+                android:orientation="horizontal">
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/txtFile"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10px"
+                            android:layout_marginRight="10px"
+                            android:textColor="@android:color/white"
+                            android:textSize="15px"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_marginTop="5px"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/Btn_rootdirectory"
+                style="@style/CButton_directory"
+                android:layout_marginLeft="15px"
+                android:text="根目录" />
+            <Button
+                android:id="@+id/Btn_dirLastPage"
+                style="@style/CButton_directory"
+                android:layout_marginLeft="5px"
+                android:text="@string/before_page" />
+
+            <Button
+                android:id="@+id/Btn_dirNextPage"
+                style="@style/CButton_directory"
+                android:layout_marginLeft="5px"
+                android:text="下一段" />
+
+            <Button
+                android:id="@+id/Btn_txtLastPage"
+                style="@style/CButton_directory"
+                android:layout_marginLeft="300px"
+                android:text="@string/before_page" />
+
+            <Button
+                android:id="@+id/Btn_txtNextPage"
+                style="@style/CButton_directory"
+                android:layout_marginLeft="30px"
+                android:text="下一段" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
