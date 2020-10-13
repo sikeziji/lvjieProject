@@ -1,15 +1,19 @@
 package com.yzlm.cyl.cfragment.Content.Module;
 
+import com.yzlm.cyl.cfragment.Display.Display;
 import com.yzlm.cyl.cfragment.Frame.Content.Up_content3;
 import com.yzlm.cyl.cfragment.Frame.Content.Up_content3_2;
 import com.yzlm.cyl.cfragment.Frame.Content.Up_content3_3;
 import com.yzlm.cyl.cfragment.Frame.Content.Up_content3_5;
 import com.yzlm.cyl.cfragment.Frame.Content.Up_content3_6;
 import com.yzlm.cyl.cfragment.Frame.Content.Up_content3_7;
+import com.yzlm.cyl.cfragment.Frame.Content.Up_content3_lvjie;
+import com.yzlm.cyl.cfragment.Frame.PublicContent.Bottom_list_lvjie;
 import com.yzlm.cyl.cfragment.R;
 
 import java.io.File;
 
+import static com.yzlm.cyl.cfragment.Frame.MainActivity.isLvjie;
 import static com.yzlm.cyl.cfragment.Frame.MainActivity.main;
 import static com.yzlm.cyl.cfragment.Global.getListAll5721Component;
 import static com.yzlm.cyl.cfragment.Global.strAll5721Component;
@@ -151,6 +155,11 @@ public class ModuleDistinction {
      */
     public static void showPlatformUpContent(String compName) {
 
+        if (isLvjie) {
+            main.getFragment(R.id.fragment_up_container,Up_content3_lvjie.newInstance());
+            return;
+        }
+
         if (showModuleUpContent(compName)) {
             main.getFragment(R.id.fragment_up_container, new Up_content3_5());
         } else if (QueryMeasCateg(compName).equals("4")) {
@@ -159,7 +168,7 @@ public class ModuleDistinction {
             main.getFragment(R.id.fragment_up_container, new Up_content3_2());
         } else if (QueryMeasCateg(compName).equals("11")) {
             main.getFragment(R.id.fragment_up_container, new Up_content3_6());
-        }  else if (QueryMeasCateg(compName).equals("13")) {
+        } else if (QueryMeasCateg(compName).equals("13")) {
             main.getFragment(R.id.fragment_up_container, new Up_content3_7());
         } else {
             main.getFragment(R.id.fragment_up_container, new Up_content3());
@@ -167,6 +176,14 @@ public class ModuleDistinction {
 //            main.replaceFragment(Display.newInstance(),false,R.id.fragment_up_container, new Up_content3());
 //            main.replaceFragment(Display.newInstance(),false,R.id.fragment_container, Bottom_list.newInstance());
         }
+    }
+
+    /**
+     * 显示绿洁项目主界面
+     */
+    public static void showMainContent() {
+//        main.getFragment(R.id.fragment_up_container, Display.newInstance());
+//        main.getMainFrame(Bottom_list_lvjie.newInstance());
     }
 
 

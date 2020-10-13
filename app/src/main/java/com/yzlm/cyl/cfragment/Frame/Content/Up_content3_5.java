@@ -51,12 +51,14 @@ public class Up_content3_5 extends SubFragment {
 
     public interface Callbacks {
         void onListSelected(View view);
+
     }
 
     @Override
     public void onAttach(Context context) {
         super.onAttach(context);
         mCallbacks = (Left_list4.Callbacks) context;
+
     }
 
     @Override
@@ -143,6 +145,7 @@ public class Up_content3_5 extends SubFragment {
         } catch (Exception e) {
             saveExceptInfo2File("组分[" + mCompName + "] Up_content3_5 " + e.toString());
         }
+//        mCallbacks.onDesplayForMain();
     }
 
     private class btnJJTZClick implements View.OnClickListener {

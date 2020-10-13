@@ -145,11 +145,14 @@ import com.yzlm.cyl.cfragment.Frame.Content.Up_content3_4;
 import com.yzlm.cyl.cfragment.Frame.Content.Up_content3_5;
 import com.yzlm.cyl.cfragment.Frame.Content.Up_content3_6;
 import com.yzlm.cyl.cfragment.Frame.Content.Up_content3_7;
+import com.yzlm.cyl.cfragment.Frame.Content.Up_content3_lvjie;
 import com.yzlm.cyl.cfragment.Frame.Content.Up_content4;
 import com.yzlm.cyl.cfragment.Frame.Content.Up_content5;
+import com.yzlm.cyl.cfragment.Frame.Content.componentMeasDisplayLJBean;
 import com.yzlm.cyl.cfragment.Frame.ModuleContent.ModuleUp_content1;
 import com.yzlm.cyl.cfragment.Frame.NoBoardContent.NoBoardUp_content1;
 import com.yzlm.cyl.cfragment.Frame.PublicContent.Bottom_list;
+import com.yzlm.cyl.cfragment.Frame.PublicContent.Bottom_list_lvjie;
 import com.yzlm.cyl.cfragment.Frame.PublicContent.Bottom_list_setting;
 import com.yzlm.cyl.cfragment.Frame.PublicContent.CatchExcep;
 import com.yzlm.cyl.cfragment.Frame.PublicContent.Frame;
@@ -167,6 +170,7 @@ import com.yzlm.cyl.cfragment.list.ModuleList.Module_Left_list1;
 import com.yzlm.cyl.cfragment.list.NoBoard.NoBoard_Left_list1;
 import com.yzlm.cyl.cfragment.setting.Up_content_setting;
 import com.yzlm.cyl.clibrary.CFragment.CSingleFragmentActivity;
+import com.yzlm.cyl.clibrary.CFragment.SubFragment;
 import com.yzlm.cyl.clibrary.Util.DataUtil;
 
 import java.io.BufferedReader;
@@ -216,6 +220,7 @@ import static com.yzlm.cyl.cfragment.Content.Module.ModuleDistinction.QueryMeasC
 import static com.yzlm.cyl.cfragment.Content.Module.ModuleDistinction.QueryMeasCategoryComponent;
 import static com.yzlm.cyl.cfragment.Content.Module.ModuleDistinction.getModuleName;
 import static com.yzlm.cyl.cfragment.Content.Module.ModuleDistinction.isHaveMeasCategory;
+import static com.yzlm.cyl.cfragment.Content.Module.ModuleDistinction.showMainContent;
 import static com.yzlm.cyl.cfragment.Content.Module.ModuleDistinction.showPlatformUpContent;
 import static com.yzlm.cyl.cfragment.Content.NoBoard.NoBoardContentTool.getNoBoardLastValue;
 import static com.yzlm.cyl.cfragment.DBConvert.MDBConvert.getSystemDateDay;
@@ -272,7 +277,7 @@ import static weiqian.hardware.CustomFunctions.FullScreenSticky;
 
 public class MainActivity extends CSingleFragmentActivity
 
-        implements Bottom_list.Callbacks, Bottom_list_setting.Callbacks,
+        implements Bottom_list.Callbacks, Bottom_list_setting.Callbacks, Bottom_list_lvjie.Callbacks,
         List_Content_Settingx.Callbacks, List1_Content1.Callbacks, List1_Content2.Callbacks, List2_Content2.Callbacks, List4_Content1.Callbacks,
         Display.Callbacks, Display_swdx.Callbacks, List2_Content6.Callbacks, Left_list_setting.Callbacks, Left_list1.Callbacks, Left_list2.Callbacks, Left_list4.Callbacks,
         Left_list5.Callbacks, List4_Content3_p1_0505.Callbacks, List4_Content3_pjldy.Callbacks, List4_Content3_pcldy.Callbacks,
@@ -294,6 +299,8 @@ public class MainActivity extends CSingleFragmentActivity
         List4_Content3_pRangeCal.Callbacks, List4_Content3_pddcsdy2.Callbacks, List1_Content3.Callbacks, NoBoard_List1_Content7.Callbacks, List_Content_pfxyxx.Callbacks, List4_Content3_pUserSetting.Callbacks, DealList4_Content7.Callbacks,
         Runnable {
 
+    private static final String TAG = "MainActivity";
+    //时间
     private TextView textView;
     /* 获取当前组分名的TextView*/
     private TextView textViewCompName;
@@ -338,12 +345,19 @@ public class MainActivity extends CSingleFragmentActivity
     //上次点击时间
     long firstClick;
 
+    //TODO 设置默认为绿洁项目
+    public static boolean isLvjie = true;
+    private int projectId = 3;
+
     private Fragment createFragment(int id) {
         if (id == 1) {
             return Bottom_list.newInstance();
-        } else {
+        } else if (id == 2) {
             return Bottom_list_setting.newInstance();
+        } else if (id == 3) {
+            return Bottom_list_lvjie.newInstance();
         }
+        return null;
     }
 
     @Override
@@ -371,6 +385,11 @@ public class MainActivity extends CSingleFragmentActivity
         return R.id.fragment_container;
     }
 
+    @Override
+    public void getMainFrame(Fragment fragment) {
+        super.getMainFrame(fragment);
+    }
+
     @SuppressLint("HandlerLeak")
     @Override
     protected void DoThings() {
@@ -393,6 +412,7 @@ public class MainActivity extends CSingleFragmentActivity
 
         // 主界面根据配置路径变化
         if (blAuthenticationFunction) {
+            @SuppressLint("WrongViewCast")
             LinearLayout mMainLayout = (LinearLayout) findViewById(R.id.mainLayout);
             String SdcardPath = (getStoragePath(context, false).size() == 0 ? null : (getStoragePath(context, false).get(0) + File.separator));
             Drawable bckDrawable = Drawable.createFromPath(SdcardPath + "Csoft" + File.separator + "Resource/Image/Background/bj.png");
@@ -401,11 +421,19 @@ public class MainActivity extends CSingleFragmentActivity
             }
         }
         InitComponent();
-        if (strComponent.get(1).length == 1 && QueryMeasCateg(strComponent.get(1)[0]).equals("13")) {
-            getFragment(getFrameId(), Display_swdx.newInstance());
+        main = this;
+        //todo 如果为绿洁项目则添加TAB
+        if (isLvjie) {
+            getMainFrame(createFragment(projectId));
+            showUpContent();
         } else {
-            getFragment(getFrameId(), Display.newInstance());
+            if (strComponent.get(1).length == 1 && QueryMeasCateg(strComponent.get(1)[0]).equals("13")) {
+                getFragment(getFrameId(), Display_swdx.newInstance());
+            } else {
+                getFragment(getFrameId(), Display.newInstance());
+            }
         }
+
         textView = (TextView) findViewById(R.id.time);
         mTVName = (TextView) findViewById(R.id.Name);
         mTVName.setVisibility(View.GONE);
@@ -416,7 +444,7 @@ public class MainActivity extends CSingleFragmentActivity
         mfb.setOnClickListener(new mfbClick());
         initDestopText(mfb, 62, 62);
         fixAPx();
-        main = this;
+
         intent = new Intent();
         //设置广播发送隐藏虚拟按键命令
         broadCastFullScreen(true);
@@ -425,6 +453,8 @@ public class MainActivity extends CSingleFragmentActivity
         FullWindows(mActivityWindow);
 
         InitGlobal();
+        //初始化数据
+        initData();
         /*登录信息初始化**/
         if (!(getPublicConfigData("LogInName").equals("0"))) {
             updatePublicConfigData("LogInName", "0");
@@ -516,6 +546,9 @@ public class MainActivity extends CSingleFragmentActivity
                 String status = ft.GetStatus(getCmds(Component).getCmd(51).getValue());
                 doFlowing.put(Component, status);
 
+                //更新主界面UI
+//                updateMainUI(Component, at, status);
+
                 /*测量界面*/
                 componentMeasDisplayWin(Component, at, status);
                 // 滴定界面刷新
@@ -597,6 +630,16 @@ public class MainActivity extends CSingleFragmentActivity
         }
     }
 
+    private void updateMainUI(String component, ActionTable at, String status) {
+        Log.e("TAG", "界面更新");
+        Handler up_content3_lvjie_handler = Up_content3_lvjie.newInstance().Up_content3_lvjie_Handler;
+        Message message = up_content3_lvjie_handler.obtainMessage();
+        componentMeasDisplayLJBean bean = new componentMeasDisplayLJBean(component, at, status);
+        message.what = 1;
+        message.obj = bean;
+        up_content3_lvjie_handler.sendMessage(message);
+    }
+
     @Override
     protected void onDestroy() {
         super.onDestroy();
@@ -609,9 +652,13 @@ public class MainActivity extends CSingleFragmentActivity
      * 主界面显示
      */
     public void showUpContent() {
-
+//        if (!isLvjie) {
         showPlatformUpContent(mCompName);
+//        } else {
+//            showMainContent();
+//        }
     }
+
 
     /*外部第一主界面**/
     private void firstDisplayWin() {
@@ -700,6 +747,7 @@ public class MainActivity extends CSingleFragmentActivity
             Log.i("e", e.toString());
         }
     }
+
 
     /*
     常规内容，测量主界面
@@ -1073,6 +1121,20 @@ public class MainActivity extends CSingleFragmentActivity
         winID = view.getId();
     }
 
+    /**
+     * 初始化数据
+     */
+    private void initData() {
+
+        String compName = strComponent.get(1)[0];
+        boolean reNewSub = !(NextInto.equals(compName));
+        if (reNewSub) NextInto = compName;
+        mTVName.setText(getCompNameCN(compName));
+        mTVName.setVisibility(VISIBLE);
+        mCompName = compName;
+    }
+
+
     /*
      * 下导航栏
      */
@@ -1089,12 +1151,14 @@ public class MainActivity extends CSingleFragmentActivity
             switch (view.getId()) {
                 case R.id.ImBtn_1:
                     if (getModePermissions(MainActivity.mCompName, "运行") && !LockDisplayShowFlag) {
-                        getContentFragment(R.id.fragment_up_container, Up_content1.newInstance(false, true));
+//                        getContentFragment(R.id.fragment_up_container, Up_content1.newInstance(false, true));
+                        cheackFrameUpadteUI(Up_content1.newInstance(false, true), 1);
                     }
                     break;
                 case R.id.ImBtn_2:
                     if (!LockDisplayShowFlag) {
-                        getContentFragment(R.id.fragment_up_container, Up_content2.newInstance(false, true));
+//                        getContentFragment(R.id.fragment_up_container, Up_content2.newInstance(false, true));
+                        cheackFrameUpadteUI(Up_content2.newInstance(false, true), 1);
                     }
                     break;
                 case R.id.ImBtn_3:
@@ -1105,7 +1169,8 @@ public class MainActivity extends CSingleFragmentActivity
                         break;
                     }
                     if (doFlowing.get(MainActivity.mCompName).equals(getString(R.string.waiting_for_instructions))) {
-                        getContentFragment(R.id.fragment_up_container, Up_content4.newInstance());
+//                        getContentFragment(R.id.fragment_up_container, Up_content4.newInstance());
+                        cheackFrameUpadteUI(Up_content4.newInstance(), 1);
                     } else {
                         removeDestopText(mfb);
                         Dialog_password st = new Dialog_password();
@@ -1118,13 +1183,20 @@ public class MainActivity extends CSingleFragmentActivity
                     break;
                 case R.id.ImBtn_5:
                     if (!LockDisplayShowFlag) {
-                        getContentFragment(R.id.fragment_up_container, Up_content5.newInstance(false, true));
+                        cheackFrameUpadteUI(Up_content5.newInstance(false, true), 1);
+//                        getContentFragment(R.id.fragment_up_container, Up_content5.newInstance(false, true));
                     }
                     break;
             }
         } catch (IllegalArgumentException e) {
             Log.i("12", "33");
         }
+    }
+
+    private void cheackFrameUpadteUI(SubFragment fragment, int id) {
+        getMainFrame(createFragment(id));
+        Frame.updateUI(false);
+        getContentFragment(R.id.fragment_up_container, fragment);
     }
 
     private void touchImgBtn3() {
@@ -1141,10 +1213,17 @@ public class MainActivity extends CSingleFragmentActivity
 
                 WinWidgetHandler.sendMessage(msg);
 
-                if (strComponent.get(1).length == 1 && QueryMeasCateg(strComponent.get(1)[0]).equals("13")) {
-                    getFragment(getFrameId(), Display_swdx.newInstance());
+                if (isLvjie) {
+                    getMainFrame(createFragment(projectId));
+                    Frame.updateUI(true);
+                    showUpContent();
+                    System.out.println("界面显示成功");
                 } else {
-                    getFragment(getFrameId(), Display.newInstance());
+                    if (strComponent.get(1).length == 1 && QueryMeasCateg(strComponent.get(1)[0]).equals("13")) {
+                        getFragment(getFrameId(), Display_swdx.newInstance());
+                    } else {
+                        getFragment(getFrameId(), Display.newInstance());
+                    }
                 }
 //                if (preWinForImBtn_3.equals("Bottom_list")) {
 //                    replaceFragment(Bottom_list.newInstance(), false, R.id.All, Display.newInstance());
@@ -1154,7 +1233,12 @@ public class MainActivity extends CSingleFragmentActivity
 
                 AnalogQuantity_CycleThread.resume();
             } else if (QueryMeasCateg(mCompName).equals("5") || QueryMeasCateg(mCompName).equals("6")) {
-                getFragment(R.id.fragment_up_container, new List_Content_Setting_p1_1234());
+                if (isLvjie) {
+                    getMainFrame(createFragment(1));
+                    showUpContent();
+                } else {
+                    getFragment(R.id.fragment_up_container, new List_Content_Setting_p1_1234());
+                }
                 Global.LockDisplayShowFlag = false;
                 LockModuleDisplayShowFlag = false;
                 try {
@@ -1783,9 +1867,12 @@ public class MainActivity extends CSingleFragmentActivity
         public void onClick(View view) {
             if (!Global.LockDisplayShowFlag) {
                 getMainFrame(Bottom_list_setting.newInstance());
+                Frame.updateUI(false);
+
                 Left_list_setting.newInstance().selectFirst();
                 winID = R.id.fragment_up_container;
                 getFragment(R.id.fragment_up_container, Up_content_setting.newInstance());
+
             }
         }
     }
@@ -1799,6 +1886,7 @@ public class MainActivity extends CSingleFragmentActivity
             if (!fragmentClass.isAdded()) {
                 fm.beginTransaction().add(ViewId, fragmentClass).commitAllowingStateLoss();
             } else {
+                Log.e(TAG, "fm.add exception");
                 saveExceptInfo2File("fm.add exception");
             }
         } else {

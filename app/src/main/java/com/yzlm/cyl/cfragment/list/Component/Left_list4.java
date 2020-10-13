@@ -36,6 +36,8 @@ public class Left_list4 extends SubFragment {
 
     public interface Callbacks {
         void onListSelected(View view);
+
+//        void onDesplayForMain();
     }
 
     @Override

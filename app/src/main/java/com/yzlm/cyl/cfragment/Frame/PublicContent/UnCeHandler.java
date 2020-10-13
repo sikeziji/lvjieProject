@@ -83,7 +83,11 @@ class UnCeHandler implements UncaughtExceptionHandler {
                 Log.e(TAG, "error : ", e);
             }
 
-            //退出程序1
+            //TODO
+            ex.printStackTrace();
+
+          /*TODO 退出程序
+           //退出程序1
             Intent intent = new Intent(application.getApplicationContext(), MainActivity.class);
             PendingIntent restartIntent = PendingIntent.getActivity(application.getApplicationContext(), 0, intent, PendingIntent.FLAG_UPDATE_CURRENT);
 
@@ -93,6 +97,7 @@ class UnCeHandler implements UncaughtExceptionHandler {
             mgr.set(AlarmManager.RTC, System.currentTimeMillis() + 1000,
                     restartIntent); // 1秒钟后重启应用
             application.finishActivity();
+            */
 
             //退出程序2
 //            android.os.Process.killProcess(android.os.Process.myPid());

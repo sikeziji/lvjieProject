@@ -15,6 +15,8 @@ import android.widget.Toast;
 import com.yzlm.cyl.cfragment.Communication.Component.AppCmd.CmdTable;
 import com.yzlm.cyl.cfragment.Config.Component.CfgTool.ErrorLog;
 import com.yzlm.cyl.cfragment.Dialog.Dialog_ok;
+import com.yzlm.cyl.cfragment.Frame.Content.Up_content3_5;
+import com.yzlm.cyl.cfragment.Frame.Content.Up_content3_lvjie;
 import com.yzlm.cyl.cfragment.Frame.MainActivity;
 import com.yzlm.cyl.cfragment.R;
 import com.yzlm.cyl.clibrary.CFragment.SubFragment;
@@ -27,6 +29,7 @@ import static com.yzlm.cyl.cfragment.Config.Component.CfgTool.DevLog.saveOperati
 import static com.yzlm.cyl.cfragment.Config.NoBoard.CfgTool.NoBoardConfig.getNoBoardConfigData;
 import static com.yzlm.cyl.cfragment.Content.Component.ContentTool.ConvertUnit;
 import static com.yzlm.cyl.cfragment.Content.Module.ModuleDistinction.QueryMeasCateg;
+import static com.yzlm.cyl.cfragment.Frame.MainActivity.isLvjie;
 import static com.yzlm.cyl.cfragment.Frame.MainActivity.mCompName;
 import static com.yzlm.cyl.cfragment.Frame.MainActivity.main;
 import static com.yzlm.cyl.cfragment.Frame.MainActivity.mainDisplayControlDevicesInfo;
@@ -51,7 +54,12 @@ public class Display extends SubFragment {
     public static TextView mTxTControlDevicesInfo;
 
 
-    public static Display newInstance() {
+    //TODO 设置为SubFragment
+    public static SubFragment newInstance() {
+        //如果为绿洁项目则更改主界面
+        if (isLvjie) {
+            return Up_content3_lvjie.newInstance();
+        }
         if (fragment == null) {
             fragment = new Display();
         }
